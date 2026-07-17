@@ -82,7 +82,12 @@ export default function App() {
     <div className="min-h-screen bg-mira-bege p-6 md:p-8">
       <header className="mb-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <img src="/logo-planeja.svg" alt="Planeja+" className="h-11 w-auto" />
+         <div
+          role="img"
+          aria-label="Planeja+"
+          className="h-12 w-44 shrink-0 bg-contain bg-left bg-no-repeat"
+          style={{ backgroundImage: 'url(/logo-planeja.svg)' }}
+        />
           <div>
             <h1 className="text-lg font-bold leading-tight text-mira-escuro">MIRA</h1>
             <p className="text-xs text-mira-escuro/60">
