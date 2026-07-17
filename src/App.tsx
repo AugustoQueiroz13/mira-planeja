@@ -97,7 +97,7 @@ export default function App() {
         <p className="mb-4 text-sm text-mira-escuro/70">
           Painel de filtros · Selecione o município, a ação ou o período para recalcular os dados
         </p>
-        <div className="flex flex-wrap items-end justify-between gap-6">
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
           <FiltroBar
             municipios={municipiosOpcoes}
             acoes={acoesOpcoes}
