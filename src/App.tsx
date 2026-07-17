@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useDados } from './dados/carregarDados'
 import { useMetas } from './dados/carregarMetas'
+import { useMetasAcoes } from './dados/carregarMetasAcoes'
 import { indicadores, serieMensal, contagem } from './dados/resumir'
 import type { Atividade, SiglaPrograma } from './tipos'
 import { CardKPI } from './componentes/CardKPI'
@@ -13,7 +14,6 @@ import { MetasPorProjeto } from './componentes/MetasPorProjeto'
 import { TabelaAcoes } from './componentes/TabelaAcoes'
 import { DetalheAtividade } from './componentes/DetalheAtividade'
 import { ModalLista } from './componentes/ModalLista'
-import { useMetasAcoes } from './dados/carregarMetasAcoes'
 import { DetalheAcao } from './componentes/DetalheAcao'
 
 const SIGLAS: SiglaPrograma[] = ['PEA', 'PAG', 'PGP', 'PCS']
@@ -82,7 +82,7 @@ export default function App() {
     <div className="min-h-screen bg-mira-bege p-6 md:p-8">
       <header className="mb-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
-         <img src="/logo-planeja.png" alt="Planeja+" className="h-12 w-auto shrink-0" />
+          <img src="/logo-planeja.png" alt="Planeja+" className="h-12 w-auto shrink-0" />
           <div>
             <h1 className="text-lg font-bold leading-tight text-mira-escuro">MIRA</h1>
             <p className="text-xs text-mira-escuro/60">
@@ -114,59 +114,67 @@ export default function App() {
         </div>
       </div>
 
-      <div className="mb-6 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-6">
-        <CardKPI
-          titulo="Atividades"
-          valor={ind.total_atividades}
-          legenda="total de atividades realizadas"
-          aoClicar={() => setListaAberta(true)}
-        />
-        <CardKPI
-          titulo="Participantes"
-          valor={ind.total_participantes}
-          legenda="total de pessoas mobilizadas"
-        />
-        <CardKPI
-          titulo="Média de Participantes"
-          valor={ind.media_participantes}
-          legenda="por atividade"
-        />
-        <CardKPI titulo="Municípios" valor={ind.municipios_atendidos} legenda="atendidos" />
-        <CardMeta
-          titulo="Metas globais"
-          percentual={metas.globais.programa}
-          legenda="das metas previstas para o programa"
-        />
-        <CardMeta
-          titulo="Metas parcial"
-          percentual={metas.globais.trimestre}
-          legenda="das metas previstas para o trimestre"
-        />
-      </div>
-
-      <div className="grid grid-cols-1 gap-6 xl:grid-cols-2">
-        <GraficoEvolucao serie={serie} />
-        <MetasPorProjeto metas={metas} />
-      </div>
-
-      {programa !== 'TODOS' && (
-        <div className="mt-6 grid grid-cols-1 gap-6 xl:grid-cols-2">
-          <GraficoBarras titulo="Atividades por estado" dados={porEstado} />
-          <GraficoBarras titulo="Atividades por regional" dados={porRegional} />
+      {acaoEspecifica ? (
+        <div className="space-y-4">
+          <button
+            onClick={() => setAcao('TODAS')}
+            className="text-sm font-medium text-mira-verde hover:underline"
+          >
+            ← Voltar ao panorama
+          </button>
+          <DetalheAcao codigo={acao} metasAcoes={metasAcoes} atividades={filtradas} />
         </div>
-      )}
+      ) : (
+        <>
+          <div className="mb-6 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-6">
+            <CardKPI
+              titulo="Atividades"
+              valor={ind.total_atividades}
+              legenda="total de atividades realizadas"
+              aoClicar={() => setListaAberta(true)}
+            />
+            <CardKPI
+              titulo="Participantes"
+              valor={ind.total_participantes}
+              legenda="total de pessoas mobilizadas"
+            />
+            <CardKPI
+              titulo="Média de Participantes"
+              valor={ind.media_participantes}
+              legenda="por atividade"
+            />
+            <CardKPI titulo="Municípios" valor={ind.municipios_atendidos} legenda="atendidos" />
+            <CardMeta
+              titulo="Metas globais"
+              percentual={metas.globais.programa}
+              legenda="das metas previstas para o programa"
+            />
+            <CardMeta
+              titulo="Metas parcial"
+              percentual={metas.globais.trimestre}
+              legenda="das metas previstas para o trimestre"
+            />
+          </div>
 
-      {acaoEspecifica && (
-  <div className="mt-6">
-    <DetalheAcao codigo={acao} metasAcoes={metasAcoes} atividades={filtradas} />
-  </div>
-)}
+          <div className="grid grid-cols-1 gap-6 xl:grid-cols-2">
+            <GraficoEvolucao serie={serie} />
+            <MetasPorProjeto metas={metas} />
+          </div>
 
-      {tabelaVisivel && (
-        <div className="mt-6">
-          <h2 className="mb-3 text-lg font-medium text-mira-escuro">Ações realizadas</h2>
-          <TabelaAcoes atividades={filtradas} aoAbrir={setAtividadeAberta} />
-        </div>
+          {programa !== 'TODOS' && (
+            <div className="mt-6 grid grid-cols-1 gap-6 xl:grid-cols-2">
+              <GraficoBarras titulo="Atividades por estado" dados={porEstado} />
+              <GraficoBarras titulo="Atividades por regional" dados={porRegional} />
+            </div>
+          )}
+
+          {tabelaVisivel && (
+            <div className="mt-6">
+              <h2 className="mb-3 text-lg font-medium text-mira-escuro">Ações realizadas</h2>
+              <TabelaAcoes atividades={filtradas} aoAbrir={setAtividadeAberta} />
+            </div>
+          )}
+        </>
       )}
 
       {listaAberta && (
