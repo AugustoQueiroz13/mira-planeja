@@ -1,0 +1,270 @@
+{
+  "_observacao": "Metas por acao (v2, formato de lista). Cada acao tem uma ou mais metas. 'realizado' e 'produto' a preencher com o apurado pela equipe.",
+  "acoes": {
+    "1.1": {
+      "programa": "PGP",
+      "descricao": "Selecionar, contratar e capacitar a equipe do programa",
+      "metas": [
+        { "rotulo": "Contratar 189 profissionais", "meta": 189, "unidade": "profissionais", "indicador": "Número de profissionais contratados", "realizado": null, "produto": null },
+        { "rotulo": "Capacitar os profissionais contratados", "meta": 189, "unidade": "profissionais", "indicador": "Número de profissionais capacitados", "realizado": null, "produto": null }
+      ]
+    },
+    "1.2": {
+      "programa": "PGP",
+      "descricao": "Selecionar e contratar serviços terceirizados",
+      "metas": [
+        { "rotulo": "Contratar empresas terceirizadas", "meta": null, "unidade": "categorias", "indicador": "Empresas contratadas", "realizado": null, "produto": null }
+      ]
+    },
+    "2.1": {
+      "programa": "PGP",
+      "descricao": "Locar as sedes para o funcionamento do programa",
+      "metas": [
+        { "rotulo": "Estruturar 34 sedes", "meta": 34, "unidade": "sedes", "indicador": "Número de sedes municipais, regionais e geral locadas", "realizado": null, "produto": null }
+      ]
+    },
+    "2.2": {
+      "programa": "PGP",
+      "descricao": "Aquisição de móveis e equipamentos para as sedes",
+      "metas": [
+        { "rotulo": "Equipar 34 sedes e a equipe", "meta": 34, "unidade": "sedes", "indicador": "Número de sedes mobiliadas", "realizado": null, "produto": null }
+      ]
+    },
+    "3.1": {
+      "programa": "PGP",
+      "descricao": "Realizar reuniões ordinárias do Conselho Gestor",
+      "metas": [
+        { "rotulo": "Realizar 12 reuniões do Conselho Gestor", "meta": 12, "unidade": "reuniões", "indicador": "Número de reuniões realizadas", "realizado": null, "produto": null }
+      ]
+    },
+    "3.2": {
+      "programa": "PGP",
+      "descricao": "Realizar reuniões de análise crítica",
+      "metas": [
+        { "rotulo": "Realizar 4 reuniões de análise crítica", "meta": 4, "unidade": "reuniões", "indicador": "Número de reuniões realizadas", "realizado": null, "produto": null }
+      ]
+    },
+    "3.3": {
+      "programa": "PGP",
+      "descricao": "Manter acervo documental do programa",
+      "metas": [
+        { "rotulo": "Manter o acervo documental", "meta": 1, "unidade": "acervo", "indicador": "Documentos organizados no acervo", "realizado": null, "produto": null }
+      ]
+    },
+    "3.4": {
+      "programa": "PGP",
+      "descricao": "Realizar Encontros Regionais da Equipe Técnica",
+      "metas": [
+        { "rotulo": "Realizar 7 encontros regionais da equipe", "meta": 7, "unidade": "encontros", "indicador": "Número de encontros realizados", "realizado": null, "produto": null }
+      ]
+    },
+    "5.1": {
+      "programa": "PGP",
+      "descricao": "Apresentar e validar o Plano de Pesquisa e de M&A",
+      "metas": [
+        { "rotulo": "Entregar o Plano de Pesquisa e de M&A", "meta": 1, "unidade": "documento", "indicador": "Documento aprovado", "realizado": null, "produto": null }
+      ]
+    },
+    "5.2": {
+      "programa": "PGP",
+      "descricao": "Diagnóstico de perfil dos participantes",
+      "metas": [
+        { "rotulo": "Realizar o diagnóstico de perfil", "meta": 1, "unidade": "diagnóstico", "indicador": "Diagnóstico entregue", "realizado": null, "produto": null }
+      ]
+    },
+    "5.3": {
+      "programa": "PGP",
+      "descricao": "Mapear e participar de eventos de controle de rendas",
+      "metas": [
+        { "rotulo": "Participar de 8 eventos de controle", "meta": 8, "unidade": "eventos", "indicador": "Número de eventos", "realizado": null, "produto": null }
+      ]
+    },
+    "5.4": {
+      "programa": "PGP",
+      "descricao": "Sistematizar dados municipais em painel",
+      "metas": [
+        { "rotulo": "Manter o painel de dados municipais", "meta": 1, "unidade": "painel", "indicador": "Painel e atualizações", "realizado": null, "produto": null }
+      ]
+    },
+    "5.5": {
+      "programa": "PGP",
+      "descricao": "Realizar oficinas de planejamento da próxima fase",
+      "metas": [
+        { "rotulo": "Realizar 52 oficinas de planejamento", "meta": 52, "unidade": "oficinas", "indicador": "Número de oficinas", "realizado": null, "produto": null }
+      ]
+    },
+    "6.1": {
+      "programa": "PGP",
+      "descricao": "Oficinas de elaboração de indicadores",
+      "metas": [
+        { "rotulo": "Realizar 2 oficinas de indicadores", "meta": 2, "unidade": "oficinas", "indicador": "Número de oficinas", "realizado": null, "produto": null }
+      ]
+    },
+    "7.1": {
+      "programa": "PGP",
+      "descricao": "Elaborar relatório das Ações de Mitigação",
+      "metas": [
+        { "rotulo": "Entregar o relatório de mitigação", "meta": 1, "unidade": "relatório", "indicador": "Relatório entregue", "realizado": null, "produto": null }
+      ]
+    },
+    "8.1": {
+      "programa": "PGP",
+      "descricao": "Sistematização das políticas públicas levantadas",
+      "metas": [
+        { "rotulo": "Entregar a metodologia de políticas públicas", "meta": 1, "unidade": "metodologia", "indicador": "Metodologia elaborada e entregue", "realizado": null, "produto": null }
+      ]
+    },
+    "9.1": {
+      "programa": "PGP",
+      "descricao": "Sistematização dos dados das receitas petrolíferas",
+      "metas": [
+        { "rotulo": "Entregar a metodologia das receitas petrolíferas", "meta": 1, "unidade": "metodologia", "indicador": "Metodologia elaborada e entregue", "realizado": null, "produto": null }
+      ]
+    },
+    "18.1": {
+      "programa": "PAG",
+      "descricao": "Oficina para elaboração do termo de compromisso",
+      "metas": [
+        { "rotulo": "Elaborar o termo de compromisso", "meta": 1, "unidade": "termo", "indicador": "Termo de compromisso elaborado", "realizado": null, "produto": null }
+      ]
+    },
+    "18.2": {
+      "programa": "PAG",
+      "descricao": "Aprovar o termo de compromisso com o Conselho Gestor",
+      "metas": [
+        { "rotulo": "Aprovar o termo de compromisso", "meta": 1, "unidade": "termo", "indicador": "Termo de compromisso aprovado", "realizado": null, "produto": null }
+      ]
+    },
+    "19.1": {
+      "programa": "PAG",
+      "descricao": "Sistematizar o uso das rendas petrolíferas",
+      "metas": [
+        { "rotulo": "Realizar 1118 reuniões de levantamento", "meta": 1118, "unidade": "reuniões", "indicador": "Número de levantamentos realizados", "realizado": null, "produto": null }
+      ]
+    },
+    "20.1": {
+      "programa": "PAG",
+      "descricao": "Oficinas para definir estratégias de atuação",
+      "metas": [
+        { "rotulo": "Realizar 104 oficinas de estratégia", "meta": 104, "unidade": "oficinas", "indicador": "Tipos de estratégias definidas", "realizado": null, "produto": null }
+      ]
+    },
+    "21.1": {
+      "programa": "PAG",
+      "descricao": "Reuniões de análise de conjuntura municipal",
+      "metas": [
+        { "rotulo": "Realizar 1248 reuniões de conjuntura", "meta": 1248, "unidade": "reuniões", "indicador": "Número de reuniões realizadas", "realizado": null, "produto": null }
+      ]
+    },
+    "21.2": {
+      "programa": "PAG",
+      "descricao": "Participar de espaços de controle social municipais",
+      "grafico_padrao": "treemap",
+      "distribuicao": [
+        { "rotulo": "Audiências públicas", "quantidade": 13 },
+        { "rotulo": "Sessões da câmara", "quantidade": 6 },
+        { "rotulo": "Conferências", "quantidade": 6 },
+        { "rotulo": "Conselho municipal", "quantidade": 5 },
+        { "rotulo": "Fóruns", "quantidade": 3 },
+        { "rotulo": "Seminários", "quantidade": 2 },
+        { "rotulo": "Comitê", "quantidade": 1 },
+        { "rotulo": "Unidade de conservação", "quantidade": 1 }
+      ],
+      "metas": [
+        { "rotulo": "Participar de 156 espaços de controle social", "meta": 156, "unidade": "espaços", "indicador": "Número de participações em espaços de controle social", "realizado": 37, "produto": null }
+      ]
+    },
+    
+    "21.3": {
+      "programa": "PAG",
+      "descricao": "Representar o Programa em espaços de controle social",
+      "metas": [
+        { "rotulo": "Ocupar 52 assentos em espaços de controle social", "meta": 52, "unidade": "assentos", "indicador": "Número de representações em espaços de controle social", "realizado": null, "produto": null }
+      ]
+    },
+    "21.4": {
+      "programa": "PAG",
+      "descricao": "Eventos locais para deliberação de propostas",
+      "metas": [
+        { "rotulo": "Realizar 26 eventos locais", "meta": 26, "unidade": "eventos", "indicador": "Número de eventos locais", "realizado": null, "produto": null }
+      ]
+    },
+    "21.5": {
+      "programa": "PAG",
+      "descricao": "Apresentar propostas de melhoria de políticas públicas",
+      "metas": [
+        { "rotulo": "Apresentar 650 propostas", "meta": 650, "unidade": "propostas", "indicador": "Número de propostas apresentadas", "realizado": null, "produto": null }
+      ]
+    },
+    "23.2": {
+      "programa": "PAG",
+      "descricao": "Participar de espaços de controle social estaduais",
+      "metas": [
+        { "rotulo": "Participar de 6 espaços estaduais", "meta": 6, "unidade": "espaços", "indicador": "Número de participações em espaços de controle social", "realizado": null, "produto": null }
+      ]
+    },
+    "23.3": {
+      "programa": "PAG",
+      "descricao": "Apresentar proposta no ciclo orçamentário estadual",
+      "metas": [
+        { "rotulo": "Apresentar 3 propostas estaduais", "meta": 3, "unidade": "propostas", "indicador": "Número de propostas apresentadas", "realizado": null, "produto": null }
+      ]
+    },
+    "24.1": {
+      "programa": "PAG",
+      "descricao": "Reuniões operacionais e de alinhamento",
+      "metas": [
+        { "rotulo": "Realizar 7 reuniões de alinhamento", "meta": 7, "unidade": "reuniões", "indicador": "Número de reuniões realizadas", "realizado": null, "produto": null }
+      ]
+    },
+    "24.2": {
+      "programa": "PAG",
+      "descricao": "Encontros regionais de troca de experiências",
+      "metas": [
+        { "rotulo": "Realizar 7 encontros regionais", "meta": 7, "unidade": "encontros", "indicador": "Número de encontros realizados", "realizado": null, "produto": null }
+      ]
+    },
+    "24.3": {
+      "programa": "PAG",
+      "descricao": "Encontro macrorregional",
+      "metas": [
+        { "rotulo": "Realizar 1 encontro macrorregional", "meta": 1, "unidade": "encontro", "indicador": "Evento realizado", "realizado": null, "produto": null }
+      ]
+    },
+    "24.4": {
+      "programa": "PAG",
+      "descricao": "Reuniões de planejamento e mobilização federal",
+      "metas": [
+        { "rotulo": "Realizar 9 reuniões de planejamento", "meta": 9, "unidade": "reuniões", "indicador": "Número de reuniões realizadas", "realizado": null, "produto": null }
+      ]
+    },
+    "24.5": {
+      "programa": "PAG",
+      "descricao": "Participar de espaço de controle social federal",
+      "metas": [
+        { "rotulo": "Participar de 2 espaços federais", "meta": 2, "unidade": "espaços", "indicador": "Número de participações em espaços de controle social", "realizado": null, "produto": null }
+      ]
+    },
+    "24.6": {
+      "programa": "PAG",
+      "descricao": "Apresentar proposta no ciclo orçamentário federal",
+      "metas": [
+        { "rotulo": "Apresentar 3 propostas federais", "meta": 3, "unidade": "propostas", "indicador": "Número de propostas apresentadas", "realizado": null, "produto": null }
+      ]
+    },
+    "25.1": {
+      "programa": "PAG",
+      "descricao": "Ações conjuntas com instituições e movimentos sociais",
+      "metas": [
+        { "rotulo": "Realizar 156 ações conjuntas", "meta": 156, "unidade": "reuniões", "indicador": "Número de ações conjuntas realizadas", "realizado": null, "produto": null }
+      ]
+    },
+    "25.2": {
+      "programa": "PAG",
+      "descricao": "Ações conjuntas em âmbito estadual",
+      "metas": [
+        { "rotulo": "Realizar 8 ações conjuntas estaduais", "meta": 8, "unidade": "ações", "indicador": "Número de ações conjuntas realizadas", "realizado": null, "produto": null }
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mira-escuro: #18303C;
+  --color-mira-verde: #3C9C3C;
+  --color-mira-lima: #78C03C;
+  --color-mira-teal: #30B4A8;
+  --color-mira-bege: #F1EFE7;
+
+  --color-pea: #54B460;
+  --color-pag: #3C9C3C;
+  --color-pgp: #639922;
+  --color-pcs: #30B4A8;
+}

@@ -1,0 +1,17 @@
+{
+  "regioes": {
+    "I":   { "uf": "ES",    "municipios": ["Piúma", "Marataízes", "Itapemirim", "Presidente Kennedy"] },
+    "II":  { "uf": "RJ",    "municipios": ["São Francisco de Itabapoana", "São João da Barra", "Campos dos Goytacazes", "Quissamã"] },
+    "III": { "uf": "RJ",    "municipios": ["Carapebus", "Macaé", "Rio das Ostras", "Casimiro de Abreu"] },
+    "IV":  { "uf": "RJ",    "municipios": ["Saquarema", "Araruama", "Arraial do Cabo", "Cabo Frio", "Armação dos Búzios"] },
+    "V":   { "uf": "RJ",    "municipios": ["Maricá", "Niterói", "Guapimirim"] },
+    "VI":  { "uf": "RJ/SP", "municipios": ["Paraty", "Caraguatatuba", "Ilhabela"] },
+    "VII": { "uf": "SP",    "municipios": ["Iguape", "Ilha Comprida", "Cananéia"] }
+  },
+  "depara": {
+    "campos": "Campos dos Goytacazes",
+    "ilha cumprida": "Ilha Comprida"
+  },
+  "marcadores_institucionais": ["gerencia", "institucional", "federal", "geral"],
+  "fora_de_abrangencia": []
+}
