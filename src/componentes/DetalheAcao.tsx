@@ -1,6 +1,9 @@
-import type { MetasAcoes } from '../tipos'
+import type { Atividade, MetasAcoes } from '../tipos'
 import { GraficoMetaResultado } from './GraficoMetaResultado'
 import { GraficoDistribuicao } from './GraficoDistribuicao'
+import { Cronograma } from './Cronograma'
+
+const ANO = 2026
 
 function Titulo({ texto }: { texto: string }) {
   return <p className="text-xs font-medium uppercase tracking-wide text-mira-verde">{texto}</p>
@@ -17,9 +20,11 @@ function RotuloMovel({ texto }: { texto: string }) {
 export function DetalheAcao({
   codigo,
   metasAcoes,
+  atividades,
 }: {
   codigo: string
   metasAcoes: MetasAcoes | null
+  atividades: Atividade[]
 }) {
   const acao = metasAcoes?.acoes?.[codigo]
 
@@ -32,6 +37,14 @@ export function DetalheAcao({
   }
 
   const temDist = !!acao.distribuicao && acao.distribuicao.length > 0
+
+  const realizadoMeses = [
+    ...new Set(
+      atividades
+        .filter((a) => a.data_iso && a.data_iso.startsWith(String(ANO)))
+        .map((a) => Number(a.data_iso.slice(5, 7)))
+    ),
+  ]
 
   return (
     <div className="space-y-4">
@@ -114,6 +127,10 @@ export function DetalheAcao({
           )}
         </div>
       </div>
+
+      {acao.cronograma_previsto && acao.cronograma_previsto.length > 0 && (
+        <Cronograma previsto={acao.cronograma_previsto} realizado={realizadoMeses} ano={ANO} />
+      )}
     </div>
   )
 }

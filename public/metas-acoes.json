@@ -4,6 +4,7 @@
     "1.1": {
       "programa": "PGP",
       "descricao": "Selecionar, contratar e capacitar a equipe do programa",
+      "cronograma_previsto": [1, 2, 3, 4, 5],
       "metas": [
         { "rotulo": "Contratar 189 profissionais", "meta": 189, "unidade": "profissionais", "indicador": "Número de profissionais contratados", "realizado": null, "produto": null },
         { "rotulo": "Capacitar os profissionais contratados", "meta": 189, "unidade": "profissionais", "indicador": "Número de profissionais capacitados", "realizado": null, "produto": null }
@@ -149,11 +150,23 @@
         { "rotulo": "Realizar 104 oficinas de estratégia", "meta": 104, "unidade": "oficinas", "indicador": "Tipos de estratégias definidas", "realizado": null, "produto": null }
       ]
     },
-    "21.1": {
+    "21.2": {
       "programa": "PAG",
-      "descricao": "Reuniões de análise de conjuntura municipal",
+      "descricao": "Participar de espaços de controle social municipais",
+      "grafico_padrao": "treemap",
+      "cronograma_previsto": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "distribuicao": [
+        { "rotulo": "Audiências públicas", "quantidade": 13 },
+        { "rotulo": "Sessões da câmara", "quantidade": 6 },
+        { "rotulo": "Conferências", "quantidade": 6 },
+        { "rotulo": "Conselho municipal", "quantidade": 5 },
+        { "rotulo": "Fóruns", "quantidade": 3 },
+        { "rotulo": "Seminários", "quantidade": 2 },
+        { "rotulo": "Comitê", "quantidade": 1 },
+        { "rotulo": "Unidade de conservação", "quantidade": 1 }
+      ],
       "metas": [
-        { "rotulo": "Realizar 1248 reuniões de conjuntura", "meta": 1248, "unidade": "reuniões", "indicador": "Número de reuniões realizadas", "realizado": null, "produto": null }
+        { "rotulo": "Participar de 156 espaços de controle social", "meta": 156, "unidade": "espaços", "indicador": "Número de participações em espaços de controle social", "realizado": 37, "produto": null }
       ]
     },
     "21.2": {

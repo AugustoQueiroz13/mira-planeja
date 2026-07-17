@@ -158,7 +158,7 @@ export default function App() {
 
       {acaoEspecifica && (
   <div className="mt-6">
-    <DetalheAcao codigo={acao} metasAcoes={metasAcoes} />
+    <DetalheAcao codigo={acao} metasAcoes={metasAcoes} atividades={filtradas} />
   </div>
 )}
 

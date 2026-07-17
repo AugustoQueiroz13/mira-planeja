@@ -69,6 +69,7 @@ export interface AcaoMeta {
   metas: MetaItem[]
   distribuicao?: Contagem[]
   grafico_padrao?: 'treemap' | 'pizza' | 'barras'
+  cronograma_previsto?: number[]
 }
 
 export interface MetasAcoes {
