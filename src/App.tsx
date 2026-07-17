@@ -17,12 +17,6 @@ import { useMetasAcoes } from './dados/carregarMetasAcoes'
 import { DetalheAcao } from './componentes/DetalheAcao'
 
 const SIGLAS: SiglaPrograma[] = ['PEA', 'PAG', 'PGP', 'PCS']
-const CORES_PROGRAMA: Record<string, string> = {
-  PEA: '#54B460',
-  PAG: '#3C9C3C',
-  PGP: '#639922',
-  PCS: '#30B4A8',
-}
 
 function ordenaAcao(a: string, b: string) {
   const pa = a.split('.').map(Number)

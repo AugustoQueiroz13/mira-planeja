@@ -48,6 +48,12 @@ export interface Dados {
   programas: Record<SiglaPrograma, Programa>
   qualidade: { municipios_a_revisar: { referencia: string; valor: string }[] }
 }
+
+export interface Metas {
+  globais: { programa: number; trimestre: number }
+  por_projeto: Record<SiglaPrograma, number>
+}
+
 export interface MetaItem {
   rotulo: string
   meta: number | null
