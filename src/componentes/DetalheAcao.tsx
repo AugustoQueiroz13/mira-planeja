@@ -128,9 +128,7 @@ export function DetalheAcao({
         </div>
       </div>
 
-      {acao.cronograma_previsto && acao.cronograma_previsto.length > 0 && (
-        <Cronograma previsto={acao.cronograma_previsto} realizado={realizadoMeses} ano={ANO} />
-      )}
+      <Cronograma previsto={acao.cronograma_previsto ?? []} realizado={realizadoMeses} ano={ANO} />
     </div>
   )
 }

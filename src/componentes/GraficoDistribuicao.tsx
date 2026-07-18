@@ -11,7 +11,6 @@ import {
   Tooltip,
   ResponsiveContainer,
   Cell,
-  Legend,
 } from 'recharts'
 import type { Contagem } from '../tipos'
 
@@ -48,6 +47,7 @@ export function GraficoDistribuicao({
 }) {
   const [tipo, setTipo] = useState<TipoGrafico>(padrao)
   const opcoes: TipoGrafico[] = ['treemap', 'pizza', 'barras']
+  const total = dados.reduce((s, d) => s + d.quantidade, 0) || 1
   const treemapData = dados.map((d) => ({ name: d.rotulo, size: d.quantidade }))
 
   return (
@@ -69,7 +69,7 @@ export function GraficoDistribuicao({
         </div>
       </div>
 
-      <ResponsiveContainer width="100%" height={260}>
+      <ResponsiveContainer width="100%" height={280}>
         {tipo === 'treemap' ? (
           <Treemap data={treemapData} dataKey="size" content={<ConteudoTreemap />} isAnimationActive={false}>
             <Tooltip />
@@ -82,21 +82,25 @@ export function GraficoDistribuicao({
               nameKey="rotulo"
               cx="50%"
               cy="50%"
-              outerRadius={85}
-              label={({ percent }) => `${Math.round((percent || 0) * 100)}%`}
+              outerRadius={105}
+              labelLine={false}
             >
               {dados.map((_, i) => (
                 <Cell key={i} fill={CORES[i % CORES.length]} />
               ))}
             </Pie>
-            <Tooltip />
-            <Legend />
+            <Tooltip
+              formatter={(v, n) => {
+                const q = Number(v) || 0
+                return [`${q} (${Math.round((q / total) * 100)}%)`, n]
+              }}
+            />
           </PieChart>
         ) : (
           <BarChart data={dados} layout="vertical" margin={{ top: 5, right: 16, bottom: 5, left: 0 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="#e5e5e0" />
             <XAxis type="number" stroke="#18303C" fontSize={12} allowDecimals={false} />
-            <YAxis type="category" dataKey="rotulo" stroke="#18303C" fontSize={11} width={130} />
+            <YAxis type="category" dataKey="rotulo" stroke="#18303C" fontSize={11} width={140} />
             <Tooltip />
             <Bar dataKey="quantidade" radius={[0, 6, 6, 0]}>
               {dados.map((_, i) => (
@@ -106,6 +110,23 @@ export function GraficoDistribuicao({
           </BarChart>
         )}
       </ResponsiveContainer>
+
+      {tipo === 'pizza' && (
+        <div className="mt-4 grid grid-cols-2 gap-x-4 gap-y-1 text-xs">
+          {dados.map((d, i) => (
+            <div key={i} className="flex items-center gap-2">
+              <span
+                className="inline-block h-3 w-3 shrink-0 rounded-sm"
+                style={{ backgroundColor: CORES[i % CORES.length] }}
+              />
+              <span className="truncate text-mira-escuro/80">{d.rotulo}</span>
+              <span className="ml-auto font-medium text-mira-escuro">
+                {Math.round((d.quantidade / total) * 100)}%
+              </span>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   )
 }

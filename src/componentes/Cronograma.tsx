@@ -29,6 +29,7 @@ export function Cronograma({
 }) {
   const prev = new Set(previsto)
   const real = new Set(realizado)
+  const semPrevisto = previsto.length === 0
 
   return (
     <div className="rounded-xl bg-white p-5 shadow-sm">
@@ -37,7 +38,7 @@ export function Cronograma({
       <div className="overflow-x-auto">
         <div className="min-w-[560px] space-y-1">
           <div className="flex">
-            <div className="w-24 shrink-0" />
+            <div className="w-28 shrink-0" />
             <div className="grid flex-1 grid-cols-4">
               {TRIMESTRES.map((t) => (
                 <div
@@ -51,7 +52,7 @@ export function Cronograma({
           </div>
 
           <div className="flex">
-            <div className="w-24 shrink-0" />
+            <div className="w-28 shrink-0" />
             <div className="grid flex-1 grid-cols-12">
               {MESES.map((mes) => (
                 <div key={mes} className="text-center text-[10px] text-mira-escuro/50">
@@ -62,12 +63,15 @@ export function Cronograma({
           </div>
 
           <div className="flex items-center">
-            <div className="w-24 shrink-0 text-xs text-mira-escuro/70">Previsto</div>
+            <div className="w-28 shrink-0 text-xs text-mira-escuro/70">
+              Previsto{' '}
+              {semPrevisto && <span className="text-mira-escuro/40">(a definir)</span>}
+            </div>
             <Faixa ativos={prev} cor="#8FCB6E" />
           </div>
 
           <div className="flex items-center">
-            <div className="w-24 shrink-0 text-xs text-mira-escuro/70">Realizado</div>
+            <div className="w-28 shrink-0 text-xs text-mira-escuro/70">Realizado</div>
             <Faixa ativos={real} cor="#2F6B2F" />
           </div>
         </div>
