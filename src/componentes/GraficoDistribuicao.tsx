@@ -54,7 +54,7 @@ export function GraficoDistribuicao({
     <div className="rounded-xl bg-white p-5 shadow-sm">
       <div className="mb-3 flex items-center justify-between gap-2">
         <h3 className="font-medium text-mira-escuro">{titulo}</h3>
-        <div className="flex gap-1">
+        <div className="flex gap-1 print:hidden">
           {opcoes.map((o) => (
             <button
               key={o}

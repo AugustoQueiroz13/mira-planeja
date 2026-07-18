@@ -12,3 +12,13 @@
   --color-pgp: #639922;
   --color-pcs: #30B4A8;
 }
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .rounded-xl,
+  .rounded-2xl {
+    break-inside: avoid;
+  }
+}

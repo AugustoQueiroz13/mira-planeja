@@ -79,7 +79,7 @@ export default function App() {
   const tabelaVisivel = programa !== 'TODOS' && municipio === 'TODOS' && acao === 'TODAS'
 
   return (
-    <div className="min-h-screen bg-mira-bege p-6 md:p-8">
+    <div className="min-h-screen bg-mira-bege p-6 md:p-8 print:bg-white">
       <header className="mb-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img src="/logo-planeja.png" alt="Planeja+" className="h-12 w-auto shrink-0" />
@@ -90,10 +90,18 @@ export default function App() {
             </p>
           </div>
         </div>
-        <p className="text-2xl font-bold text-mira-escuro">Resultados</p>
+        <div className="flex items-center gap-4">
+          <button
+            onClick={() => window.print()}
+            className="rounded-lg bg-mira-verde px-4 py-2 text-sm font-medium text-white transition hover:opacity-90 print:hidden"
+          >
+            Exportar PDF
+          </button>
+          <p className="text-2xl font-bold text-mira-escuro">Resultados</p>
+        </div>
       </header>
 
-      <div className="mb-6 rounded-2xl bg-[#E7EDE0] p-5">
+      <div className="mb-6 rounded-2xl bg-[#E7EDE0] p-5 print:hidden">
         <p className="mb-4 text-sm text-mira-escuro/70">
           Painel de filtros · Selecione o município, a ação ou o período para recalcular os dados
         </p>
@@ -118,7 +126,7 @@ export default function App() {
         <div className="space-y-4">
           <button
             onClick={() => setAcao('TODAS')}
-            className="text-sm font-medium text-mira-verde hover:underline"
+            className="text-sm font-medium text-mira-verde hover:underline print:hidden"
           >
             ← Voltar ao panorama
           </button>
