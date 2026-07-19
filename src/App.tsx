@@ -80,24 +80,24 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-mira-bege p-6 md:p-8 print:bg-white">
-      <header className="mb-4 flex items-center justify-between">
+      <<header className="mb-4 flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-3">
-          <img src="/logo-planeja.png" alt="Planeja+" className="h-12 w-auto shrink-0" />
+          <img src="/logo-planeja.png" alt="Planeja+" className="h-10 w-auto shrink-0 md:h-12" />
           <div>
-            <h1 className="text-lg font-bold leading-tight text-mira-escuro">MIRA</h1>
-            <p className="text-xs text-mira-escuro/60">
+            <h1 className="text-base font-bold leading-tight text-mira-escuro md:text-lg">MIRA</h1>
+            <p className="text-[11px] text-mira-escuro/60 md:text-xs">
               Monitoramento Integrado de Resultados e Atividades
             </p>
           </div>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3">
           <button
             onClick={() => window.print()}
-            className="rounded-lg bg-mira-verde px-4 py-2 text-sm font-medium text-white transition hover:opacity-90 print:hidden"
+            className="rounded-md border border-mira-verde px-3 py-1.5 text-xs font-medium text-mira-verde transition hover:bg-mira-verde hover:text-white print:hidden"
           >
             Exportar PDF
           </button>
-          <p className="text-2xl font-bold text-mira-escuro">Resultados</p>
+          <p className="text-xl font-bold text-mira-escuro md:text-2xl">Resultados</p>
         </div>
       </header>
 
