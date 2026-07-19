@@ -51,14 +51,14 @@ export function DetalheAcao({
       <div className="flex items-center justify-between gap-4">
         <div>
           <p className="text-sm text-mira-escuro/60">Ação {codigo}</p>
-          <h2 className="text-lg font-medium text-mira-escuro">{acao.descricao}</h2>
+          <h2 className="text-base font-medium text-mira-escuro md:text-lg">{acao.descricao}</h2>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex shrink-0 flex-col items-center">
           <span className="text-xs text-mira-escuro/60">Projeto selecionado</span>
           <img
             src={`/icones/${acao.programa.toLowerCase()}.png`}
             alt={acao.programa}
-            className="h-16 w-16 object-contain"
+            className="h-14 w-14 object-contain md:h-16 md:w-16"
           />
         </div>
       </div>
@@ -109,7 +109,7 @@ export function DetalheAcao({
               <p className="mb-2 text-xs font-medium uppercase tracking-wide text-mira-verde">
                 Detalhamento
               </p>
-              <ul className="grid grid-cols-2 gap-x-6 gap-y-1 text-sm text-mira-escuro/80">
+              <ul className="grid grid-cols-1 gap-x-6 gap-y-1 text-sm text-mira-escuro/80 sm:grid-cols-2">
                 {acao.distribuicao!.map((d, i) => (
                   <li key={i}>
                     {String(d.quantidade).padStart(2, '0')} {d.rotulo}
