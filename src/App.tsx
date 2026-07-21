@@ -15,6 +15,7 @@ import { TabelaAcoes } from './componentes/TabelaAcoes'
 import { DetalheAtividade } from './componentes/DetalheAtividade'
 import { ModalLista } from './componentes/ModalLista'
 import { DetalheAcao } from './componentes/DetalheAcao'
+import { AvisoQualidade } from './componentes/AvisoQualidade'
 
 const SIGLAS: SiglaPrograma[] = ['PEA', 'PAG', 'PGP', 'PCS']
 
@@ -184,7 +185,7 @@ export default function App() {
           )}
         </>
       )}
-
+      <AvisoQualidade qualidade={dados.qualidade} />
       {listaAberta && (
         <ModalLista
           titulo="Atividades no filtro atual"
