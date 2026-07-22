@@ -104,22 +104,24 @@ export default function App() {
       </header>
 
       <div className="mb-6 rounded-2xl bg-[#E7EDE0] p-4 md:p-5 print:hidden">
-        <p className="mb-4 text-sm text-mira-escuro/70">
-          Painel de filtros · Selecione o município, a ação ou o período para recalcular os dados
-        </p>
         <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
-          <FiltroBar
-            municipios={municipiosOpcoes}
-            acoes={acoesOpcoes}
-            municipio={municipio}
-            acao={acao}
-            inicio={inicio}
-            fim={fim}
-            setMunicipio={setMunicipio}
-            setAcao={setAcao}
-            setInicio={setInicio}
-            setFim={setFim}
-          />
+          <div className="flex-1">
+            <p className="mb-4 text-sm text-mira-escuro/70">
+              Painel de filtros · Selecione o município, a ação ou o período para recalcular os dados
+            </p>
+            <FiltroBar
+              municipios={municipiosOpcoes}
+              acoes={acoesOpcoes}
+              municipio={municipio}
+              acao={acao}
+              inicio={inicio}
+              fim={fim}
+              setMunicipio={setMunicipio}
+              setAcao={setAcao}
+              setInicio={setInicio}
+              setFim={setFim}
+            />
+          </div>
           <IconesProjeto selecionado={programa} aoSelecionar={setPrograma} temDados={temDados} />
         </div>
       </div>

@@ -10,9 +10,9 @@ type Props = {
 
 export function IconesProjeto({ selecionado, aoSelecionar, temDados }: Props) {
   return (
-    <div className="flex flex-col items-start gap-2">
+    <div className="flex flex-col items-start gap-0.5">
       <p className="text-sm font-medium text-mira-escuro/70">Projeto</p>
-      <div className="flex items-center gap-1.5">
+      <div className="flex items-center gap-0.5">
         <button
           onClick={() => aoSelecionar('TODOS')}
           className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-xl text-sm font-medium transition ${
