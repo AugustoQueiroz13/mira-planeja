@@ -2,13 +2,17 @@ import type { Atividade, Indicadores, PontoTempo, Contagem } from '../tipos'
 
 export function indicadores(ativs: Atividade[]): Indicadores {
   const total = ativs.length
-  const participantes = ativs.reduce((s, a) => s + (a.participantes || 0), 0)
+  const internos = ativs.reduce((s, a) => s + (a.part_internos || 0), 0)
+  const externos = ativs.reduce((s, a) => s + (a.part_externos || 0), 0)
+  const participantes = internos + externos
   const municipios = new Set<string>()
   ativs.forEach((a) => (a.municipios || []).forEach((m) => municipios.add(m)))
   const regionais = new Set(ativs.map((a) => a.regional).filter(Boolean))
   return {
     total_atividades: total,
     total_participantes: participantes,
+    internos,
+    externos,
     media_participantes: total ? Math.round((participantes / total) * 100) / 100 : 0,
     municipios_atendidos: municipios.size,
     regionais: regionais.size,

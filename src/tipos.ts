@@ -5,11 +5,12 @@ export type SiglaPrograma = 'PEA' | 'PAG' | 'PGP' | 'PCS'
 export interface Indicadores {
   total_atividades: number
   total_participantes: number
+  internos: number
+  externos: number
   media_participantes: number
   municipios_atendidos: number
   regionais: number
 }
-
 export interface Atividade {
   codigo_acao: string
   atividade: string

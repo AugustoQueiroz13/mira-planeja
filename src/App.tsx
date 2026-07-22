@@ -29,6 +29,7 @@ export default function App() {
   const dados = useDados()
   const metas = useMetas()
   const metasAcoes = useMetasAcoes()
+  const [logado] = useState(false)
   const [programa, setPrograma] = useState<SiglaPrograma | 'TODOS'>('TODOS')
   const [municipio, setMunicipio] = useState('TODOS')
   const [acao, setAcao] = useState('TODAS')
@@ -85,9 +86,9 @@ export default function App() {
         <div className="flex items-center gap-3">
           <img src="/logo-planeja.png" alt="Planeja+" className="h-10 w-auto shrink-0 md:h-12" />
           <div>
-            <h1 className="text-base font-bold leading-tight text-mira-escuro md:text-lg">MIRA</h1>
+            <h1 className="text-base font-bold leading-tight text-mira-escuro md:text-lg">SMA</h1>
             <p className="text-[11px] text-mira-escuro/60 md:text-xs">
-              Monitoramento Integrado de Resultados e Atividades
+              Sistema de Monitoramento de Atividades
             </p>
           </div>
         </div>
@@ -145,7 +146,7 @@ export default function App() {
             <CardKPI
               titulo="Participantes"
               valor={ind.total_participantes}
-              legenda="total de pessoas mobilizadas"
+              legenda={`${ind.internos} internos · ${ind.externos} externos`}
             />
             <CardKPI
               titulo="Média de Participantes"
@@ -185,7 +186,9 @@ export default function App() {
           )}
         </>
       )}
-      <AvisoQualidade qualidade={dados.qualidade} />
+
+      {logado && <AvisoQualidade qualidade={dados.qualidade} />}
+
       {listaAberta && (
         <ModalLista
           titulo="Atividades no filtro atual"

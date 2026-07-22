@@ -1,4 +1,5 @@
 import type { Atividade, MetasAcoes } from '../tipos'
+import { contagem } from '../dados/resumir'
 import { GraficoMetaResultado } from './GraficoMetaResultado'
 import { GraficoDistribuicao } from './GraficoDistribuicao'
 import { Cronograma } from './Cronograma'
@@ -36,7 +37,10 @@ export function DetalheAcao({
     )
   }
 
-  const temDist = !!acao.distribuicao && acao.distribuicao.length > 0
+  const temCurada = !!acao.distribuicao && acao.distribuicao.length > 0
+  const distribuicao = temCurada ? acao.distribuicao! : contagem(atividades, 'regional')
+  const tituloDistrib = temCurada ? 'Atividade por tipo' : 'Atividades por regional'
+  const temDistrib = distribuicao.length > 0
 
   const realizadoMeses = [
     ...new Set(
@@ -104,13 +108,13 @@ export function DetalheAcao({
             ))}
           </div>
 
-          {temDist && (
+          {temDistrib && (
             <div className="rounded-xl bg-white p-5 shadow-sm">
               <p className="mb-2 text-xs font-medium uppercase tracking-wide text-mira-verde">
                 Detalhamento
               </p>
               <ul className="grid grid-cols-1 gap-x-6 gap-y-1 text-sm text-mira-escuro/80 sm:grid-cols-2">
-                {acao.distribuicao!.map((d, i) => (
+                {distribuicao.map((d, i) => (
                   <li key={i}>
                     {String(d.quantidade).padStart(2, '0')} {d.rotulo}
                   </li>
@@ -122,8 +126,12 @@ export function DetalheAcao({
 
         <div className="space-y-6">
           <GraficoMetaResultado metas={acao.metas} />
-          {temDist && (
-            <GraficoDistribuicao dados={acao.distribuicao!} padrao={acao.grafico_padrao ?? 'treemap'} />
+          {temDistrib && (
+            <GraficoDistribuicao
+              titulo={tituloDistrib}
+              dados={distribuicao}
+              padrao={acao.grafico_padrao ?? 'treemap'}
+            />
           )}
         </div>
       </div>
