@@ -1,13 +1,25 @@
+import { useState } from 'react'
+import { Login } from './Login'
+import { Painel } from './Painel'
+
 export function Admin() {
+  const [logado, setLogado] = useState(false)
+
+  if (!logado) {
+    return <Login aoEntrar={() => setLogado(true)} />
+  }
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-mira-bege p-8">
-      <div className="w-full max-w-md rounded-2xl bg-white p-8 text-center shadow-sm">
-        <h1 className="text-lg font-bold text-mira-escuro">SMA · Área de administração</h1>
-        <p className="mt-3 text-sm text-mira-escuro/70">
-          Esta área é protegida. O acesso por senha será ativado na próxima etapa, e só depois de
-          entrar é que o carregamento de planilha ficará disponível aqui.
-        </p>
+    <div>
+      <div className="flex items-center justify-end bg-mira-bege px-4 pt-4 md:px-8 print:hidden">
+        <button
+          onClick={() => setLogado(false)}
+          className="rounded-md border border-mira-escuro/20 px-3 py-1.5 text-xs font-medium text-mira-escuro/70 transition hover:bg-white"
+        >
+          Sair da administração
+        </button>
       </div>
+      <Painel admin />
     </div>
   )
 }
