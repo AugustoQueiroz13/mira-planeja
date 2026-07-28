@@ -3,7 +3,7 @@ import { useDados } from './dados/carregarDados'
 import { useMetas } from './dados/carregarMetas'
 import { useMetasAcoes } from './dados/carregarMetasAcoes'
 import { indicadores, serieMensal, contagem } from './dados/resumir'
-import type { Atividade, SiglaPrograma } from './tipos'
+import type { Atividade, Dados, SiglaPrograma } from './tipos'
 import { CardKPI } from './componentes/CardKPI'
 import { CardMeta } from './componentes/CardMeta'
 import { IconesProjeto } from './componentes/IconesProjeto'
@@ -16,6 +16,7 @@ import { DetalheAtividade } from './componentes/DetalheAtividade'
 import { ModalLista } from './componentes/ModalLista'
 import { DetalheAcao } from './componentes/DetalheAcao'
 import { AvisoQualidade } from './componentes/AvisoQualidade'
+import { BotaoUpload } from './componentes/BotaoUpload'
 
 const SIGLAS: SiglaPrograma[] = ['PEA', 'PAG', 'PGP', 'PCS']
 
@@ -26,10 +27,12 @@ function ordenaAcao(a: string, b: string) {
 }
 
 export default function App() {
-  const dados = useDados()
+  const dadosPublicados = useDados()
   const metas = useMetas()
   const metasAcoes = useMetasAcoes()
   const [logado] = useState(false)
+  const [dadosCarregados, setDadosCarregados] = useState<Dados | null>(null)
+  const [erroUpload, setErroUpload] = useState('')
   const [programa, setPrograma] = useState<SiglaPrograma | 'TODOS'>('TODOS')
   const [municipio, setMunicipio] = useState('TODOS')
   const [acao, setAcao] = useState('TODAS')
@@ -37,6 +40,8 @@ export default function App() {
   const [fim, setFim] = useState('')
   const [atividadeAberta, setAtividadeAberta] = useState<Atividade | null>(null)
   const [listaAberta, setListaAberta] = useState(false)
+
+  const dados = dadosCarregados ?? dadosPublicados
 
   if (!dados) return <p className="p-8 text-mira-escuro">Carregando...</p>
 
@@ -92,7 +97,14 @@ export default function App() {
             </p>
           </div>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-3">
+          <BotaoUpload
+            aoCarregar={(d) => {
+              setDadosCarregados(d)
+              setErroUpload('')
+            }}
+            aoErro={setErroUpload}
+          />
           <button
             onClick={() => window.print()}
             className="rounded-md border border-mira-verde px-3 py-1.5 text-xs font-medium text-mira-verde transition hover:bg-mira-verde hover:text-white print:hidden"
@@ -102,6 +114,27 @@ export default function App() {
           <p className="text-xl font-bold text-mira-escuro md:text-2xl">Resultados</p>
         </div>
       </header>
+
+      {dadosCarregados && (
+        <div className="mb-4 flex flex-wrap items-center justify-between gap-2 rounded-lg border border-amber-300 bg-amber-50 px-4 py-2 text-sm text-amber-800 print:hidden">
+          <span>
+            Você está vendo uma planilha carregada, apenas nesta sessão. Os dados publicados não
+            foram alterados.
+          </span>
+          <button
+            onClick={() => setDadosCarregados(null)}
+            className="rounded-md border border-amber-400 px-3 py-1 text-xs font-medium text-amber-800 transition hover:bg-amber-100"
+          >
+            Voltar aos dados publicados
+          </button>
+        </div>
+      )}
+
+      {erroUpload && (
+        <div className="mb-4 rounded-lg border border-red-300 bg-red-50 px-4 py-2 text-sm text-red-700 print:hidden">
+          {erroUpload}
+        </div>
+      )}
 
       <div className="mb-6 rounded-2xl bg-[#E7EDE0] p-4 md:p-5 print:hidden">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
