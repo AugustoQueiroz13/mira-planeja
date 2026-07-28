@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export function Login({ aoEntrar }: { aoEntrar: () => void }) {
   const [senha, setSenha] = useState('')
@@ -56,6 +57,12 @@ export function Login({ aoEntrar }: { aoEntrar: () => void }) {
         >
           {verificando ? 'Verificando...' : 'Entrar'}
         </button>
+
+        <div className="mt-4 text-center">
+          <Link to="/" className="text-sm font-medium text-mira-verde hover:underline">
+            ← Voltar ao painel
+          </Link>
+        </div>
       </div>
     </div>
   )
