@@ -55,7 +55,7 @@ export interface MetaAcaoInfo {
   produto_entregue?: boolean
   meta_produto?: number
   produto_executado?: number
-  cronograma_previsto?: number[]
+  cronograma_previsto?: string[]
 }
 
 export interface MetasInfo {
@@ -92,6 +92,14 @@ export interface Comunicacao {
   engajamento: { posts: number; interacoes: number; visualizacoes: number }
 }
 
+// Equipe (acao 1.1): agregados de contratacao, sem dados individuais
+export interface Equipe {
+  total: number
+  sexo: Contagem[]
+  formacao: Contagem[]
+  area: Contagem[]
+}
+
 export interface Dados {
   gerado_em: string
   periodo: { inicio: string; fim: string }
@@ -99,6 +107,7 @@ export interface Dados {
   programas: Record<SiglaPrograma, Programa>
   metas: MetasInfo
   comunicacao?: Comunicacao
+  equipe?: Equipe
   qualidade: { municipios_a_revisar: { referencia: string; valor: string }[] }
 }
 

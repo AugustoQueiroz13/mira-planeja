@@ -254,6 +254,14 @@ def transforma(df):
     df["municipio"] = trip.map(lambda t: t[1])
     df["abrangencia"] = trip.map(lambda t: t[2])
 
+    # Atividades de nivel institucional nao sao atribuidas a municipios: evita
+    # parecer que os municipios executaram uma acao que e institucional e nao
+    # infla a contagem de municipios atendidos.
+    inst = df["regional"].str.contains("institucional", case=False, na=False)
+    df.loc[inst, "municipios_canon"] = df.loc[inst, "municipios_canon"].map(lambda _: [])
+    df.loc[inst, "municipio"] = "Institucional"
+    df.loc[inst, "abrangencia"] = "institucional"
+
     df["data"] = df["data_realizada"].map(parse_data)
     df["mes_ref"] = df["data"].dt.strftime("%Y-%m")
     df["data_iso"] = df["data"].dt.strftime("%Y-%m-%d").fillna("")
@@ -422,9 +430,9 @@ def carrega_metas(caminho):
         if "executado" in mp_txt or "executado" in pe_txt:
             rec["exec_prod"] = True
 
-    # Datas previstas (aba Mun-Reg-Ger, coluna DatesGoals): meses previstos no
-    # ano corrente para o cronograma de cada acao
-    ANO_CRON = 2026
+    # Datas previstas (aba Mun-Reg-Ger, coluna DatesGoals): meses previstos de
+    # cada acao em todos os anos do programa, no formato "AAAA-MM", para o
+    # cronograma multi-ano
     previsto_por_cod = {}
     if "Metas_dos_Mun-Reg-Ger." in wb.sheetnames:
         ws2 = wb["Metas_dos_Mun-Reg-Ger."]
@@ -439,12 +447,10 @@ def carrega_metas(caminho):
             if datas is None:
                 continue
             if hasattr(datas, "year"):  # celula com uma data (datetime)
-                if datas.year == ANO_CRON:
-                    meses.add(datas.month)
-            else:  # texto com varias datas dd/mm/aaaa separadas
-                for m in re.finditer(r"\d{1,2}/(\d{1,2})/(\d{4})", str(datas)):
-                    if int(m.group(2)) == ANO_CRON:
-                        meses.add(int(m.group(1)))
+                meses.add(f"{datas.year:04d}-{datas.month:02d}")
+            else:  # texto com varias datas dd/mm/aaaa separadas por ; ou quebra
+                for m in re.finditer(r"(\d{1,2})/(\d{1,2})/(\d{4})", str(datas)):
+                    meses.add(f"{m.group(3)}-{int(m.group(2)):02d}")
     wb.close()
 
     acoes = {}
@@ -597,6 +603,36 @@ def monta_saida(df, metas, comunicacao):
     return saida
 
 
+# ------------------------------------------------------------------ equipe
+
+def carrega_equipe(caminho):
+    """Le os agregados da equipe (aba Planilha1): sexo, formacao e grande area
+    de conhecimento. Usa SO os dados agregados, nunca dados individuais."""
+    if not os.path.exists(caminho):
+        return None
+    wb = load_workbook(caminho, read_only=True, data_only=True)
+    ws = wb["Planilha1"] if "Planilha1" in wb.sheetnames else wb[wb.sheetnames[0]]
+    rows = list(ws.iter_rows(values_only=True))
+    wb.close()
+
+    def coleta(col_rot, col_qtd):
+        out = []
+        for r in rows[1:]:
+            rot = limpa_texto(r[col_rot]) if len(r) > col_rot else ""
+            q = r[col_qtd] if len(r) > col_qtd else None
+            if rot and rot.upper() != "TOTAL" and isinstance(q, (int, float)):
+                out.append({"rotulo": rot, "quantidade": int(q)})
+        return out
+
+    sexo = coleta(1, 2)       # Sexo | Quantidade
+    formacao = coleta(5, 6)   # Formacao | Quantidade
+    area = coleta(9, 10)      # Grande area | Quantidade
+    total = sum(x["quantidade"] for x in sexo) or sum(x["quantidade"] for x in formacao)
+    if not (sexo or formacao or area):
+        return None
+    return {"total": int(total), "sexo": sexo, "formacao": formacao, "area": area}
+
+
 # ------------------------------------------------------------------ main
 
 def main():
@@ -626,6 +662,13 @@ def main():
           f"{len(comunicacao['seguidores'])} redes | whatsapp {comunicacao['whatsapp']['total']} membros")
 
     saida = monta_saida(df, metas, comunicacao)
+
+    # Equipe (agregados de contratacao): alimenta a acao 1.1
+    func_path = os.path.join(os.path.dirname(metas_path) or ".", "funcionarios.xlsx")
+    equipe = carrega_equipe(func_path)
+    if equipe:
+        saida["equipe"] = equipe
+        print(f"Equipe: {equipe['total']} contratados (sexo/formacao/area agregados)")
 
     os.makedirs(os.path.dirname(saida_path) or ".", exist_ok=True)
     with open(saida_path, "w", encoding="utf-8") as f:

@@ -1,4 +1,4 @@
-import type { Atividade, MetasInfo, MetasAcoes } from '../tipos'
+import type { Atividade, MetasInfo, MetasAcoes, Equipe } from '../tipos'
 import { CheckCircle2 } from 'lucide-react'
 import {
   BarChart,
@@ -13,8 +13,6 @@ import { contagem } from '../dados/resumir'
 import { GraficoDistribuicao } from './GraficoDistribuicao'
 import { Cronograma } from './Cronograma'
 
-const ANO = 2026
-
 function Campo({ titulo, valor, cinza }: { titulo: string; valor: string; cinza?: boolean }) {
   return (
     <div>
@@ -26,21 +24,65 @@ function Campo({ titulo, valor, cinza }: { titulo: string; valor: string; cinza?
   )
 }
 
+function Frente({
+  titulo,
+  realizado,
+  meta,
+  pct,
+  unidade,
+}: {
+  titulo: string
+  realizado: number
+  meta: number
+  pct: number
+  unidade: string
+}) {
+  const cor = pct >= 100 ? '#3C9C3C' : pct >= 50 ? '#78C03C' : '#30B4A8'
+  return (
+    <div className="rounded-xl bg-white p-5 shadow-sm">
+      <div className="flex items-center justify-between">
+        <h3 className="font-medium text-mira-escuro">{titulo}</h3>
+        <span className="text-lg font-bold text-mira-escuro">{pct}%</span>
+      </div>
+      <p className="mt-1 text-2xl font-bold text-mira-escuro">
+        {realizado}{' '}
+        <span className="text-base font-normal text-mira-escuro/55">
+          de {meta} {unidade}
+        </span>
+      </p>
+      <div className="mt-3 h-3 w-full rounded-full bg-mira-bege">
+        <div className="h-3 rounded-full" style={{ width: `${pct}%`, backgroundColor: cor }} />
+      </div>
+    </div>
+  )
+}
+
 export function DetalheAcao({
   codigo,
   metas,
   metasAcoes,
   atividades,
   aoAbrir,
+  equipe,
 }: {
   codigo: string
   metas: MetasInfo | undefined
   metasAcoes: MetasAcoes | null
   atividades: Atividade[]
   aoAbrir: (a: Atividade) => void
+  equipe?: Equipe
 }) {
   const info = metas?.acoes?.[codigo]
   const desc = metasAcoes?.acoes?.[codigo]
+
+  // Acao 1.1: duas frentes (contratacao, da planilha de equipe; capacitacao,
+  // pela contagem de atividades) e a composicao da equipe
+  const ehAcaoEquipe = codigo === '1.1' && !!equipe
+  const contratados = equipe?.total ?? 0
+  const metaContrat = info?.meta_produto ?? 0
+  const pctContrat = metaContrat > 0 ? Math.min(100, Math.round((contratados / metaContrat) * 100)) : 0
+  const metaCapac = info?.alvo ?? 0
+  const pctCapac = metaCapac > 0 ? Math.min(100, Math.round((atividades.length / metaCapac) * 100)) : 0
 
   const ativs = atividades
   // Produto e medido pela planilha (Executado / Meta); atividade e hibrida,
@@ -99,12 +141,9 @@ export function DetalheAcao({
   const distribuicao = temCurada ? desc!.distribuicao! : contagem(ativs, 'regional')
   const tituloDistrib = temCurada ? 'Atividade por tipo' : 'Atividades por regional'
 
+  // meses com atividade realizada, em todos os anos, no formato "AAAA-MM"
   const realizadoMeses = [
-    ...new Set(
-      ativs
-        .filter((a) => a.data_iso && a.data_iso.startsWith(String(ANO)))
-        .map((a) => Number(a.data_iso.slice(5, 7)))
-    ),
+    ...new Set(ativs.filter((a) => a.data_iso).map((a) => a.data_iso.slice(0, 7))),
   ]
 
   const corBarra = pct >= 100 ? '#3C9C3C' : pct >= 50 ? '#78C03C' : '#30B4A8'
@@ -141,6 +180,33 @@ export function DetalheAcao({
         </div>
       )}
 
+      {ehAcaoEquipe && equipe && (
+        <>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <Frente
+              titulo="Contratação"
+              realizado={contratados}
+              meta={metaContrat}
+              pct={pctContrat}
+              unidade="contratados"
+            />
+            <Frente
+              titulo="Capacitação"
+              realizado={atividades.length}
+              meta={metaCapac}
+              pct={pctCapac}
+              unidade="capacitações"
+            />
+          </div>
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+            <GraficoDistribuicao titulo="Equipe por sexo" dados={equipe.sexo} />
+            <GraficoDistribuicao titulo="Equipe por formação" dados={equipe.formacao} />
+            <GraficoDistribuicao titulo="Equipe por grande área" dados={equipe.area} />
+          </div>
+        </>
+      )}
+
+      {!ehAcaoEquipe && (
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-[2fr_1fr]">
         {/* Bloco descritivo (formato da versao anterior) com dados reais */}
         <div className="rounded-xl bg-white p-5 shadow-sm">
@@ -198,16 +264,13 @@ export function DetalheAcao({
           </ResponsiveContainer>
         </div>
       </div>
+      )}
 
       {distribuicao.length > 0 && (
         <GraficoDistribuicao titulo={tituloDistrib} dados={distribuicao} />
       )}
 
-      <Cronograma
-        previsto={info?.cronograma_previsto ?? desc?.cronograma_previsto ?? []}
-        realizado={realizadoMeses}
-        ano={ANO}
-      />
+      <Cronograma previsto={info?.cronograma_previsto ?? []} realizado={realizadoMeses} />
 
       {ativs.length > 0 && (
         <div className="rounded-xl bg-white p-5 shadow-sm">

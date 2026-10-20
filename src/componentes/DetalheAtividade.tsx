@@ -63,8 +63,8 @@ export function DetalheAtividade({
             <Campo rotulo="Nível de atuação" valor={a.nivel_atuacao} />
             <Campo rotulo="Local" valor={a.local} />
             <Campo
-              rotulo="Participantes"
-              valor={`${a.participantes} (${a.part_internos} internos, ${a.part_externos} externos)`}
+              rotulo="Participações"
+              valor={`${a.participantes} (${a.part_internos} internas, ${a.part_externos} externas)`}
             />
           </div>
           <Campo rotulo="Objetivo da atividade" valor={a.objetivo} />

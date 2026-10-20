@@ -61,16 +61,22 @@ export function Painel({ admin = false }: { admin?: boolean }) {
       rotuloAcao.set(a.codigo_acao, a.atividade)
     }
   })
-  const acoesOpcoes = [...rotuloAcao.entries()]
-    .map(([codigo, nome]) => ({ codigo, nome: dados.metas?.acoes?.[codigo]?.rotulo || nome }))
-    .sort((a, b) => ordenaAcao(a.codigo, b.codigo))
+  const acoesOpcoes = [
+    { codigo: 'NAO_PREVISTAS', nome: 'Atividades não previstas (sem meta no plano)' },
+    ...[...rotuloAcao.entries()]
+      .map(([codigo, nome]) => ({ codigo, nome: dados.metas?.acoes?.[codigo]?.rotulo || nome }))
+      .sort((a, b) => ordenaAcao(a.codigo, b.codigo)),
+  ]
 
   const filtradas = todas.filter(
     (a) =>
       (programa === 'TODOS' || a.programa === programa) &&
       (municipio === 'TODOS' || a.municipios.includes(municipio)) &&
       (regional === 'TODAS' || a.regional === regional) &&
-      (acao === 'TODAS' || a.codigo_acao === acao) &&
+      (acao === 'TODAS' ||
+        (acao === 'NAO_PREVISTAS'
+          ? !dados.metas?.acoes?.[a.codigo_acao]
+          : a.codigo_acao === acao)) &&
       (!inicio || !a.data_iso || a.data_iso >= inicio) &&
       (!fim || !a.data_iso || a.data_iso <= fim)
   )
@@ -91,7 +97,7 @@ export function Painel({ admin = false }: { admin?: boolean }) {
     PCS: dados.programas.PCS.tem_dados,
   }
 
-  const acaoEspecifica = acao !== 'TODAS'
+  const acaoEspecifica = acao !== 'TODAS' && acao !== 'NAO_PREVISTAS'
   const tabelaVisivel = programa !== 'TODOS' && municipio === 'TODOS' && acao === 'TODAS'
 
   return (
@@ -188,6 +194,7 @@ export function Painel({ admin = false }: { admin?: boolean }) {
             metasAcoes={metasAcoes}
             atividades={filtradas}
             aoAbrir={setAtividadeAberta}
+            equipe={dados.equipe}
           />
         </div>
       ) : (
@@ -200,12 +207,12 @@ export function Painel({ admin = false }: { admin?: boolean }) {
               aoClicar={() => setListaAberta(true)}
             />
             <CardKPI
-              titulo="Participantes"
+              titulo="Participações"
               valor={ind.total_participantes}
-              legenda={`${ind.internos} internos · ${ind.externos} externos`}
+              legenda={`${ind.internos} internas · ${ind.externos} externas · presenças, não pessoas únicas`}
             />
             <CardKPI
-              titulo="Média de Participantes"
+              titulo="Média de Participações"
               valor={ind.media_participantes}
               legenda="por atividade"
             />
