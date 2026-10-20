@@ -315,13 +315,24 @@ def deduplica_intermunicipal(df):
     if df.empty:
         return df
     df = df.copy()
+    # Inclui o LOCAL na chave: duas atividades na mesma data, acao e regional,
+    # mas em locais diferentes (ex: uma em Sao Francisco e outra em Campos), sao
+    # eventos distintos e NAO devem ser agrupados. So agrupa quando e o mesmo
+    # evento (mesmo local) registrado em varias linhas de municipio.
     df["_chave"] = (
         df["data_iso"].astype(str) + "|" +
         df["codigo_acao"].map(_norm_chave) + "|" +
         df["atividade"].map(_norm_chave) + "|" +
         df["programa"].map(_norm_chave) + "|" +
-        df["regional"].map(_norm_chave)
+        df["regional"].map(_norm_chave) + "|" +
+        df["local"].map(_norm_chave)
     )
+    # Publicacoes (28.2) na mesma data e regional, mas em redes diferentes,
+    # sao publicacoes distintas e NAO devem ser agrupadas. Cada uma recebe uma
+    # chave unica para passar direto pela deduplicacao intermunicipal.
+    e28 = df["codigo_acao"] == "28.2"
+    if e28.any():
+        df.loc[e28, "_chave"] = [f"pub-{i}" for i in range(int(e28.sum()))]
     linhas = []
     for _, grupo in df.groupby("_chave", sort=False):
         base = grupo.iloc[0].to_dict()
@@ -410,6 +421,30 @@ def carrega_metas(caminho):
             rec["exec_ativ"] = True
         if "executado" in mp_txt or "executado" in pe_txt:
             rec["exec_prod"] = True
+
+    # Datas previstas (aba Mun-Reg-Ger, coluna DatesGoals): meses previstos no
+    # ano corrente para o cronograma de cada acao
+    ANO_CRON = 2026
+    previsto_por_cod = {}
+    if "Metas_dos_Mun-Reg-Ger." in wb.sheetnames:
+        ws2 = wb["Metas_dos_Mun-Reg-Ger."]
+        for r in ws2.iter_rows(min_row=2, values_only=True):
+            if not r or not r[0]:
+                continue
+            cod = extrai_codigo_acao(limpa_texto(r[0]))
+            if cod == "s/codigo":
+                continue
+            datas = r[6] if len(r) > 6 else None
+            meses = previsto_por_cod.setdefault(cod, set())
+            if datas is None:
+                continue
+            if hasattr(datas, "year"):  # celula com uma data (datetime)
+                if datas.year == ANO_CRON:
+                    meses.add(datas.month)
+            else:  # texto com varias datas dd/mm/aaaa separadas
+                for m in re.finditer(r"\d{1,2}/(\d{1,2})/(\d{4})", str(datas)):
+                    if int(m.group(2)) == ANO_CRON:
+                        meses.add(int(m.group(1)))
     wb.close()
 
     acoes = {}
@@ -448,6 +483,7 @@ def carrega_metas(caminho):
             item["tipo"] = "sem_meta"
             item["alvo"] = 1.0 if (rec["exec_ativ"] or rec["exec_prod"]) else 0.0
             item["concluido"] = rec["exec_ativ"] or rec["exec_prod"]
+        item["cronograma_previsto"] = sorted(previsto_por_cod.get(cod, set()))
         acoes[cod] = item
     return {"acoes": acoes, "totais_projeto": totais}
 
@@ -529,9 +565,14 @@ def engajamento_pcs(df):
 
 
 def monta_saida(df, metas, comunicacao):
-    tem_data = df["data"].notna().any()
     comunicacao = dict(comunicacao or {})
     comunicacao["engajamento"] = engajamento_pcs(df)
+    # As publicacoes 28.2 sao contadas pela planilha de atividades (ja vem
+    # consolidadas, uma por publicacao). As 28.2 vindas da planilha de redes
+    # servem so ao engajamento (interacoes/visualizacoes, calculado acima) e
+    # duplicariam a contagem de atividades, por isso saem daqui em diante.
+    df = df[~((df["codigo_acao"] == "28.2") & (df["origem"] == "redes"))].copy()
+    tem_data = df["data"].notna().any()
     saida = {
         "gerado_em": datetime.now().isoformat(timespec="seconds"),
         "periodo": {
@@ -565,7 +606,10 @@ def main():
 
     df = transforma(carrega_todos(entrada))
     df = filtra_periodo(df)
-    df = remove_publicacao_duplicada(df)
+    # A planilha de atividades do PCS ja vem consolidada (uma linha por
+    # publicacao real), entao todas as 28.2 sao contadas. A remocao automatica
+    # foi desativada porque descartava publicacoes distintas como se fossem
+    # duplicadas. Para reativar uma deduplicacao, fazer por link/identificador.
     df = deduplica_intermunicipal(df)
 
     metas = {"acoes": {}, "totais_projeto": {}}

@@ -1,11 +1,14 @@
 type Props = {
   municipios: string[]
+  regionais: string[]
   acoes: { codigo: string; nome: string }[]
   municipio: string
+  regional: string
   acao: string
   inicio: string
   fim: string
   setMunicipio: (v: string) => void
+  setRegional: (v: string) => void
   setAcao: (v: string) => void
   setInicio: (v: string) => void
   setFim: (v: string) => void
@@ -18,6 +21,16 @@ const rotulo = 'flex w-full flex-col gap-1 text-xs font-medium text-mira-escuro/
 export function FiltroBar(p: Props) {
   return (
     <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:flex lg:flex-wrap lg:items-end">
+      <label className={rotulo}>
+        Regional
+        <select className={campo} value={p.regional} onChange={(e) => p.setRegional(e.target.value)}>
+          <option value="TODAS">Todas as regionais</option>
+          {p.regionais.map((r) => (
+            <option key={r} value={r}>{r}</option>
+          ))}
+        </select>
+      </label>
+
       <label className={rotulo}>
         Município
         <select className={campo} value={p.municipio} onChange={(e) => p.setMunicipio(e.target.value)}>

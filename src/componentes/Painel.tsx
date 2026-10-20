@@ -34,6 +34,7 @@ export function Painel({ admin = false }: { admin?: boolean }) {
   const [erroUpload, setErroUpload] = useState('')
   const [programa, setPrograma] = useState<SiglaPrograma | 'TODOS'>('TODOS')
   const [municipio, setMunicipio] = useState('TODOS')
+  const [regional, setRegional] = useState('TODAS')
   const [acao, setAcao] = useState('TODAS')
   const [inicio, setInicio] = useState('')
   const [fim, setFim] = useState('')
@@ -50,6 +51,10 @@ export function Painel({ admin = false }: { admin?: boolean }) {
     .filter(Boolean)
     .sort((a, b) => a.localeCompare(b, 'pt'))
 
+  const regionaisOpcoes = [...new Set(todas.map((a) => a.regional).filter(Boolean))].sort((a, b) =>
+    a.localeCompare(b, 'pt')
+  )
+
   const rotuloAcao = new Map<string, string>()
   todas.forEach((a) => {
     if (a.codigo_acao && a.codigo_acao !== 's/codigo' && !rotuloAcao.has(a.codigo_acao)) {
@@ -64,6 +69,7 @@ export function Painel({ admin = false }: { admin?: boolean }) {
     (a) =>
       (programa === 'TODOS' || a.programa === programa) &&
       (municipio === 'TODOS' || a.municipios.includes(municipio)) &&
+      (regional === 'TODAS' || a.regional === regional) &&
       (acao === 'TODAS' || a.codigo_acao === acao) &&
       (!inicio || !a.data_iso || a.data_iso >= inicio) &&
       (!fim || !a.data_iso || a.data_iso <= fim)
@@ -145,16 +151,20 @@ export function Painel({ admin = false }: { admin?: boolean }) {
         <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
           <div className="flex-1">
             <p className="mb-4 text-sm text-mira-escuro/70">
-              Painel de filtros · Selecione o município, a ação ou o período para recalcular os dados
+              Painel de filtros · Selecione a regional, o município, a ação ou o período para
+              recalcular os dados
             </p>
             <FiltroBar
               municipios={municipiosOpcoes}
+              regionais={regionaisOpcoes}
               acoes={acoesOpcoes}
               municipio={municipio}
+              regional={regional}
               acao={acao}
               inicio={inicio}
               fim={fim}
               setMunicipio={setMunicipio}
+              setRegional={setRegional}
               setAcao={setAcao}
               setInicio={setInicio}
               setFim={setFim}

@@ -55,6 +55,7 @@ export interface MetaAcaoInfo {
   produto_entregue?: boolean
   meta_produto?: number
   produto_executado?: number
+  cronograma_previsto?: number[]
 }
 
 export interface MetasInfo {

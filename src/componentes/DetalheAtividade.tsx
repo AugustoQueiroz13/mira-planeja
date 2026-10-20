@@ -19,8 +19,17 @@ export function DetalheAtividade({
   aoFechar: () => void
 }) {
   const a = atividade
-  const municipios = a.municipios?.length ? a.municipios.join(', ') : a.municipio
-  const rotuloMunicipio = a.municipios && a.municipios.length > 1 ? 'Municípios' : 'Município'
+  const ehInstitucional = /institucional/i.test(a.regional || '')
+  const municipios = ehInstitucional
+    ? 'Institucional'
+    : a.municipios?.length
+      ? a.municipios.join(', ')
+      : a.municipio
+  const rotuloMunicipio = ehInstitucional
+    ? 'Abrangência'
+    : a.municipios && a.municipios.length > 1
+      ? 'Municípios'
+      : 'Município'
 
   return (
     <div className="fixed inset-0 z-50 flex justify-end bg-black/40" onClick={aoFechar}>

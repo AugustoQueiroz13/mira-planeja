@@ -109,10 +109,13 @@ export function DetalheAcao({
 
   const corBarra = pct >= 100 ? '#3C9C3C' : pct >= 50 ? '#78C03C' : '#30B4A8'
 
+  const ehInstitucional = (a: Atividade) => /institucional/i.test(a.regional || '')
   const detalheAtividade = (a: Atividade) =>
-    [a.data, a.municipios?.length ? a.municipios.join(', ') : a.municipio, a.regional]
-      .filter(Boolean)
-      .join(' · ')
+    ehInstitucional(a)
+      ? [a.data, 'Institucional'].filter(Boolean).join(' · ')
+      : [a.data, a.municipios?.length ? a.municipios.join(', ') : a.municipio, a.regional]
+          .filter(Boolean)
+          .join(' · ')
 
   return (
     <div className="space-y-6">
@@ -200,7 +203,11 @@ export function DetalheAcao({
         <GraficoDistribuicao titulo={tituloDistrib} dados={distribuicao} />
       )}
 
-      <Cronograma previsto={desc?.cronograma_previsto ?? []} realizado={realizadoMeses} ano={ANO} />
+      <Cronograma
+        previsto={info?.cronograma_previsto ?? desc?.cronograma_previsto ?? []}
+        realizado={realizadoMeses}
+        ano={ANO}
+      />
 
       {ativs.length > 0 && (
         <div className="rounded-xl bg-white p-5 shadow-sm">
