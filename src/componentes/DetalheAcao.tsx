@@ -1,10 +1,30 @@
 import type { Atividade, MetasInfo, MetasAcoes } from '../tipos'
 import { CheckCircle2 } from 'lucide-react'
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Cell,
+  LabelList,
+  ResponsiveContainer,
+} from 'recharts'
 import { contagem } from '../dados/resumir'
 import { GraficoDistribuicao } from './GraficoDistribuicao'
 import { Cronograma } from './Cronograma'
 
 const ANO = 2026
+
+function Campo({ titulo, valor, cinza }: { titulo: string; valor: string; cinza?: boolean }) {
+  return (
+    <div>
+      <p className="text-xs font-medium uppercase tracking-wide text-mira-verde">{titulo}</p>
+      <p className={`mt-1 text-sm ${cinza ? 'text-mira-escuro/40' : 'font-medium text-mira-escuro'}`}>
+        {valor}
+      </p>
+    </div>
+  )
+}
 
 export function DetalheAcao({
   codigo,
@@ -26,6 +46,7 @@ export function DetalheAcao({
   // Produto e medido pela planilha (Executado / Meta); atividade e hibrida,
   // pela contagem de atividades do PINAR.
   const ehProduto = info?.tipo === 'produto'
+  const temProduto = info?.tipo === 'produto' || info?.tipo === 'hibrida'
   const realizado = ehProduto ? (info?.produto_executado ?? 0) : ativs.length
   const alvo = ehProduto ? (info?.meta_produto ?? 0) : (info?.alvo ?? 0)
   const concluido = !!info?.concluido
@@ -43,7 +64,35 @@ export function DetalheAcao({
   )
   const programa = info?.projeto || desc?.programa || ''
   const tipoLabel = ehProduto ? 'produtos' : 'atividades'
-  const resultadoLabel = ehProduto ? 'entregues' : 'realizadas até aqui'
+
+  // Textos descritivos (versao anterior): vem do metas-acoes quando existir
+  const metaDesc = desc?.metas?.[0]
+  const metaTexto = metaDesc?.rotulo || `${alvo || '—'} ${tipoLabel} previstas`
+  const indicadorTexto =
+    metaDesc?.indicador || (ehProduto ? 'Produtos entregues' : 'Atividades realizadas')
+  const resultadoTexto = concluido ? `${realizado} (concluído)` : `${realizado}`
+
+  // Produto entregue: status real
+  let produtoTexto = '—'
+  let produtoCinza = true
+  if (temProduto) {
+    const mp = info?.meta_produto ?? 0
+    const pe = info?.produto_executado ?? 0
+    if (mp > 0 && pe >= mp) {
+      produtoTexto = mp > 1 ? `Entregue (${pe} de ${mp})` : 'Entregue'
+      produtoCinza = false
+    } else if (pe > 0) {
+      produtoTexto = `${pe} de ${mp} entregues`
+      produtoCinza = false
+    } else {
+      produtoTexto = 'Não entregue'
+    }
+  }
+
+  const dadosMeta = [
+    { nome: 'Meta', valor: alvo },
+    { nome: 'Resultado', valor: realizado },
+  ]
 
   // distribuicao: curada (metas-acoes) ou derivada por regional
   const temCurada = !!desc?.distribuicao && desc.distribuicao.length > 0
@@ -84,59 +133,66 @@ export function DetalheAcao({
           <CheckCircle2 size={18} className="mt-0.5 shrink-0 text-mira-verde" />
           <span>
             <span className="font-semibold text-mira-verde">Produto entregue.</span> As atividades
-            de acompanhamento desta ação continuam em andamento e são contabilizadas no progresso
-            abaixo.
+            de acompanhamento desta ação continuam em andamento e são contabilizadas abaixo.
           </span>
         </div>
       )}
 
-      {/* Resumo real da meta */}
-      <div className="rounded-xl bg-white p-5 shadow-sm">
-        {info?.produto_entregue && (
-          <div className="mb-4 inline-flex items-center gap-1.5 rounded-full bg-mira-verde px-3 py-1 text-xs font-semibold text-white">
-            <CheckCircle2 size={14} />
-            Produto entregue
-            {info.meta_produto && info.meta_produto > 1
-              ? ` (${info.produto_executado} de ${info.meta_produto})`
-              : ''}
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-[2fr_1fr]">
+        {/* Bloco descritivo (formato da versao anterior) com dados reais */}
+        <div className="rounded-xl bg-white p-5 shadow-sm">
+          <div className="grid grid-cols-2 gap-5 md:grid-cols-4">
+            <Campo titulo="Metas" valor={metaTexto} />
+            <Campo titulo="Indicador" valor={indicadorTexto} />
+            <Campo titulo="Resultado alcançado" valor={resultadoTexto} />
+            <Campo titulo="Produto entregue" valor={produtoTexto} cinza={produtoCinza} />
           </div>
-        )}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-[1fr_1fr_2fr] md:items-center">
-          <div>
-            <p className="text-xs font-medium uppercase tracking-wide text-mira-verde">Meta</p>
-            <p className="text-2xl font-bold text-mira-escuro">{alvo || '—'}</p>
-            <p className="text-xs text-mira-escuro/55">{tipoLabel} previstas</p>
-          </div>
-          <div>
-            <p className="text-xs font-medium uppercase tracking-wide text-mira-verde">
-              Resultado alcançado
-            </p>
-            {concluido ? (
-              <p className="text-2xl font-bold text-mira-verde">Concluído</p>
-            ) : (
-              <>
-                <p className="text-2xl font-bold text-mira-escuro">{realizado}</p>
-                <p className="text-xs text-mira-escuro/55">{resultadoLabel}</p>
-              </>
-            )}
-          </div>
-          <div>
-            <div className="mb-1 flex items-center justify-between">
-              <p className="text-xs font-medium uppercase tracking-wide text-mira-verde">
-                Progresso
-              </p>
-              <span className="text-lg font-bold text-mira-escuro">{pct}%</span>
+
+          <div className="mt-5 grid grid-cols-2 gap-5 border-t border-mira-bege pt-4">
+            <Campo titulo="Atividades realizadas" valor={`${ativs.length} registradas no PINAR`} />
+            <div>
+              <div className="mb-1 flex items-center justify-between">
+                <p className="text-xs font-medium uppercase tracking-wide text-mira-verde">
+                  Progresso
+                </p>
+                <span className="text-sm font-bold text-mira-escuro">{pct}%</span>
+              </div>
+              <div className="h-3 w-full rounded-full bg-mira-bege">
+                <div
+                  className="h-3 rounded-full"
+                  style={{ width: `${pct}%`, backgroundColor: corBarra }}
+                />
+              </div>
             </div>
-            <div className="h-4 w-full rounded-full bg-mira-bege">
-              <div
-                className="h-4 rounded-full"
-                style={{ width: `${pct}%`, backgroundColor: corBarra }}
+          </div>
+        </div>
+
+        {/* Grafico Meta e resultado */}
+        <div className="rounded-xl bg-white p-5 shadow-sm">
+          <h3 className="mb-2 font-medium text-mira-escuro">Meta e resultado</h3>
+          <p className="mb-2 text-xs text-mira-escuro/55">{indicadorTexto}</p>
+          <ResponsiveContainer width="100%" height={130}>
+            <BarChart
+              layout="vertical"
+              data={dadosMeta}
+              margin={{ top: 4, right: 36, left: 8, bottom: 4 }}
+            >
+              <XAxis type="number" hide domain={[0, Math.max(alvo, realizado, 1)]} />
+              <YAxis
+                type="category"
+                dataKey="nome"
+                width={72}
+                tick={{ fontSize: 12, fill: '#18303C' }}
+                axisLine={false}
+                tickLine={false}
               />
-            </div>
-            {desc?.metas?.[0]?.indicador && (
-              <p className="mt-2 text-xs text-mira-escuro/55">{desc.metas[0].indicador}</p>
-            )}
-          </div>
+              <Bar dataKey="valor" radius={[0, 6, 6, 0]} barSize={26}>
+                <Cell fill="#9FD88A" />
+                <Cell fill="#3C9C3C" />
+                <LabelList dataKey="valor" position="right" style={{ fontSize: 12, fill: '#18303C' }} />
+              </Bar>
+            </BarChart>
+          </ResponsiveContainer>
         </div>
       </div>
 

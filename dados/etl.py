@@ -209,11 +209,38 @@ def carrega_todos(pasta):
 
 # ------------------------------------------------------------------ transformacao
 
+# Cidade de referencia de cada regional (Quadro 1 do Plano de Trabalho)
+SEDE_REGIONAL = {
+    "I": "Marataízes", "II": "Campos", "III": "Macaé", "IV": "Cabo Frio",
+    "V": "Niterói", "VI": "Caraguatatuba", "VII": "Iguape",
+}
+_ROMANO_REGIONAL = re.compile(r"\b(VII|VI|IV|III|II|V|I)\b")
+
+
+def normaliza_regional(valor):
+    """Padroniza a Regional num unico formato ('Regional III - Macaé'),
+    juntando as varias grafias (numero, nome da cidade, com e sem a palavra
+    'Regional') que aparecem nas planilhas de meses diferentes."""
+    s = limpa_texto(valor)
+    if not s:
+        return ""
+    low = s.lower()
+    if "institucional" in low:
+        return "Institucional"
+    if "gerencia" in low or "gerência" in low:
+        return "Gerência"
+    m = _ROMANO_REGIONAL.search(s.upper())
+    if m and m.group(1) in SEDE_REGIONAL:
+        rom = m.group(1)
+        return f"Regional {rom} - {SEDE_REGIONAL[rom]}"
+    return s
+
+
 def transforma(df):
     df["programa"] = df["programa"].map(normaliza_programa)
     df["codigo_acao"] = df["atividade"].map(extrai_codigo_acao)
     df["atividade"] = df["atividade"].map(limpa_texto)
-    df["regional"] = df["regional"].map(limpa_texto)
+    df["regional"] = df["regional"].map(normaliza_regional)
     df["estado"] = df["estado"].map(lambda v: limpa_texto(v).upper())
     for c in ["local", "objetivo", "metodologia", "perfil", "resultados",
               "produtos", "link_relatorio", "nivel_atuacao", "acao_relacionada",

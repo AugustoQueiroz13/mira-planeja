@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-10-20T11:43:14",
+  "gerado_em": "2026-10-20T14:54:32",
   "periodo": {
     "inicio": "27/02/2026",
     "fim": "30/09/2026"
@@ -11,7 +11,7 @@
     "externos": 446,
     "media_participantes": 7.4,
     "municipios_atendidos": 26,
-    "regionais": 31,
+    "regionais": 12,
     "serie_temporal": [
       {
         "mes": "2026-02",
@@ -58,7 +58,7 @@
         "externos": 361,
         "media_participantes": 24.47,
         "municipios_atendidos": 26,
-        "regionais": 14
+        "regionais": 9
       },
       "serie_temporal": [
         {
@@ -131,7 +131,7 @@
           "data": "03/06/2026",
           "data_iso": "2026-06-03",
           "mes_ref": "2026-06",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -162,7 +162,7 @@
           "data": "09/06/2026",
           "data_iso": "2026-06-09",
           "mes_ref": "2026-06",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Quissamã",
           "municipios": [
@@ -193,7 +193,7 @@
           "data": "10/06/2026",
           "data_iso": "2026-06-10",
           "mes_ref": "2026-06",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Ilhabela",
           "municipios": [
@@ -269,7 +269,7 @@
           "data": "15/06/2026",
           "data_iso": "2026-06-15",
           "mes_ref": "2026-06",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "RJ",
           "municipio": "Paraty",
           "municipios": [
@@ -300,7 +300,7 @@
           "data": "18/06/2026",
           "data_iso": "2026-06-18",
           "mes_ref": "2026-06",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Piúma; Marataízes; Itapemirim; Presidente Kennedy",
           "municipios": [
@@ -334,7 +334,7 @@
           "data": "24/06/2026",
           "data_iso": "2026-06-24",
           "mes_ref": "2026-06",
-          "regional": "VII- Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Iguape",
           "municipios": [
@@ -365,7 +365,7 @@
           "data": "02/07/2026",
           "data_iso": "2026-07-02",
           "mes_ref": "2026-07",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Piúma; Marataízes; Itapemirim; Presidente Kennedy",
           "municipios": [
@@ -444,7 +444,7 @@
           "data": "16/07/2026",
           "data_iso": "2026-07-16",
           "mes_ref": "2026-07",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Carapebus; Macaé; Rio das Ostras; Casimiro de Abreu",
           "municipios": [
@@ -523,7 +523,7 @@
           "data": "22/07/2026",
           "data_iso": "2026-07-22",
           "mes_ref": "2026-07",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Paraty; Caraguatatuba; Ilhabela",
           "municipios": [
@@ -556,7 +556,7 @@
           "data": "29/07/2026",
           "data_iso": "2026-07-29",
           "mes_ref": "2026-07",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana; São João da Barra; Campos dos Goytacazes; Quissamã",
           "municipios": [
@@ -590,7 +590,7 @@
           "data": "29/07/2026",
           "data_iso": "2026-07-29",
           "mes_ref": "2026-07",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema; Araruama; Arraial do Cabo; Cabo Frio; Armação dos Búzios",
           "municipios": [
@@ -625,7 +625,7 @@
           "data": "30/07/2026",
           "data_iso": "2026-07-30",
           "mes_ref": "2026-07",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Maricá; Niterói; Guapimirim",
           "municipios": [
@@ -658,7 +658,7 @@
           "data": "30/07/2026",
           "data_iso": "2026-07-30",
           "mes_ref": "2026-07",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Carapebus; Macaé; Rio das Ostras; Casimiro de Abreu",
           "municipios": [
@@ -692,7 +692,7 @@
           "data": "02/06/2026",
           "data_iso": "2026-06-02",
           "mes_ref": "2026-06",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -723,7 +723,7 @@
           "data": "02/06/2026",
           "data_iso": "2026-06-02",
           "mes_ref": "2026-06",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Casimiro de Abreu",
           "municipios": [
@@ -810,7 +810,7 @@
           "data": "",
           "data_iso": "",
           "mes_ref": "",
-          "regional": "VII- Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Cananéia",
           "municipios": [
@@ -841,7 +841,7 @@
           "data": "",
           "data_iso": "",
           "mes_ref": "",
-          "regional": "VII- Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Iguape; Ilha Comprida; Cananéia",
           "municipios": [
@@ -874,7 +874,7 @@
           "data": "11/08/2026",
           "data_iso": "2026-08-11",
           "mes_ref": "2026-08",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Marataízes",
           "municipios": [
@@ -905,7 +905,7 @@
           "data": "17/08/2026",
           "data_iso": "2026-08-17",
           "mes_ref": "2026-08",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Itapemirim",
           "municipios": [
@@ -936,7 +936,7 @@
           "data": "18/08/2026",
           "data_iso": "2026-08-18",
           "mes_ref": "2026-08",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Piúma",
           "municipios": [
@@ -967,7 +967,7 @@
           "data": "20/08/2026",
           "data_iso": "2026-08-20",
           "mes_ref": "2026-08",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Presidente Kennedy",
           "municipios": [
@@ -998,7 +998,7 @@
           "data": "26/08/2026",
           "data_iso": "2026-08-26",
           "mes_ref": "2026-08",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Piúma; Marataízes; Itapemirim; Presidente Kennedy",
           "municipios": [
@@ -1032,7 +1032,7 @@
           "data": "04/08/2026",
           "data_iso": "2026-08-04",
           "mes_ref": "2026-08",
-          "regional": "II- Campos",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -1063,7 +1063,7 @@
           "data": "12/08/2026",
           "data_iso": "2026-08-12",
           "mes_ref": "2026-08",
-          "regional": "II- Campos",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana; São João da Barra; Campos dos Goytacazes; Quissamã",
           "municipios": [
@@ -1097,7 +1097,7 @@
           "data": "15/08/2026",
           "data_iso": "2026-08-15",
           "mes_ref": "2026-08",
-          "regional": "II- Campos",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana; Campos dos Goytacazes",
           "municipios": [
@@ -1129,7 +1129,7 @@
           "data": "19/08/2026",
           "data_iso": "2026-08-19",
           "mes_ref": "2026-08",
-          "regional": "II- Campos",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Quissamã",
           "municipios": [
@@ -1160,7 +1160,7 @@
           "data": "19/08/2026",
           "data_iso": "2026-08-19",
           "mes_ref": "2026-08",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé",
           "municipios": [
@@ -1191,7 +1191,7 @@
           "data": "26/08/2026",
           "data_iso": "2026-08-26",
           "mes_ref": "2026-08",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Carapebus",
           "municipios": [
@@ -1222,7 +1222,7 @@
           "data": "22/08/2026",
           "data_iso": "2026-08-22",
           "mes_ref": "2026-08",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Casimiro de Abreu",
           "municipios": [
@@ -1253,7 +1253,7 @@
           "data": "29/08/2026",
           "data_iso": "2026-08-29",
           "mes_ref": "2026-08",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -1284,7 +1284,7 @@
           "data": "18/08/2026",
           "data_iso": "2026-08-18",
           "mes_ref": "2026-08",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema; Araruama; Arraial do Cabo; Cabo Frio; Armação dos Búzios",
           "municipios": [
@@ -1319,7 +1319,7 @@
           "data": "21/08/2026",
           "data_iso": "2026-08-21",
           "mes_ref": "2026-08",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Araruama",
           "municipios": [
@@ -1350,7 +1350,7 @@
           "data": "24/08/2026",
           "data_iso": "2026-08-24",
           "mes_ref": "2026-08",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema; Araruama; Arraial do Cabo; Cabo Frio; Armação dos Búzios",
           "municipios": [
@@ -1385,7 +1385,7 @@
           "data": "26/08/2026",
           "data_iso": "2026-08-26",
           "mes_ref": "2026-08",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema; Cabo Frio; Armação dos Búzios",
           "municipios": [
@@ -1418,7 +1418,7 @@
           "data": "27/08/2026",
           "data_iso": "2026-08-27",
           "mes_ref": "2026-08",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Arraial do Cabo",
           "municipios": [
@@ -1449,7 +1449,7 @@
           "data": "05/08/2026",
           "data_iso": "2026-08-05",
           "mes_ref": "2026-08",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Maricá",
           "municipios": [
@@ -1480,7 +1480,7 @@
           "data": "15/08/2026",
           "data_iso": "2026-08-15",
           "mes_ref": "2026-08",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Niterói",
           "municipios": [
@@ -1511,7 +1511,7 @@
           "data": "22/08/2026",
           "data_iso": "2026-08-22",
           "mes_ref": "2026-08",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Guapimirim",
           "municipios": [
@@ -1542,7 +1542,7 @@
           "data": "19/08/2026",
           "data_iso": "2026-08-19",
           "mes_ref": "2026-08",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "RJ",
           "municipio": "Paraty",
           "municipios": [
@@ -1573,7 +1573,7 @@
           "data": "20/08/2026",
           "data_iso": "2026-08-20",
           "mes_ref": "2026-08",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Caraguatatuba",
           "municipios": [
@@ -1604,7 +1604,7 @@
           "data": "24/08/2026",
           "data_iso": "2026-08-24",
           "mes_ref": "2026-08",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Ilhabela",
           "municipios": [
@@ -1635,7 +1635,7 @@
           "data": "13/08/2026",
           "data_iso": "2026-08-13",
           "mes_ref": "2026-08",
-          "regional": "VII - Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Regional",
           "municipios": [],
@@ -1664,7 +1664,7 @@
           "data": "20/08/2026",
           "data_iso": "2026-08-20",
           "mes_ref": "2026-08",
-          "regional": "VII - Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Ilha Comprida",
           "municipios": [
@@ -1695,7 +1695,7 @@
           "data": "26/08/2026",
           "data_iso": "2026-08-26",
           "mes_ref": "2026-08",
-          "regional": "VII - Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Iguape",
           "municipios": [
@@ -1726,7 +1726,7 @@
           "data": "27/08/2026",
           "data_iso": "2026-08-27",
           "mes_ref": "2026-08",
-          "regional": "VII - Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Cananéia",
           "municipios": [
@@ -1813,7 +1813,7 @@
           "data": "10/09/2026",
           "data_iso": "2026-09-10",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana; São João da Barra; Campos dos Goytacazes; Quissamã",
           "municipios": [
@@ -1847,7 +1847,7 @@
           "data": "17/09/2026",
           "data_iso": "2026-09-17",
           "mes_ref": "2026-09",
-          "regional": "Regional VII",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Ilha Comprida",
           "municipios": [
@@ -1936,7 +1936,7 @@
           "data": "24/09/2026",
           "data_iso": "2026-09-24",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana; São João da Barra; Campos dos Goytacazes; Quissamã",
           "municipios": [
@@ -1970,7 +1970,7 @@
           "data": "25/09/2026",
           "data_iso": "2026-09-25",
           "mes_ref": "2026-09",
-          "regional": "Regional I",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Marataízes",
           "municipios": [
@@ -2062,7 +2062,7 @@
         "externos": 83,
         "media_participantes": 2.88,
         "municipios_atendidos": 26,
-        "regionais": 20
+        "regionais": 8
       },
       "serie_temporal": [
         {
@@ -2106,7 +2106,7 @@
           "data": "19/03/2026",
           "data_iso": "2026-03-19",
           "mes_ref": "2026-03",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Casimiro de Abreu",
           "municipios": [
@@ -2137,7 +2137,7 @@
           "data": "08/04/2026",
           "data_iso": "2026-04-08",
           "mes_ref": "2026-04",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé",
           "municipios": [
@@ -2168,7 +2168,7 @@
           "data": "09/04/2026",
           "data_iso": "2026-04-09",
           "mes_ref": "2026-04",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Casimiro de Abreu; Rio das Ostras",
           "municipios": [
@@ -2200,7 +2200,7 @@
           "data": "10/03/2026",
           "data_iso": "2026-03-10",
           "mes_ref": "2026-03",
-          "regional": "IV- Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Armação dos Búzios",
           "municipios": [
@@ -2231,7 +2231,7 @@
           "data": "14/04/2026",
           "data_iso": "2026-04-14",
           "mes_ref": "2026-04",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -2262,7 +2262,7 @@
           "data": "28/04/2026",
           "data_iso": "2026-04-28",
           "mes_ref": "2026-04",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Carapebus",
           "municipios": [
@@ -2293,7 +2293,7 @@
           "data": "29/04/2026",
           "data_iso": "2026-04-29",
           "mes_ref": "2026-04",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Piúma",
           "municipios": [
@@ -2324,7 +2324,7 @@
           "data": "09/04/2026",
           "data_iso": "2026-04-09",
           "mes_ref": "2026-04",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Marataízes",
           "municipios": [
@@ -2355,7 +2355,7 @@
           "data": "29/05/2026",
           "data_iso": "2026-05-29",
           "mes_ref": "2026-05",
-          "regional": "V- Nitéroi",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Maricá",
           "municipios": [
@@ -2386,7 +2386,7 @@
           "data": "29/04/2026",
           "data_iso": "2026-04-29",
           "mes_ref": "2026-04",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Presidente Kennedy",
           "municipios": [
@@ -2417,7 +2417,7 @@
           "data": "27/05/2026",
           "data_iso": "2026-05-27",
           "mes_ref": "2026-05",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Itapemirim",
           "municipios": [
@@ -2448,7 +2448,7 @@
           "data": "28/05/2026",
           "data_iso": "2026-05-28",
           "mes_ref": "2026-05",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana",
           "municipios": [
@@ -2479,7 +2479,7 @@
           "data": "20/03/2026",
           "data_iso": "2026-03-20",
           "mes_ref": "2026-03",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -2510,7 +2510,7 @@
           "data": "28/04/2026",
           "data_iso": "2026-04-28",
           "mes_ref": "2026-04",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé",
           "municipios": [
@@ -2541,7 +2541,7 @@
           "data": "12/05/2026",
           "data_iso": "2026-05-12",
           "mes_ref": "2026-05",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Marataízes; Itapemirim",
           "municipios": [
@@ -2573,7 +2573,7 @@
           "data": "21/05/2026",
           "data_iso": "2026-05-21",
           "mes_ref": "2026-05",
-          "regional": "V- Nitéroi",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Guapimirim",
           "municipios": [
@@ -2604,7 +2604,7 @@
           "data": "29/04/2026",
           "data_iso": "2026-04-29",
           "mes_ref": "2026-04",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé",
           "municipios": [
@@ -2635,7 +2635,7 @@
           "data": "20/03/2026",
           "data_iso": "2026-03-20",
           "mes_ref": "2026-03",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -2666,7 +2666,7 @@
           "data": "09/04/2026",
           "data_iso": "2026-04-09",
           "mes_ref": "2026-04",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -2697,7 +2697,7 @@
           "data": "16/04/2026",
           "data_iso": "2026-04-16",
           "mes_ref": "2026-04",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -2728,7 +2728,7 @@
           "data": "20/04/2026",
           "data_iso": "2026-04-20",
           "mes_ref": "2026-04",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -2759,7 +2759,7 @@
           "data": "30/04/2026",
           "data_iso": "2026-04-30",
           "mes_ref": "2026-04",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -2790,7 +2790,7 @@
           "data": "06/05/2026",
           "data_iso": "2026-05-06",
           "mes_ref": "2026-05",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Piúma",
           "municipios": [
@@ -2821,7 +2821,7 @@
           "data": "12/05/2026",
           "data_iso": "2026-05-12",
           "mes_ref": "2026-05",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Presidente Kennedy",
           "municipios": [
@@ -2852,7 +2852,7 @@
           "data": "26/05/2026",
           "data_iso": "2026-05-26",
           "mes_ref": "2026-05",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Presidente Kennedy",
           "municipios": [
@@ -2883,7 +2883,7 @@
           "data": "13/05/2026",
           "data_iso": "2026-05-13",
           "mes_ref": "2026-05",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Piúma",
           "municipios": [
@@ -2914,7 +2914,7 @@
           "data": "30/04/2026",
           "data_iso": "2026-04-30",
           "mes_ref": "2026-04",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -2945,7 +2945,7 @@
           "data": "06/05/2026",
           "data_iso": "2026-05-06",
           "mes_ref": "2026-05",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -2976,7 +2976,7 @@
           "data": "15/04/2026",
           "data_iso": "2026-04-15",
           "mes_ref": "2026-04",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Quissamã",
           "municipios": [
@@ -3007,7 +3007,7 @@
           "data": "28/04/2026",
           "data_iso": "2026-04-28",
           "mes_ref": "2026-04",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -3038,7 +3038,7 @@
           "data": "20/05/2026",
           "data_iso": "2026-05-20",
           "mes_ref": "2026-05",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana",
           "municipios": [
@@ -3069,7 +3069,7 @@
           "data": "26/05/2026",
           "data_iso": "2026-05-26",
           "mes_ref": "2026-05",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes",
           "municipios": [
@@ -3100,7 +3100,7 @@
           "data": "07/05/2026",
           "data_iso": "2026-05-07",
           "mes_ref": "2026-05",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Casimiro de Abreu; Rio das Ostras",
           "municipios": [
@@ -3132,7 +3132,7 @@
           "data": "13/03/2026",
           "data_iso": "2026-03-13",
           "mes_ref": "2026-03",
-          "regional": "IV- Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Armação dos Búzios",
           "municipios": [
@@ -3163,7 +3163,7 @@
           "data": "19/03/2026",
           "data_iso": "2026-03-19",
           "mes_ref": "2026-03",
-          "regional": "IV- Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema",
           "municipios": [
@@ -3194,7 +3194,7 @@
           "data": "",
           "data_iso": "",
           "mes_ref": "",
-          "regional": "VII- Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Ilha Comprida; Iguape",
           "municipios": [
@@ -3226,7 +3226,7 @@
           "data": "",
           "data_iso": "",
           "mes_ref": "",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Carapebus",
           "municipios": [
@@ -3257,7 +3257,7 @@
           "data": "",
           "data_iso": "",
           "mes_ref": "",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras; Casimiro de Abreu",
           "municipios": [
@@ -3289,7 +3289,7 @@
           "data": "01/04/2026",
           "data_iso": "2026-04-01",
           "mes_ref": "2026-04",
-          "regional": "IV- Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema",
           "municipios": [
@@ -3320,7 +3320,7 @@
           "data": "15/05/2026",
           "data_iso": "2026-05-15",
           "mes_ref": "2026-05",
-          "regional": "VI- Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Caraguatatuba",
           "municipios": [
@@ -3351,7 +3351,7 @@
           "data": "12/05/2026",
           "data_iso": "2026-05-12",
           "mes_ref": "2026-05",
-          "regional": "VI- Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Caraguatatuba",
           "municipios": [
@@ -3382,7 +3382,7 @@
           "data": "14/05/2026",
           "data_iso": "2026-05-14",
           "mes_ref": "2026-05",
-          "regional": "VI- Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Caraguatatuba",
           "municipios": [
@@ -3413,7 +3413,7 @@
           "data": "09/04/2026",
           "data_iso": "2026-04-09",
           "mes_ref": "2026-04",
-          "regional": "IV- Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema",
           "municipios": [
@@ -3444,7 +3444,7 @@
           "data": "14/05/2026",
           "data_iso": "2026-05-14",
           "mes_ref": "2026-05",
-          "regional": "VII- Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Iguape",
           "municipios": [
@@ -3475,7 +3475,7 @@
           "data": "20/05/2026",
           "data_iso": "2026-05-20",
           "mes_ref": "2026-05",
-          "regional": "VII- Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Iguape",
           "municipios": [
@@ -3506,7 +3506,7 @@
           "data": "09/04/2026",
           "data_iso": "2026-04-09",
           "mes_ref": "2026-04",
-          "regional": "IV- Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Armação dos Búzios",
           "municipios": [
@@ -3537,7 +3537,7 @@
           "data": "10/04/2026",
           "data_iso": "2026-04-10",
           "mes_ref": "2026-04",
-          "regional": "IV- Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Araruama",
           "municipios": [
@@ -3568,7 +3568,7 @@
           "data": "29/04/2026",
           "data_iso": "2026-04-29",
           "mes_ref": "2026-04",
-          "regional": "IV- Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Araruama",
           "municipios": [
@@ -3599,7 +3599,7 @@
           "data": "30/04/2026",
           "data_iso": "2026-04-30",
           "mes_ref": "2026-04",
-          "regional": "IV- Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Arraial do Cabo",
           "municipios": [
@@ -3630,7 +3630,7 @@
           "data": "06/05/2026",
           "data_iso": "2026-05-06",
           "mes_ref": "2026-05",
-          "regional": "IV- Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema",
           "municipios": [
@@ -3661,7 +3661,7 @@
           "data": "07/05/2026",
           "data_iso": "2026-05-07",
           "mes_ref": "2026-05",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé",
           "municipios": [
@@ -3692,7 +3692,7 @@
           "data": "27/03/2026",
           "data_iso": "2026-03-27",
           "mes_ref": "2026-03",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes",
           "municipios": [
@@ -3723,7 +3723,7 @@
           "data": "06/05/2026",
           "data_iso": "2026-05-06",
           "mes_ref": "2026-05",
-          "regional": "IV- Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema",
           "municipios": [
@@ -3754,7 +3754,7 @@
           "data": "04/05/2026",
           "data_iso": "2026-05-04",
           "mes_ref": "2026-05",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -3785,7 +3785,7 @@
           "data": "16/04/2026",
           "data_iso": "2026-04-16",
           "mes_ref": "2026-04",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Piúma",
           "municipios": [
@@ -3816,7 +3816,7 @@
           "data": "12/05/2026",
           "data_iso": "2026-05-12",
           "mes_ref": "2026-05",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Piúma",
           "municipios": [
@@ -3847,7 +3847,7 @@
           "data": "12/05/2026",
           "data_iso": "2026-05-12",
           "mes_ref": "2026-05",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Carapebus",
           "municipios": [
@@ -3878,7 +3878,7 @@
           "data": "30/03/2026",
           "data_iso": "2026-03-30",
           "mes_ref": "2026-03",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -3909,7 +3909,7 @@
           "data": "12/05/2026",
           "data_iso": "2026-05-12",
           "mes_ref": "2026-05",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -3940,7 +3940,7 @@
           "data": "25/03/2026",
           "data_iso": "2026-03-25",
           "mes_ref": "2026-03",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana",
           "municipios": [
@@ -3971,7 +3971,7 @@
           "data": "14/05/2026",
           "data_iso": "2026-05-14",
           "mes_ref": "2026-05",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -4002,7 +4002,7 @@
           "data": "08/05/2026",
           "data_iso": "2026-05-08",
           "mes_ref": "2026-05",
-          "regional": "IV- Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Araruama",
           "municipios": [
@@ -4033,7 +4033,7 @@
           "data": "12/05/2026",
           "data_iso": "2026-05-12",
           "mes_ref": "2026-05",
-          "regional": "IV- Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Armação dos Búzios",
           "municipios": [
@@ -4064,7 +4064,7 @@
           "data": "13/05/2026",
           "data_iso": "2026-05-13",
           "mes_ref": "2026-05",
-          "regional": "IV- Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema",
           "municipios": [
@@ -4095,7 +4095,7 @@
           "data": "14/05/2026",
           "data_iso": "2026-05-14",
           "mes_ref": "2026-05",
-          "regional": "IV- Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema",
           "municipios": [
@@ -4126,7 +4126,7 @@
           "data": "30/04/2026",
           "data_iso": "2026-04-30",
           "mes_ref": "2026-04",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana",
           "municipios": [
@@ -4157,7 +4157,7 @@
           "data": "19/05/2026",
           "data_iso": "2026-05-19",
           "mes_ref": "2026-05",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana",
           "municipios": [
@@ -4188,7 +4188,7 @@
           "data": "20/05/2026",
           "data_iso": "2026-05-20",
           "mes_ref": "2026-05",
-          "regional": "IV- Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Cabo Frio",
           "municipios": [
@@ -4219,7 +4219,7 @@
           "data": "21/05/2026",
           "data_iso": "2026-05-21",
           "mes_ref": "2026-05",
-          "regional": "IV- Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema",
           "municipios": [
@@ -4250,7 +4250,7 @@
           "data": "27/03/2026",
           "data_iso": "2026-03-27",
           "mes_ref": "2026-03",
-          "regional": "IV- Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema",
           "municipios": [
@@ -4281,7 +4281,7 @@
           "data": "",
           "data_iso": "",
           "mes_ref": "",
-          "regional": "IV- Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Armação dos Búzios",
           "municipios": [
@@ -4312,7 +4312,7 @@
           "data": "30/04/2026",
           "data_iso": "2026-04-30",
           "mes_ref": "2026-04",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -4343,7 +4343,7 @@
           "data": "28/05/2026",
           "data_iso": "2026-05-28",
           "mes_ref": "2026-05",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -4374,7 +4374,7 @@
           "data": "26/03/2026",
           "data_iso": "2026-03-26",
           "mes_ref": "2026-03",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Quissamã",
           "municipios": [
@@ -4405,7 +4405,7 @@
           "data": "16/04/2026",
           "data_iso": "2026-04-16",
           "mes_ref": "2026-04",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Quissamã",
           "municipios": [
@@ -4436,7 +4436,7 @@
           "data": "26/05/2026",
           "data_iso": "2026-05-26",
           "mes_ref": "2026-05",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -4467,7 +4467,7 @@
           "data": "18/05/2026",
           "data_iso": "2026-05-18",
           "mes_ref": "2026-05",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé",
           "municipios": [
@@ -4498,7 +4498,7 @@
           "data": "21/05/2026",
           "data_iso": "2026-05-21",
           "mes_ref": "2026-05",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Casimiro de Abreu",
           "municipios": [
@@ -4529,7 +4529,7 @@
           "data": "25/03/2026",
           "data_iso": "2026-03-25",
           "mes_ref": "2026-03",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes",
           "municipios": [
@@ -4560,7 +4560,7 @@
           "data": "22/05/2026",
           "data_iso": "2026-05-22",
           "mes_ref": "2026-05",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -4591,7 +4591,7 @@
           "data": "26/05/2026",
           "data_iso": "2026-05-26",
           "mes_ref": "2026-05",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Carapebus",
           "municipios": [
@@ -4622,7 +4622,7 @@
           "data": "27/05/2026",
           "data_iso": "2026-05-27",
           "mes_ref": "2026-05",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé",
           "municipios": [
@@ -4653,7 +4653,7 @@
           "data": "28/05/2026",
           "data_iso": "2026-05-28",
           "mes_ref": "2026-05",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Carapebus",
           "municipios": [
@@ -4684,7 +4684,7 @@
           "data": "28/05/2026",
           "data_iso": "2026-05-28",
           "mes_ref": "2026-05",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Casimiro de Abreu",
           "municipios": [
@@ -4715,7 +4715,7 @@
           "data": "27/02/2026",
           "data_iso": "2026-02-27",
           "mes_ref": "2026-02",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "",
           "municipios": [],
@@ -4744,7 +4744,7 @@
           "data": "14/05/2026",
           "data_iso": "2026-05-14",
           "mes_ref": "2026-05",
-          "regional": "VII- Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Iguape",
           "municipios": [
@@ -4775,7 +4775,7 @@
           "data": "18/05/2026",
           "data_iso": "2026-05-18",
           "mes_ref": "2026-05",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes",
           "municipios": [
@@ -4806,7 +4806,7 @@
           "data": "14/05/2026",
           "data_iso": "2026-05-14",
           "mes_ref": "2026-05",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -4837,7 +4837,7 @@
           "data": "21/05/2026",
           "data_iso": "2026-05-21",
           "mes_ref": "2026-05",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -4868,7 +4868,7 @@
           "data": "12/05/2026",
           "data_iso": "2026-05-12",
           "mes_ref": "2026-05",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes; Quissamã; São Francisco de Itabapoana",
           "municipios": [
@@ -4901,7 +4901,7 @@
           "data": "24/04/2026",
           "data_iso": "2026-04-24",
           "mes_ref": "2026-04",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes; Quissamã",
           "municipios": [
@@ -4933,7 +4933,7 @@
           "data": "29/04/2026",
           "data_iso": "2026-04-29",
           "mes_ref": "2026-04",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes",
           "municipios": [
@@ -4964,7 +4964,7 @@
           "data": "19/05/2026",
           "data_iso": "2026-05-19",
           "mes_ref": "2026-05",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes",
           "municipios": [
@@ -4995,7 +4995,7 @@
           "data": "07/04/2026",
           "data_iso": "2026-04-07",
           "mes_ref": "2026-04",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -5026,7 +5026,7 @@
           "data": "16/04/2026",
           "data_iso": "2026-04-16",
           "mes_ref": "2026-04",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Casimiro de Abreu",
           "municipios": [
@@ -5057,7 +5057,7 @@
           "data": "26/03/2026",
           "data_iso": "2026-03-26",
           "mes_ref": "2026-03",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -5088,7 +5088,7 @@
           "data": "25/04/2026",
           "data_iso": "2026-04-25",
           "mes_ref": "2026-04",
-          "regional": "VI- Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Ilhabela",
           "municipios": [
@@ -5119,7 +5119,7 @@
           "data": "01/06/2026",
           "data_iso": "2026-06-01",
           "mes_ref": "2026-06",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé",
           "municipios": [
@@ -5150,7 +5150,7 @@
           "data": "02/06/2026",
           "data_iso": "2026-06-02",
           "mes_ref": "2026-06",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Quissamã; Campos dos Goytacazes; Carapebus",
           "municipios": [
@@ -5183,7 +5183,7 @@
           "data": "02/06/2026",
           "data_iso": "2026-06-02",
           "mes_ref": "2026-06",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -5214,7 +5214,7 @@
           "data": "02/06/2026",
           "data_iso": "2026-06-02",
           "mes_ref": "2026-06",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -5245,7 +5245,7 @@
           "data": "03/06/2026",
           "data_iso": "2026-06-03",
           "mes_ref": "2026-06",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Guapimirim",
           "municipios": [
@@ -5276,7 +5276,7 @@
           "data": "03/06/2026",
           "data_iso": "2026-06-03",
           "mes_ref": "2026-06",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Maricá",
           "municipios": [
@@ -5307,7 +5307,7 @@
           "data": "08/06/2026",
           "data_iso": "2026-06-08",
           "mes_ref": "2026-06",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes",
           "municipios": [
@@ -5338,7 +5338,7 @@
           "data": "09/06/2026",
           "data_iso": "2026-06-09",
           "mes_ref": "2026-06",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -5369,7 +5369,7 @@
           "data": "09/06/2026",
           "data_iso": "2026-06-09",
           "mes_ref": "2026-06",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -5400,7 +5400,7 @@
           "data": "10/06/2026",
           "data_iso": "2026-06-10",
           "mes_ref": "2026-06",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Guapimirim",
           "municipios": [
@@ -5431,7 +5431,7 @@
           "data": "11/06/2026",
           "data_iso": "2026-06-11",
           "mes_ref": "2026-06",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Guapimirim",
           "municipios": [
@@ -5462,7 +5462,7 @@
           "data": "11/06/2026",
           "data_iso": "2026-06-11",
           "mes_ref": "2026-06",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Caraguatatuba",
           "municipios": [
@@ -5493,7 +5493,7 @@
           "data": "11/06/2026",
           "data_iso": "2026-06-11",
           "mes_ref": "2026-06",
-          "regional": "VII- Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Iguape",
           "municipios": [
@@ -5524,7 +5524,7 @@
           "data": "12/06/2026",
           "data_iso": "2026-06-12",
           "mes_ref": "2026-06",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Araruama",
           "municipios": [
@@ -5555,7 +5555,7 @@
           "data": "13/06/2026",
           "data_iso": "2026-06-13",
           "mes_ref": "2026-06",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Niterói",
           "municipios": [
@@ -5586,7 +5586,7 @@
           "data": "15/06/2026",
           "data_iso": "2026-06-15",
           "mes_ref": "2026-06",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Araruama",
           "municipios": [
@@ -5617,7 +5617,7 @@
           "data": "16/06/2026",
           "data_iso": "2026-06-16",
           "mes_ref": "2026-06",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes; São João da Barra; São Francisco de Itabapoana; Quissamã",
           "municipios": [
@@ -5651,7 +5651,7 @@
           "data": "16/06/2026",
           "data_iso": "2026-06-16",
           "mes_ref": "2026-06",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Carapebus",
           "municipios": [
@@ -5682,7 +5682,7 @@
           "data": "16/06/2026",
           "data_iso": "2026-06-16",
           "mes_ref": "2026-06",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Niterói",
           "municipios": [
@@ -5713,7 +5713,7 @@
           "data": "17/06/2026",
           "data_iso": "2026-06-17",
           "mes_ref": "2026-06",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé; Rio das Ostras; Casimiro de Abreu",
           "municipios": [
@@ -5746,7 +5746,7 @@
           "data": "17/06/2026",
           "data_iso": "2026-06-17",
           "mes_ref": "2026-06",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Arraial do Cabo",
           "municipios": [
@@ -5777,7 +5777,7 @@
           "data": "18/06/2026",
           "data_iso": "2026-06-18",
           "mes_ref": "2026-06",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana",
           "municipios": [
@@ -5808,7 +5808,7 @@
           "data": "18/06/2026",
           "data_iso": "2026-06-18",
           "mes_ref": "2026-06",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Quissamã",
           "municipios": [
@@ -5839,7 +5839,7 @@
           "data": "18/06/2026",
           "data_iso": "2026-06-18",
           "mes_ref": "2026-06",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Cabo Frio",
           "municipios": [
@@ -5870,7 +5870,7 @@
           "data": "18/06/2026",
           "data_iso": "2026-06-18",
           "mes_ref": "2026-06",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "RJ",
           "municipio": "Paraty",
           "municipios": [
@@ -5901,7 +5901,7 @@
           "data": "19/06/2026",
           "data_iso": "2026-06-19",
           "mes_ref": "2026-06",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Arraial do Cabo",
           "municipios": [
@@ -5932,7 +5932,7 @@
           "data": "19/06/2026",
           "data_iso": "2026-06-19",
           "mes_ref": "2026-06",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Niterói",
           "municipios": [
@@ -5963,7 +5963,7 @@
           "data": "19/06/2026",
           "data_iso": "2026-06-19",
           "mes_ref": "2026-06",
-          "regional": "VII- Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Ilha Comprida",
           "municipios": [
@@ -5994,7 +5994,7 @@
           "data": "20/06/2026",
           "data_iso": "2026-06-20",
           "mes_ref": "2026-06",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -6025,7 +6025,7 @@
           "data": "22/06/2026",
           "data_iso": "2026-06-22",
           "mes_ref": "2026-06",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Piúma",
           "municipios": [
@@ -6056,7 +6056,7 @@
           "data": "22/06/2026",
           "data_iso": "2026-06-22",
           "mes_ref": "2026-06",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Niterói",
           "municipios": [
@@ -6087,7 +6087,7 @@
           "data": "22/06/2026",
           "data_iso": "2026-06-22",
           "mes_ref": "2026-06",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Ilhabela",
           "municipios": [
@@ -6118,7 +6118,7 @@
           "data": "23/06/2026",
           "data_iso": "2026-06-23",
           "mes_ref": "2026-06",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Itapemirim",
           "municipios": [
@@ -6149,7 +6149,7 @@
           "data": "24/06/2026",
           "data_iso": "2026-06-24",
           "mes_ref": "2026-06",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Presidente Kennedy",
           "municipios": [
@@ -6180,7 +6180,7 @@
           "data": "25/06/2026",
           "data_iso": "2026-06-25",
           "mes_ref": "2026-06",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES / RJ",
           "municipio": "Presidente Kennedy; Marataízes; São Francisco de Itabapoana",
           "municipios": [
@@ -6213,7 +6213,7 @@
           "data": "25/06/2026",
           "data_iso": "2026-06-25",
           "mes_ref": "2026-06",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Piúma",
           "municipios": [
@@ -6244,7 +6244,7 @@
           "data": "25/06/2026",
           "data_iso": "2026-06-25",
           "mes_ref": "2026-06",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Arraial do Cabo",
           "municipios": [
@@ -6275,7 +6275,7 @@
           "data": "25/06/2026",
           "data_iso": "2026-06-25",
           "mes_ref": "2026-06",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -6306,7 +6306,7 @@
           "data": "25/06/2026",
           "data_iso": "2026-06-25",
           "mes_ref": "2026-06",
-          "regional": "VII- Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Iguape",
           "municipios": [
@@ -6337,7 +6337,7 @@
           "data": "27/06/2026",
           "data_iso": "2026-06-27",
           "mes_ref": "2026-06",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -6368,7 +6368,7 @@
           "data": "29/06/2026",
           "data_iso": "2026-06-29",
           "mes_ref": "2026-06",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Casimiro de Abreu",
           "municipios": [
@@ -6399,7 +6399,7 @@
           "data": "30/06/2026",
           "data_iso": "2026-06-30",
           "mes_ref": "2026-06",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -6430,7 +6430,7 @@
           "data": "30/06/2026",
           "data_iso": "2026-06-30",
           "mes_ref": "2026-06",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Casimiro de Abreu",
           "municipios": [
@@ -6461,7 +6461,7 @@
           "data": "30/06/2026",
           "data_iso": "2026-06-30",
           "mes_ref": "2026-06",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé",
           "municipios": [
@@ -6492,7 +6492,7 @@
           "data": "30/06/2026",
           "data_iso": "2026-06-30",
           "mes_ref": "2026-06",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes; São João da Barra; São Francisco de Itabapoana; Quissamã",
           "municipios": [
@@ -6526,7 +6526,7 @@
           "data": "30/06/2026",
           "data_iso": "2026-06-30",
           "mes_ref": "2026-06",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Niterói",
           "municipios": [
@@ -6557,7 +6557,7 @@
           "data": "01/07/2026",
           "data_iso": "2026-07-01",
           "mes_ref": "2026-07",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema",
           "municipios": [
@@ -6588,7 +6588,7 @@
           "data": "02/07/2026",
           "data_iso": "2026-07-02",
           "mes_ref": "2026-07",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes; São João da Barra; São Francisco de Itabapoana; Quissamã",
           "municipios": [
@@ -6622,7 +6622,7 @@
           "data": "02/07/2026",
           "data_iso": "2026-07-02",
           "mes_ref": "2026-07",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé; Rio das Ostras; Casimiro de Abreu",
           "municipios": [
@@ -6655,7 +6655,7 @@
           "data": "06/07/2026",
           "data_iso": "2026-07-06",
           "mes_ref": "2026-07",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "RJ",
           "municipio": "Paraty",
           "municipios": [
@@ -6686,7 +6686,7 @@
           "data": "07/07/2026",
           "data_iso": "2026-07-07",
           "mes_ref": "2026-07",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -6717,7 +6717,7 @@
           "data": "07/07/2026",
           "data_iso": "2026-07-07",
           "mes_ref": "2026-07",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Guapimirim",
           "municipios": [
@@ -6748,7 +6748,7 @@
           "data": "07/07/2026",
           "data_iso": "2026-07-07",
           "mes_ref": "2026-07",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Caraguatatuba",
           "municipios": [
@@ -6779,7 +6779,7 @@
           "data": "08/07/2026",
           "data_iso": "2026-07-08",
           "mes_ref": "2026-07",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Itapemirim",
           "municipios": [
@@ -6810,7 +6810,7 @@
           "data": "08/07/2026",
           "data_iso": "2026-07-08",
           "mes_ref": "2026-07",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé",
           "municipios": [
@@ -6841,7 +6841,7 @@
           "data": "08/07/2026",
           "data_iso": "2026-07-08",
           "mes_ref": "2026-07",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Armação dos Búzios",
           "municipios": [
@@ -6872,7 +6872,7 @@
           "data": "08/07/2026",
           "data_iso": "2026-07-08",
           "mes_ref": "2026-07",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "RJ",
           "municipio": "Paraty",
           "municipios": [
@@ -6903,7 +6903,7 @@
           "data": "08/07/2026",
           "data_iso": "2026-07-08",
           "mes_ref": "2026-07",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Ilhabela",
           "municipios": [
@@ -6934,7 +6934,7 @@
           "data": "09/07/2026",
           "data_iso": "2026-07-09",
           "mes_ref": "2026-07",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema",
           "municipios": [
@@ -6965,7 +6965,7 @@
           "data": "14/07/2026",
           "data_iso": "2026-07-14",
           "mes_ref": "2026-07",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -6996,7 +6996,7 @@
           "data": "14/07/2026",
           "data_iso": "2026-07-14",
           "mes_ref": "2026-07",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Armação dos Búzios",
           "municipios": [
@@ -7027,7 +7027,7 @@
           "data": "15/07/2026",
           "data_iso": "2026-07-15",
           "mes_ref": "2026-07",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -7058,7 +7058,7 @@
           "data": "16/07/2026",
           "data_iso": "2026-07-16",
           "mes_ref": "2026-07",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Araruama",
           "municipios": [
@@ -7089,7 +7089,7 @@
           "data": "18/07/2026",
           "data_iso": "2026-07-18",
           "mes_ref": "2026-07",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "RJ",
           "municipio": "Paraty",
           "municipios": [
@@ -7120,7 +7120,7 @@
           "data": "18/07/2026",
           "data_iso": "2026-07-18",
           "mes_ref": "2026-07",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Caraguatatuba",
           "municipios": [
@@ -7151,7 +7151,7 @@
           "data": "21/07/2026",
           "data_iso": "2026-07-21",
           "mes_ref": "2026-07",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Piúma",
           "municipios": [
@@ -7182,7 +7182,7 @@
           "data": "21/07/2026",
           "data_iso": "2026-07-21",
           "mes_ref": "2026-07",
-          "regional": "VII- Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Iguape",
           "municipios": [
@@ -7213,7 +7213,7 @@
           "data": "22/07/2026",
           "data_iso": "2026-07-22",
           "mes_ref": "2026-07",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana",
           "municipios": [
@@ -7244,7 +7244,7 @@
           "data": "22/07/2026",
           "data_iso": "2026-07-22",
           "mes_ref": "2026-07",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Casimiro de Abreu",
           "municipios": [
@@ -7275,7 +7275,7 @@
           "data": "22/07/2026",
           "data_iso": "2026-07-22",
           "mes_ref": "2026-07",
-          "regional": "VII- Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Iguape",
           "municipios": [
@@ -7362,7 +7362,7 @@
           "data": "23/07/2026",
           "data_iso": "2026-07-23",
           "mes_ref": "2026-07",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé",
           "municipios": [
@@ -7393,7 +7393,7 @@
           "data": "23/07/2026",
           "data_iso": "2026-07-23",
           "mes_ref": "2026-07",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Cabo Frio",
           "municipios": [
@@ -7424,7 +7424,7 @@
           "data": "24/07/2026",
           "data_iso": "2026-07-24",
           "mes_ref": "2026-07",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -7455,7 +7455,7 @@
           "data": "27/07/2026",
           "data_iso": "2026-07-27",
           "mes_ref": "2026-07",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé; Casimiro de Abreu; Rio das Ostras",
           "municipios": [
@@ -7488,7 +7488,7 @@
           "data": "28/07/2026",
           "data_iso": "2026-07-28",
           "mes_ref": "2026-07",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -7519,7 +7519,7 @@
           "data": "28/07/2026",
           "data_iso": "2026-07-28",
           "mes_ref": "2026-07",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Caraguatatuba",
           "municipios": [
@@ -7550,7 +7550,7 @@
           "data": "30/07/2026",
           "data_iso": "2026-07-30",
           "mes_ref": "2026-07",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé",
           "municipios": [
@@ -7581,7 +7581,7 @@
           "data": "30/07/2026",
           "data_iso": "2026-07-30",
           "mes_ref": "2026-07",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "RJ",
           "municipio": "Paraty",
           "municipios": [
@@ -7612,7 +7612,7 @@
           "data": "30/07/2026",
           "data_iso": "2026-07-30",
           "mes_ref": "2026-07",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes",
           "municipios": [
@@ -7643,7 +7643,7 @@
           "data": "30/07/2026",
           "data_iso": "2026-07-30",
           "mes_ref": "2026-07",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -7674,7 +7674,7 @@
           "data": "30/07/2026",
           "data_iso": "2026-07-30",
           "mes_ref": "2026-07",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Arraial do Cabo",
           "municipios": [
@@ -7705,7 +7705,7 @@
           "data": "30/07/2026",
           "data_iso": "2026-07-30",
           "mes_ref": "2026-07",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Ilhabela",
           "municipios": [
@@ -7736,7 +7736,7 @@
           "data": "",
           "data_iso": "",
           "mes_ref": "",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes",
           "municipios": [
@@ -7767,7 +7767,7 @@
           "data": "",
           "data_iso": "",
           "mes_ref": "",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Quissamã",
           "municipios": [
@@ -7798,7 +7798,7 @@
           "data": "",
           "data_iso": "",
           "mes_ref": "",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana",
           "municipios": [
@@ -7829,7 +7829,7 @@
           "data": "",
           "data_iso": "",
           "mes_ref": "",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema",
           "municipios": [
@@ -7860,7 +7860,7 @@
           "data": "",
           "data_iso": "",
           "mes_ref": "",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Armação dos Búzios",
           "municipios": [
@@ -7891,7 +7891,7 @@
           "data": "",
           "data_iso": "",
           "mes_ref": "",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema",
           "municipios": [
@@ -7922,7 +7922,7 @@
           "data": "",
           "data_iso": "",
           "mes_ref": "",
-          "regional": "VII- Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Cananéia",
           "municipios": [
@@ -7953,7 +7953,7 @@
           "data": "",
           "data_iso": "",
           "mes_ref": "",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Carapebus",
           "municipios": [
@@ -7984,7 +7984,7 @@
           "data": "",
           "data_iso": "",
           "mes_ref": "",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Carapebus",
           "municipios": [
@@ -8015,7 +8015,7 @@
           "data": "05/08/2026",
           "data_iso": "2026-08-05",
           "mes_ref": "2026-08",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Itapemirim",
           "municipios": [
@@ -8046,7 +8046,7 @@
           "data": "06/08/2026",
           "data_iso": "2026-08-06",
           "mes_ref": "2026-08",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Itapemirim",
           "municipios": [
@@ -8077,7 +8077,7 @@
           "data": "13/08/2026",
           "data_iso": "2026-08-13",
           "mes_ref": "2026-08",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Presidente Kennedy",
           "municipios": [
@@ -8108,7 +8108,7 @@
           "data": "25/08/2026",
           "data_iso": "2026-08-25",
           "mes_ref": "2026-08",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Piúma; Itapemirim",
           "municipios": [
@@ -8140,7 +8140,7 @@
           "data": "27/08/2026",
           "data_iso": "2026-08-27",
           "mes_ref": "2026-08",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Presidente Kennedy",
           "municipios": [
@@ -8171,7 +8171,7 @@
           "data": "04/08/2026",
           "data_iso": "2026-08-04",
           "mes_ref": "2026-08",
-          "regional": "II- Campos",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes",
           "municipios": [
@@ -8202,7 +8202,7 @@
           "data": "11/08/2026",
           "data_iso": "2026-08-11",
           "mes_ref": "2026-08",
-          "regional": "II- Campos",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana; Campos dos Goytacazes; São João da Barra",
           "municipios": [
@@ -8235,7 +8235,7 @@
           "data": "12/08/2026",
           "data_iso": "2026-08-12",
           "mes_ref": "2026-08",
-          "regional": "II- Campos",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana",
           "municipios": [
@@ -8266,7 +8266,7 @@
           "data": "18/08/2026",
           "data_iso": "2026-08-18",
           "mes_ref": "2026-08",
-          "regional": "II- Campos",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -8297,7 +8297,7 @@
           "data": "18/08/2026",
           "data_iso": "2026-08-18",
           "mes_ref": "2026-08",
-          "regional": "II- Campos",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana",
           "municipios": [
@@ -8328,7 +8328,7 @@
           "data": "20/08/2026",
           "data_iso": "2026-08-20",
           "mes_ref": "2026-08",
-          "regional": "II- Campos",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes",
           "municipios": [
@@ -8359,7 +8359,7 @@
           "data": "25/08/2026",
           "data_iso": "2026-08-25",
           "mes_ref": "2026-08",
-          "regional": "II- Campos",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Quissamã",
           "municipios": [
@@ -8390,7 +8390,7 @@
           "data": "26/08/2026",
           "data_iso": "2026-08-26",
           "mes_ref": "2026-08",
-          "regional": "II- Campos",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes",
           "municipios": [
@@ -8421,7 +8421,7 @@
           "data": "27/08/2026",
           "data_iso": "2026-08-27",
           "mes_ref": "2026-08",
-          "regional": "II- Campos",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes; São Francisco de Itabapoana",
           "municipios": [
@@ -8453,7 +8453,7 @@
           "data": "27/08/2026",
           "data_iso": "2026-08-27",
           "mes_ref": "2026-08",
-          "regional": "II- Campos",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -8484,7 +8484,7 @@
           "data": "27/08/2026",
           "data_iso": "2026-08-27",
           "mes_ref": "2026-08",
-          "regional": "II- Campos",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana",
           "municipios": [
@@ -8515,7 +8515,7 @@
           "data": "28/08/2026",
           "data_iso": "2026-08-28",
           "mes_ref": "2026-08",
-          "regional": "II- Campos",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -8546,7 +8546,7 @@
           "data": "",
           "data_iso": "",
           "mes_ref": "",
-          "regional": "II- Campos",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -8577,7 +8577,7 @@
           "data": "10/08/2026",
           "data_iso": "2026-08-10",
           "mes_ref": "2026-08",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -8608,7 +8608,7 @@
           "data": "11/08/2026",
           "data_iso": "2026-08-11",
           "mes_ref": "2026-08",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -8639,7 +8639,7 @@
           "data": "12/08/2026",
           "data_iso": "2026-08-12",
           "mes_ref": "2026-08",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé",
           "municipios": [
@@ -8670,7 +8670,7 @@
           "data": "12/08/2026",
           "data_iso": "2026-08-12",
           "mes_ref": "2026-08",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé",
           "municipios": [
@@ -8701,7 +8701,7 @@
           "data": "12/08/2026",
           "data_iso": "2026-08-12",
           "mes_ref": "2026-08",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé; Casimiro de Abreu",
           "municipios": [
@@ -8733,7 +8733,7 @@
           "data": "13/08/2026",
           "data_iso": "2026-08-13",
           "mes_ref": "2026-08",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Casimiro de Abreu; Macaé; Rio das Ostras",
           "municipios": [
@@ -8766,7 +8766,7 @@
           "data": "14/08/2026",
           "data_iso": "2026-08-14",
           "mes_ref": "2026-08",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Casimiro de Abreu",
           "municipios": [
@@ -8797,7 +8797,7 @@
           "data": "27/08/2026",
           "data_iso": "2026-08-27",
           "mes_ref": "2026-08",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -8828,7 +8828,7 @@
           "data": "27/08/2026",
           "data_iso": "2026-08-27",
           "mes_ref": "2026-08",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -8859,7 +8859,7 @@
           "data": "27/08/2026",
           "data_iso": "2026-08-27",
           "mes_ref": "2026-08",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Casimiro de Abreu",
           "municipios": [
@@ -8890,7 +8890,7 @@
           "data": "28/08/2026",
           "data_iso": "2026-08-28",
           "mes_ref": "2026-08",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Carapebus",
           "municipios": [
@@ -8921,7 +8921,7 @@
           "data": "29/08/2026",
           "data_iso": "2026-08-29",
           "mes_ref": "2026-08",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé",
           "municipios": [
@@ -8952,7 +8952,7 @@
           "data": "31/08/2026",
           "data_iso": "2026-08-31",
           "mes_ref": "2026-08",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -8983,7 +8983,7 @@
           "data": "31/08/2026",
           "data_iso": "2026-08-31",
           "mes_ref": "2026-08",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -9014,7 +9014,7 @@
           "data": "13/08/2026",
           "data_iso": "2026-08-13",
           "mes_ref": "2026-08",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema",
           "municipios": [
@@ -9045,7 +9045,7 @@
           "data": "14/08/2026",
           "data_iso": "2026-08-14",
           "mes_ref": "2026-08",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Araruama",
           "municipios": [
@@ -9076,7 +9076,7 @@
           "data": "17/08/2026",
           "data_iso": "2026-08-17",
           "mes_ref": "2026-08",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Piúma; Marataízes; Itapemirim; Presidente Kennedy; São Francisco de Itabapoana; São João da Barra; Campos dos Goytacazes; Quissamã; Carapebus; Macaé; Rio das Ostras; Casimiro de Abreu; Saquarema; Araruama; Arraial do Cabo; Cabo Frio; Armação dos Búzios; Maricá; Niterói; Guapimirim; Paraty; Caraguatatuba; Ilhabela; Iguape; Ilha Comprida; Cananéia",
           "municipios": [
@@ -9132,7 +9132,7 @@
           "data": "20/08/2026",
           "data_iso": "2026-08-20",
           "mes_ref": "2026-08",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Araruama",
           "municipios": [
@@ -9163,7 +9163,7 @@
           "data": "24/08/2026",
           "data_iso": "2026-08-24",
           "mes_ref": "2026-08",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Arraial do Cabo",
           "municipios": [
@@ -9194,7 +9194,7 @@
           "data": "24/08/2026",
           "data_iso": "2026-08-24",
           "mes_ref": "2026-08",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Armação dos Búzios",
           "municipios": [
@@ -9225,7 +9225,7 @@
           "data": "27/08/2026",
           "data_iso": "2026-08-27",
           "mes_ref": "2026-08",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Arraial do Cabo",
           "municipios": [
@@ -9256,7 +9256,7 @@
           "data": "27/08/2026",
           "data_iso": "2026-08-27",
           "mes_ref": "2026-08",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Cabo Frio",
           "municipios": [
@@ -9287,7 +9287,7 @@
           "data": "12/08/2026",
           "data_iso": "2026-08-12",
           "mes_ref": "2026-08",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Maricá",
           "municipios": [
@@ -9318,7 +9318,7 @@
           "data": "15/08/2026",
           "data_iso": "2026-08-15",
           "mes_ref": "2026-08",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Niterói",
           "municipios": [
@@ -9349,7 +9349,7 @@
           "data": "18/08/2026",
           "data_iso": "2026-08-18",
           "mes_ref": "2026-08",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Maricá",
           "municipios": [
@@ -9380,7 +9380,7 @@
           "data": "19/08/2026",
           "data_iso": "2026-08-19",
           "mes_ref": "2026-08",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Maricá",
           "municipios": [
@@ -9411,7 +9411,7 @@
           "data": "20/08/2026",
           "data_iso": "2026-08-20",
           "mes_ref": "2026-08",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Guapimirim",
           "municipios": [
@@ -9442,7 +9442,7 @@
           "data": "24/08/2026",
           "data_iso": "2026-08-24",
           "mes_ref": "2026-08",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Guapimirim",
           "municipios": [
@@ -9473,7 +9473,7 @@
           "data": "25/08/2026",
           "data_iso": "2026-08-25",
           "mes_ref": "2026-08",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Guapimirim",
           "municipios": [
@@ -9504,7 +9504,7 @@
           "data": "25/08/2026",
           "data_iso": "2026-08-25",
           "mes_ref": "2026-08",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Guapimirim",
           "municipios": [
@@ -9535,7 +9535,7 @@
           "data": "31/08/2026",
           "data_iso": "2026-08-31",
           "mes_ref": "2026-08",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Maricá; Niterói; Guapimirim",
           "municipios": [
@@ -9568,7 +9568,7 @@
           "data": "05/08/2026",
           "data_iso": "2026-08-05",
           "mes_ref": "2026-08",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Caraguatatuba",
           "municipios": [
@@ -9599,7 +9599,7 @@
           "data": "12/08/2026",
           "data_iso": "2026-08-12",
           "mes_ref": "2026-08",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "RJ",
           "municipio": "Paraty",
           "municipios": [
@@ -9630,7 +9630,7 @@
           "data": "15/08/2026",
           "data_iso": "2026-08-15",
           "mes_ref": "2026-08",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Caraguatatuba",
           "municipios": [
@@ -9661,7 +9661,7 @@
           "data": "17/08/2026",
           "data_iso": "2026-08-17",
           "mes_ref": "2026-08",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Caraguatatuba",
           "municipios": [
@@ -9692,7 +9692,7 @@
           "data": "19/08/2026",
           "data_iso": "2026-08-19",
           "mes_ref": "2026-08",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Ilhabela",
           "municipios": [
@@ -9723,7 +9723,7 @@
           "data": "20/08/2026",
           "data_iso": "2026-08-20",
           "mes_ref": "2026-08",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Ilhabela",
           "municipios": [
@@ -9754,7 +9754,7 @@
           "data": "25/08/2026",
           "data_iso": "2026-08-25",
           "mes_ref": "2026-08",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Caraguatatuba",
           "municipios": [
@@ -9785,7 +9785,7 @@
           "data": "27/08/2026",
           "data_iso": "2026-08-27",
           "mes_ref": "2026-08",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "RJ",
           "municipio": "Paraty",
           "municipios": [
@@ -9816,7 +9816,7 @@
           "data": "04/08/2026",
           "data_iso": "2026-08-04",
           "mes_ref": "2026-08",
-          "regional": "VII - Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Cananéia",
           "municipios": [
@@ -10100,7 +10100,7 @@
           "data": "01/09/2026",
           "data_iso": "2026-09-01",
           "mes_ref": "2026-09",
-          "regional": "Regional VII",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Cananéia",
           "municipios": [
@@ -10131,7 +10131,7 @@
           "data": "01/09/2026",
           "data_iso": "2026-09-01",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes; São João da Barra; Quissamã",
           "municipios": [
@@ -10164,7 +10164,7 @@
           "data": "01/09/2026",
           "data_iso": "2026-09-01",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -10195,7 +10195,7 @@
           "data": "01/09/2026",
           "data_iso": "2026-09-01",
           "mes_ref": "2026-09",
-          "regional": "Regional V",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Guapimirim",
           "municipios": [
@@ -10226,7 +10226,7 @@
           "data": "02/09/2026",
           "data_iso": "2026-09-02",
           "mes_ref": "2026-09",
-          "regional": "Regional IV",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema",
           "municipios": [
@@ -10257,7 +10257,7 @@
           "data": "02/09/2026",
           "data_iso": "2026-09-02",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -10288,7 +10288,7 @@
           "data": "02/09/2026",
           "data_iso": "2026-09-02",
           "mes_ref": "2026-09",
-          "regional": "Regional V",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Maricá",
           "municipios": [
@@ -10319,7 +10319,7 @@
           "data": "02/09/2026",
           "data_iso": "2026-09-02",
           "mes_ref": "2026-09",
-          "regional": "Regional VI",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Caraguatatuba",
           "municipios": [
@@ -10350,7 +10350,7 @@
           "data": "03/09/2026",
           "data_iso": "2026-09-03",
           "mes_ref": "2026-09",
-          "regional": "Regional I",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Itapemirim",
           "municipios": [
@@ -10381,7 +10381,7 @@
           "data": "03/09/2026",
           "data_iso": "2026-09-03",
           "mes_ref": "2026-09",
-          "regional": "Regional I",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Marataízes",
           "municipios": [
@@ -10412,7 +10412,7 @@
           "data": "08/09/2026",
           "data_iso": "2026-09-08",
           "mes_ref": "2026-09",
-          "regional": "Regional IV",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Armação dos Búzios",
           "municipios": [
@@ -10443,7 +10443,7 @@
           "data": "08/09/2026",
           "data_iso": "2026-09-08",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -10474,7 +10474,7 @@
           "data": "09/09/2026",
           "data_iso": "2026-09-09",
           "mes_ref": "2026-09",
-          "regional": "Regional IV",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Arraial do Cabo",
           "municipios": [
@@ -10505,7 +10505,7 @@
           "data": "09/09/2026",
           "data_iso": "2026-09-09",
           "mes_ref": "2026-09",
-          "regional": "Regional IV",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Arraial do Cabo",
           "municipios": [
@@ -10536,7 +10536,7 @@
           "data": "09/09/2026",
           "data_iso": "2026-09-09",
           "mes_ref": "2026-09",
-          "regional": "Regional I",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Marataízes",
           "municipios": [
@@ -10567,7 +10567,7 @@
           "data": "09/09/2026",
           "data_iso": "2026-09-09",
           "mes_ref": "2026-09",
-          "regional": "Regional I",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Marataízes",
           "municipios": [
@@ -10598,7 +10598,7 @@
           "data": "09/09/2026",
           "data_iso": "2026-09-09",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -10629,7 +10629,7 @@
           "data": "10/09/2026",
           "data_iso": "2026-09-10",
           "mes_ref": "2026-09",
-          "regional": "Regional VII",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Cananéia",
           "municipios": [
@@ -10660,7 +10660,7 @@
           "data": "10/09/2026",
           "data_iso": "2026-09-10",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana",
           "municipios": [
@@ -10691,7 +10691,7 @@
           "data": "10/09/2026",
           "data_iso": "2026-09-10",
           "mes_ref": "2026-09",
-          "regional": "Regional I",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Presidente Kennedy",
           "municipios": [
@@ -10722,7 +10722,7 @@
           "data": "10/09/2026",
           "data_iso": "2026-09-10",
           "mes_ref": "2026-09",
-          "regional": "Regional I",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Presidente Kennedy",
           "municipios": [
@@ -10753,7 +10753,7 @@
           "data": "10/09/2026",
           "data_iso": "2026-09-10",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Carapebus",
           "municipios": [
@@ -10784,7 +10784,7 @@
           "data": "10/09/2026",
           "data_iso": "2026-09-10",
           "mes_ref": "2026-09",
-          "regional": "Regional V",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Guapimirim",
           "municipios": [
@@ -10815,7 +10815,7 @@
           "data": "12/09/2026",
           "data_iso": "2026-09-12",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé",
           "municipios": [
@@ -10846,7 +10846,7 @@
           "data": "12/09/2026",
           "data_iso": "2026-09-12",
           "mes_ref": "2026-09",
-          "regional": "Regional V",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Guapimirim; Niterói",
           "municipios": [
@@ -10878,7 +10878,7 @@
           "data": "12/09/2026",
           "data_iso": "2026-09-12",
           "mes_ref": "2026-09",
-          "regional": "Regional V",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Niterói",
           "municipios": [
@@ -10909,7 +10909,7 @@
           "data": "14/09/2026",
           "data_iso": "2026-09-14",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Quissamã",
           "municipios": [
@@ -10940,7 +10940,7 @@
           "data": "14/09/2026",
           "data_iso": "2026-09-14",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Casimiro de Abreu",
           "municipios": [
@@ -10971,7 +10971,7 @@
           "data": "14/09/2026",
           "data_iso": "2026-09-14",
           "mes_ref": "2026-09",
-          "regional": "Regional VI",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Caraguatatuba",
           "municipios": [
@@ -11002,7 +11002,7 @@
           "data": "15/09/2026",
           "data_iso": "2026-09-15",
           "mes_ref": "2026-09",
-          "regional": "Regional IV",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema",
           "municipios": [
@@ -11033,7 +11033,7 @@
           "data": "15/09/2026",
           "data_iso": "2026-09-15",
           "mes_ref": "2026-09",
-          "regional": "Regional I",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Piúma",
           "municipios": [
@@ -11064,7 +11064,7 @@
           "data": "15/09/2026",
           "data_iso": "2026-09-15",
           "mes_ref": "2026-09",
-          "regional": "Regional I",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Itapemirim; Piúma",
           "municipios": [
@@ -11096,7 +11096,7 @@
           "data": "15/09/2026",
           "data_iso": "2026-09-15",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -11127,7 +11127,7 @@
           "data": "16/09/2026",
           "data_iso": "2026-09-16",
           "mes_ref": "2026-09",
-          "regional": "Regional IV",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Armação dos Búzios",
           "municipios": [
@@ -11158,7 +11158,7 @@
           "data": "16/09/2026",
           "data_iso": "2026-09-16",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana; Quissamã",
           "municipios": [
@@ -11190,7 +11190,7 @@
           "data": "16/09/2026",
           "data_iso": "2026-09-16",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Carapebus",
           "municipios": [
@@ -11221,7 +11221,7 @@
           "data": "16/09/2026",
           "data_iso": "2026-09-16",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé",
           "municipios": [
@@ -11252,7 +11252,7 @@
           "data": "16/09/2026",
           "data_iso": "2026-09-16",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Casimiro de Abreu",
           "municipios": [
@@ -11283,7 +11283,7 @@
           "data": "16/09/2026",
           "data_iso": "2026-09-16",
           "mes_ref": "2026-09",
-          "regional": "Regional V",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Maricá",
           "municipios": [
@@ -11314,7 +11314,7 @@
           "data": "17/09/2026",
           "data_iso": "2026-09-17",
           "mes_ref": "2026-09",
-          "regional": "Regional VII",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Iguape",
           "municipios": [
@@ -11345,7 +11345,7 @@
           "data": "17/09/2026",
           "data_iso": "2026-09-17",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Quissamã",
           "municipios": [
@@ -11376,7 +11376,7 @@
           "data": "17/09/2026",
           "data_iso": "2026-09-17",
           "mes_ref": "2026-09",
-          "regional": "Regional IV",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Cabo Frio; Saquarema",
           "municipios": [
@@ -11408,7 +11408,7 @@
           "data": "17/09/2026",
           "data_iso": "2026-09-17",
           "mes_ref": "2026-09",
-          "regional": "Regional IV",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema",
           "municipios": [
@@ -11439,7 +11439,7 @@
           "data": "17/09/2026",
           "data_iso": "2026-09-17",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -11470,7 +11470,7 @@
           "data": "17/09/2026",
           "data_iso": "2026-09-17",
           "mes_ref": "2026-09",
-          "regional": "Regional V",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Guapimirim",
           "municipios": [
@@ -11501,7 +11501,7 @@
           "data": "18/09/2026",
           "data_iso": "2026-09-18",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Quissamã",
           "municipios": [
@@ -11532,7 +11532,7 @@
           "data": "18/09/2026",
           "data_iso": "2026-09-18",
           "mes_ref": "2026-09",
-          "regional": "Regional IV",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Araruama; Arraial do Cabo; Armação dos Búzios; Saquarema",
           "municipios": [
@@ -11566,7 +11566,7 @@
           "data": "18/09/2026",
           "data_iso": "2026-09-18",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Carapebus; Casimiro de Abreu; Rio das Ostras",
           "municipios": [
@@ -11599,7 +11599,7 @@
           "data": "18/09/2026",
           "data_iso": "2026-09-18",
           "mes_ref": "2026-09",
-          "regional": "Regional V",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Maricá",
           "municipios": [
@@ -11630,7 +11630,7 @@
           "data": "19/09/2026",
           "data_iso": "2026-09-19",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana",
           "municipios": [
@@ -11661,7 +11661,7 @@
           "data": "19/09/2026",
           "data_iso": "2026-09-19",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Casimiro de Abreu",
           "municipios": [
@@ -11692,7 +11692,7 @@
           "data": "19/09/2026",
           "data_iso": "2026-09-19",
           "mes_ref": "2026-09",
-          "regional": "Regional VI",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Caraguatatuba",
           "municipios": [
@@ -11723,7 +11723,7 @@
           "data": "20/09/2026",
           "data_iso": "2026-09-20",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes",
           "municipios": [
@@ -11754,7 +11754,7 @@
           "data": "21/09/2026",
           "data_iso": "2026-09-21",
           "mes_ref": "2026-09",
-          "regional": "Regional I",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Itapemirim",
           "municipios": [
@@ -11785,7 +11785,7 @@
           "data": "21/09/2026",
           "data_iso": "2026-09-21",
           "mes_ref": "2026-09",
-          "regional": "Regional I",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Itapemirim",
           "municipios": [
@@ -11816,7 +11816,7 @@
           "data": "21/09/2026",
           "data_iso": "2026-09-21",
           "mes_ref": "2026-09",
-          "regional": "Regional IV",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Araruama",
           "municipios": [
@@ -11847,7 +11847,7 @@
           "data": "21/09/2026",
           "data_iso": "2026-09-21",
           "mes_ref": "2026-09",
-          "regional": "Regional IV",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Cabo Frio",
           "municipios": [
@@ -11878,7 +11878,7 @@
           "data": "21/09/2026",
           "data_iso": "2026-09-21",
           "mes_ref": "2026-09",
-          "regional": "Regional IV",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema",
           "municipios": [
@@ -11909,7 +11909,7 @@
           "data": "21/09/2026",
           "data_iso": "2026-09-21",
           "mes_ref": "2026-09",
-          "regional": "Regional V",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Niterói; Guapimirim; Maricá",
           "municipios": [
@@ -11942,7 +11942,7 @@
           "data": "21/09/2026",
           "data_iso": "2026-09-21",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -11973,7 +11973,7 @@
           "data": "22/09/2026",
           "data_iso": "2026-09-22",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Quissamã",
           "municipios": [
@@ -12004,7 +12004,7 @@
           "data": "22/09/2026",
           "data_iso": "2026-09-22",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana",
           "municipios": [
@@ -12035,7 +12035,7 @@
           "data": "22/09/2026",
           "data_iso": "2026-09-22",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -12066,7 +12066,7 @@
           "data": "22/09/2026",
           "data_iso": "2026-09-22",
           "mes_ref": "2026-09",
-          "regional": "Regional I",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Marataízes",
           "municipios": [
@@ -12097,7 +12097,7 @@
           "data": "22/09/2026",
           "data_iso": "2026-09-22",
           "mes_ref": "2026-09",
-          "regional": "Regional I",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Piúma",
           "municipios": [
@@ -12128,7 +12128,7 @@
           "data": "22/09/2026",
           "data_iso": "2026-09-22",
           "mes_ref": "2026-09",
-          "regional": "Regional IV",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Arraial do Cabo",
           "municipios": [
@@ -12159,7 +12159,7 @@
           "data": "22/09/2026",
           "data_iso": "2026-09-22",
           "mes_ref": "2026-09",
-          "regional": "Regional V",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Guapimirim",
           "municipios": [
@@ -12190,7 +12190,7 @@
           "data": "23/09/2026",
           "data_iso": "2026-09-23",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana",
           "municipios": [
@@ -12221,7 +12221,7 @@
           "data": "23/09/2026",
           "data_iso": "2026-09-23",
           "mes_ref": "2026-09",
-          "regional": "Regional I",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Marataízes",
           "municipios": [
@@ -12252,7 +12252,7 @@
           "data": "23/09/2026",
           "data_iso": "2026-09-23",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana",
           "municipios": [
@@ -12283,7 +12283,7 @@
           "data": "23/09/2026",
           "data_iso": "2026-09-23",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes",
           "municipios": [
@@ -12314,7 +12314,7 @@
           "data": "23/09/2026",
           "data_iso": "2026-09-23",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Carapebus; Rio das Ostras",
           "municipios": [
@@ -12346,7 +12346,7 @@
           "data": "24/09/2026",
           "data_iso": "2026-09-24",
           "mes_ref": "2026-09",
-          "regional": "Regional VII",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Ilha Comprida",
           "municipios": [
@@ -12377,7 +12377,7 @@
           "data": "24/09/2026",
           "data_iso": "2026-09-24",
           "mes_ref": "2026-09",
-          "regional": "Regional VII",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Iguape",
           "municipios": [
@@ -12408,7 +12408,7 @@
           "data": "24/09/2026",
           "data_iso": "2026-09-24",
           "mes_ref": "2026-09",
-          "regional": "Regional I",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Presidente Kennedy",
           "municipios": [
@@ -12439,7 +12439,7 @@
           "data": "24/09/2026",
           "data_iso": "2026-09-24",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes",
           "municipios": [
@@ -12470,7 +12470,7 @@
           "data": "24/09/2026",
           "data_iso": "2026-09-24",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -12501,7 +12501,7 @@
           "data": "24/09/2026",
           "data_iso": "2026-09-24",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -12532,7 +12532,7 @@
           "data": "24/09/2026",
           "data_iso": "2026-09-24",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -12563,7 +12563,7 @@
           "data": "24/09/2026",
           "data_iso": "2026-09-24",
           "mes_ref": "2026-09",
-          "regional": "Regional VI",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "RJ",
           "municipio": "Paraty",
           "municipios": [
@@ -12594,7 +12594,7 @@
           "data": "24/09/2026",
           "data_iso": "2026-09-24",
           "mes_ref": "2026-09",
-          "regional": "Regional VI",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Ilhabela",
           "municipios": [
@@ -12625,7 +12625,7 @@
           "data": "24/09/2026",
           "data_iso": "2026-09-24",
           "mes_ref": "2026-09",
-          "regional": "Regional IV",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Arraial do Cabo",
           "municipios": [
@@ -12656,7 +12656,7 @@
           "data": "24/09/2026",
           "data_iso": "2026-09-24",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé",
           "municipios": [
@@ -12687,7 +12687,7 @@
           "data": "24/09/2026",
           "data_iso": "2026-09-24",
           "mes_ref": "2026-09",
-          "regional": "Regional I",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Presidente Kennedy; Marataízes",
           "municipios": [
@@ -12719,7 +12719,7 @@
           "data": "25/09/2026",
           "data_iso": "2026-09-25",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras; Casimiro de Abreu",
           "municipios": [
@@ -12751,7 +12751,7 @@
           "data": "26/09/2026",
           "data_iso": "2026-09-26",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes",
           "municipios": [
@@ -12782,7 +12782,7 @@
           "data": "26/09/2026",
           "data_iso": "2026-09-26",
           "mes_ref": "2026-09",
-          "regional": "Regional V",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Guapimirim",
           "municipios": [
@@ -12813,7 +12813,7 @@
           "data": "26/09/2026",
           "data_iso": "2026-09-26",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé; Rio das Ostras",
           "municipios": [
@@ -12845,7 +12845,7 @@
           "data": "28/09/2026",
           "data_iso": "2026-09-28",
           "mes_ref": "2026-09",
-          "regional": "Regional VII",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Iguape",
           "municipios": [
@@ -12876,7 +12876,7 @@
           "data": "28/09/2026",
           "data_iso": "2026-09-28",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Quissamã",
           "municipios": [
@@ -12907,7 +12907,7 @@
           "data": "28/09/2026",
           "data_iso": "2026-09-28",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana",
           "municipios": [
@@ -12938,7 +12938,7 @@
           "data": "28/09/2026",
           "data_iso": "2026-09-28",
           "mes_ref": "2026-09",
-          "regional": "Regional VI",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Caraguatatuba",
           "municipios": [
@@ -12969,7 +12969,7 @@
           "data": "28/09/2026",
           "data_iso": "2026-09-28",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Casimiro de Abreu; Rio das Ostras",
           "municipios": [
@@ -13001,7 +13001,7 @@
           "data": "29/09/2026",
           "data_iso": "2026-09-29",
           "mes_ref": "2026-09",
-          "regional": "Regional VII",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Cananéia",
           "municipios": [
@@ -13032,7 +13032,7 @@
           "data": "29/09/2026",
           "data_iso": "2026-09-29",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana",
           "municipios": [
@@ -13063,7 +13063,7 @@
           "data": "29/09/2026",
           "data_iso": "2026-09-29",
           "mes_ref": "2026-09",
-          "regional": "Regional I",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Presidente Kennedy; Marataízes",
           "municipios": [
@@ -13095,7 +13095,7 @@
           "data": "29/09/2026",
           "data_iso": "2026-09-29",
           "mes_ref": "2026-09",
-          "regional": "Regional I",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Piúma",
           "municipios": [
@@ -13126,7 +13126,7 @@
           "data": "29/09/2026",
           "data_iso": "2026-09-29",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Quissamã; São João da Barra",
           "municipios": [
@@ -13158,7 +13158,7 @@
           "data": "29/09/2026",
           "data_iso": "2026-09-29",
           "mes_ref": "2026-09",
-          "regional": "Regional VI",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "RJ",
           "municipio": "Paraty",
           "municipios": [
@@ -13189,7 +13189,7 @@
           "data": "29/09/2026",
           "data_iso": "2026-09-29",
           "mes_ref": "2026-09",
-          "regional": "Regional IV",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Arraial do Cabo",
           "municipios": [
@@ -13220,7 +13220,7 @@
           "data": "29/09/2026",
           "data_iso": "2026-09-29",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Carapebus",
           "municipios": [
@@ -13251,7 +13251,7 @@
           "data": "29/09/2026",
           "data_iso": "2026-09-29",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Casimiro de Abreu; Rio das Ostras",
           "municipios": [
@@ -13283,7 +13283,7 @@
           "data": "29/09/2026",
           "data_iso": "2026-09-29",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -13314,7 +13314,7 @@
           "data": "",
           "data_iso": "",
           "mes_ref": "",
-          "regional": "Regional VII",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Iguape",
           "municipios": [
@@ -13345,7 +13345,7 @@
           "data": "",
           "data_iso": "",
           "mes_ref": "",
-          "regional": "Regional IV",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Arraial do Cabo",
           "municipios": [
@@ -13376,7 +13376,7 @@
           "data": "",
           "data_iso": "",
           "mes_ref": "",
-          "regional": "Regional IV",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Cabo Frio",
           "municipios": [
@@ -13407,7 +13407,7 @@
           "data": "",
           "data_iso": "",
           "mes_ref": "",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé",
           "municipios": [
@@ -13438,7 +13438,7 @@
           "data": "",
           "data_iso": "",
           "mes_ref": "",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Rio das Ostras",
           "municipios": [
@@ -13474,7 +13474,7 @@
         "externos": 2,
         "media_participantes": 18.6,
         "municipios_atendidos": 26,
-        "regionais": 10
+        "regionais": 7
       },
       "serie_temporal": [
         {
@@ -13750,7 +13750,7 @@
           "data": "20/05/2026",
           "data_iso": "2026-05-20",
           "mes_ref": "2026-05",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana; São João da Barra; Campos dos Goytacazes; Quissamã",
           "municipios": [
@@ -13784,7 +13784,7 @@
           "data": "21/05/2026",
           "data_iso": "2026-05-21",
           "mes_ref": "2026-05",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Carapebus; Macaé; Rio das Ostras; Casimiro de Abreu",
           "municipios": [
@@ -14433,7 +14433,7 @@
           "data": "03/06/2026",
           "data_iso": "2026-06-03",
           "mes_ref": "2026-06",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes",
           "municipios": [
@@ -14559,7 +14559,7 @@
           "data": "18/06/2026",
           "data_iso": "2026-06-18",
           "mes_ref": "2026-06",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes",
           "municipios": [
@@ -14712,7 +14712,7 @@
           "data": "07/07/2026",
           "data_iso": "2026-07-07",
           "mes_ref": "2026-07",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana; São João da Barra; Campos dos Goytacazes; Quissamã",
           "municipios": [
@@ -15000,7 +15000,7 @@
           "data": "23/07/2026",
           "data_iso": "2026-07-23",
           "mes_ref": "2026-07",
-          "regional": "II - Campos dos Goytacazes",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana; São João da Barra; Campos dos Goytacazes; Quissamã",
           "municipios": [
@@ -15034,7 +15034,7 @@
           "data": "24/07/2026",
           "data_iso": "2026-07-24",
           "mes_ref": "2026-07",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Carapebus; Macaé; Rio das Ostras; Casimiro de Abreu",
           "municipios": [
@@ -15068,7 +15068,7 @@
           "data": "28/07/2026",
           "data_iso": "2026-07-28",
           "mes_ref": "2026-07",
-          "regional": "I -Marataízes",
+          "regional": "Regional I - Marataízes",
           "estado": "ES",
           "municipio": "Piúma; Marataízes; Itapemirim; Presidente Kennedy",
           "municipios": [
@@ -15102,7 +15102,7 @@
           "data": "29/07/2026",
           "data_iso": "2026-07-29",
           "mes_ref": "2026-07",
-          "regional": "III- Macaé",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Macaé; Casimiro de Abreu; Rio das Ostras; Carapebus",
           "municipios": [
@@ -15549,7 +15549,7 @@
           "data": "19/08/2026",
           "data_iso": "2026-08-19",
           "mes_ref": "2026-08",
-          "regional": "IV - Cabo Frio",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema; Araruama; Arraial do Cabo; Cabo Frio; Armação dos Búzios",
           "municipios": [
@@ -15584,7 +15584,7 @@
           "data": "04/08/2026",
           "data_iso": "2026-08-04",
           "mes_ref": "2026-08",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Guapimirim",
           "municipios": [
@@ -15615,7 +15615,7 @@
           "data": "06/08/2026",
           "data_iso": "2026-08-06",
           "mes_ref": "2026-08",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Niterói",
           "municipios": [
@@ -15646,7 +15646,7 @@
           "data": "13/08/2026",
           "data_iso": "2026-08-13",
           "mes_ref": "2026-08",
-          "regional": "V - Niterói",
+          "regional": "Regional V - Niterói",
           "estado": "RJ",
           "municipio": "Maricá",
           "municipios": [
@@ -15677,7 +15677,7 @@
           "data": "26/08/2026",
           "data_iso": "2026-08-26",
           "mes_ref": "2026-08",
-          "regional": "VI - Caraguatatuba",
+          "regional": "Regional VI - Caraguatatuba",
           "estado": "SP",
           "municipio": "Paraty; Caraguatatuba; Ilhabela",
           "municipios": [
@@ -16192,7 +16192,7 @@
           "data": "02/09/2026",
           "data_iso": "2026-09-02",
           "mes_ref": "2026-09",
-          "regional": "Regional IV",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Cabo Frio",
           "municipios": [
@@ -16293,7 +16293,7 @@
           "data": "09/09/2026",
           "data_iso": "2026-09-09",
           "mes_ref": "2026-09",
-          "regional": "Regional IV",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Saquarema",
           "municipios": [
@@ -16353,7 +16353,7 @@
           "data": "10/09/2026",
           "data_iso": "2026-09-10",
           "mes_ref": "2026-09",
-          "regional": "Regional IV",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Arraial do Cabo",
           "municipios": [
@@ -16384,7 +16384,7 @@
           "data": "11/09/2026",
           "data_iso": "2026-09-11",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São João da Barra",
           "municipios": [
@@ -16415,7 +16415,7 @@
           "data": "11/09/2026",
           "data_iso": "2026-09-11",
           "mes_ref": "2026-09",
-          "regional": "Regional III",
+          "regional": "Regional III - Macaé",
           "estado": "RJ",
           "municipio": "Carapebus; Macaé; Rio das Ostras; Casimiro de Abreu",
           "municipios": [
@@ -16449,7 +16449,7 @@
           "data": "14/09/2026",
           "data_iso": "2026-09-14",
           "mes_ref": "2026-09",
-          "regional": "Regional IV",
+          "regional": "Regional IV - Cabo Frio",
           "estado": "RJ",
           "municipio": "Armação dos Búzios; Araruama",
           "municipios": [
@@ -16510,7 +16510,7 @@
           "data": "15/09/2026",
           "data_iso": "2026-09-15",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "São Francisco de Itabapoana",
           "municipios": [
@@ -16541,7 +16541,7 @@
           "data": "18/09/2026",
           "data_iso": "2026-09-18",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Quissamã",
           "municipios": [
@@ -16572,7 +16572,7 @@
           "data": "22/09/2026",
           "data_iso": "2026-09-22",
           "mes_ref": "2026-09",
-          "regional": "Regional II",
+          "regional": "Regional II - Campos",
           "estado": "RJ",
           "municipio": "Campos dos Goytacazes",
           "municipios": [
@@ -16664,7 +16664,7 @@
         "externos": 0,
         "media_participantes": 4.33,
         "municipios_atendidos": 26,
-        "regionais": 10
+        "regionais": 9
       },
       "serie_temporal": [
         {
@@ -16790,7 +16790,7 @@
           "data": "19/06/2026",
           "data_iso": "2026-06-19",
           "mes_ref": "2026-06",
-          "regional": "VII- Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Regional",
           "municipios": [],
@@ -16909,7 +16909,7 @@
           "data": "02/07/2026",
           "data_iso": "2026-07-02",
           "mes_ref": "2026-07",
-          "regional": "VII- Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Cananéia; Iguape; Ilha Comprida",
           "municipios": [
@@ -17107,7 +17107,7 @@
           "data": "15/07/2026",
           "data_iso": "2026-07-15",
           "mes_ref": "2026-07",
-          "regional": "VII- Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Cananéia; Iguape; Ilha Comprida",
           "municipios": [
@@ -17173,7 +17173,7 @@
           "data": "17/07/2026",
           "data_iso": "2026-07-17",
           "mes_ref": "2026-07",
-          "regional": "VII- Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Cananéia; Iguape; Ilha Comprida",
           "municipios": [
@@ -17276,7 +17276,7 @@
           "data": "29/07/2026",
           "data_iso": "2026-07-29",
           "mes_ref": "2026-07",
-          "regional": "VII- Iguape",
+          "regional": "Regional VII - Iguape",
           "estado": "SP",
           "municipio": "Cananéia; Iguape; Ilha Comprida",
           "municipios": [
