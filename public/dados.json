@@ -1,15 +1,15 @@
 {
-  "gerado_em": "2026-10-20T19:04:07",
+  "gerado_em": "2026-10-20T19:11:02",
   "periodo": {
     "inicio": "23/07/2024",
     "fim": "30/09/2026"
   },
   "global": {
-    "total_atividades": 592,
-    "total_participantes": 4654,
-    "internos": 4207,
+    "total_atividades": 590,
+    "total_participantes": 4652,
+    "internos": 4205,
     "externos": 447,
-    "media_participantes": 7.86,
+    "media_participantes": 7.88,
     "municipios_atendidos": 26,
     "regionais": 12,
     "serie_temporal": [
@@ -43,11 +43,11 @@
       },
       {
         "mes": "2026-08",
-        "atividades": 117
+        "atividades": 116
       },
       {
         "mes": "2026-09",
-        "atividades": 148
+        "atividades": 147
       }
     ]
   },
@@ -1930,11 +1930,11 @@
       "sigla": "PAG",
       "tem_dados": true,
       "indicadores": {
-        "total_atividades": 354,
-        "total_participantes": 1122,
-        "internos": 1038,
+        "total_atividades": 352,
+        "total_participantes": 1120,
+        "internos": 1036,
         "externos": 84,
-        "media_participantes": 3.17,
+        "media_participantes": 3.18,
         "municipios_atendidos": 26,
         "regionais": 8
       },
@@ -1965,11 +1965,11 @@
         },
         {
           "mes": "2026-08",
-          "atividades": 64
+          "atividades": 63
         },
         {
           "mes": "2026-09",
-          "atividades": 111
+          "atividades": 110
         }
       ],
       "atividades": [
@@ -8755,37 +8755,6 @@
         },
         {
           "codigo_acao": "21.3",
-          "atividade": "21.3 Representar o Programa em espaços de controle social em nível municipal - Reunião Ordinária do Conselho Municipal de Meio Ambiente",
-          "programa": "PAG",
-          "data": "24/08/2026",
-          "data_iso": "2026-08-24",
-          "mes_ref": "2026-08",
-          "regional": "Regional IV - Cabo Frio",
-          "estado": "RJ",
-          "municipio": "Armação dos Búzios",
-          "municipios": [
-            "Armação dos Búzios"
-          ],
-          "abrangencia": "ok",
-          "local": "Secretaria Municipal de Turismo",
-          "objetivo": "Representar a Associação Raízes na reunião extraordinária do Conselho Municipal de Meio Ambiente a fim de apreciar e aprovar atas de reuniões anteriores, bem como tomar ciência sobre assuntos pertinentes ao Rio Una e ao balanço patrimonial do ano de 2025 do Fundo Municipal do Meio Ambiente.",
-          "metodologia": "Exposição dialogada",
-          "perfil": "educadora social e educador assistente",
-          "participantes": 1,
-          "part_internos": 1,
-          "part_externos": 0,
-          "resultados": "A atividade não foi realizada na data prevista pois foi reagendada pelo Poder Público após o envio da Agenda Ibama e Petrobras. A representante da Associação Raízes e a equipe técnica tomaram conhecimento sobre os assuntos em pauta, em especial ao compartilhamento do balanço patrimonial do Fundo Municipal do Meio Ambiente, referente ao ano de 2025. Também acompanharam as discussões a respeito do Rio Una, dos incêndios nas áreas de vegetação de praias e da necessidade de recomposição da Mesa Diretora do Conselho, bem como apreciaram e aprovaram as atas de reuniões anteriores do colegiado.",
-          "produtos": "Não houve",
-          "link_relatorio": "https://docs.google.com/document/d/1Dr4xJPZEytRCiehekgSV9xrGkOvSt3lr/edit?usp=sharing&ouid=101063241604327415295&rtpof=true&sd=true",
-          "nivel_atuacao": "",
-          "titulo_peca": "",
-          "plataforma": "",
-          "interacoes": 0,
-          "visualizacoes": 0,
-          "origem": "atividade"
-        },
-        {
-          "codigo_acao": "21.3",
           "atividade": "21.3 Representar o Programa em espaços de controle social em nível municipal Reunião Ordinária do Conselho Municipal de Meio Ambiente",
           "programa": "PAG",
           "data": "27/08/2026",
@@ -9856,37 +9825,6 @@
           "resultados": "A audiência foi marcada pelo poder público após o envio da agenda mensal. A equipe técnica acompanhou a Audiência Pública do novo Plano Diretor Municipal (PDM) de Marataízes, ampliando a compreensão sobre sua importância para o desenvolvimento e a organização do município, bem como para o fortalecimento da participação popular e do controle social no planejamento urbano.",
           "produtos": "Não houve.",
           "link_relatorio": "https://docs.google.com/document/d/1tWu6GfGzJFsW5R7Ei4YxCuKqqCPBSsoH/edit",
-          "nivel_atuacao": "",
-          "titulo_peca": "",
-          "plataforma": "",
-          "interacoes": 0,
-          "visualizacoes": 0,
-          "origem": "atividade"
-        },
-        {
-          "codigo_acao": "21.3",
-          "atividade": "21.3 Representar o Programa em espaços de controle social em nível municipal - Conselho Municipal de Meio Ambiente",
-          "programa": "PAG",
-          "data": "08/09/2026",
-          "data_iso": "2026-09-08",
-          "mes_ref": "2026-09",
-          "regional": "Regional IV - Cabo Frio",
-          "estado": "RJ",
-          "municipio": "Armação dos Búzios",
-          "municipios": [
-            "Armação dos Búzios"
-          ],
-          "abrangencia": "ok",
-          "local": "Secretaria Municipal de Turismo",
-          "objetivo": "Apreciar as atas de reuniões anteriores, tomar ciência sobre assuntos pertinentes ao Plano Diretor e ao balanço patrimonial detalhado do Fundo Municipal do Meio Ambiente, bem como participar do processo de eleição para presidência do Conselho.",
-          "metodologia": "Exposição dialogada",
-          "perfil": "Educadora social",
-          "participantes": 1,
-          "part_internos": 1,
-          "part_externos": 0,
-          "resultados": "A representante da Associação Raízes e a educadora estiveram presentes na reunião ordinária do Conselho Municipal do Meio Ambiente, exercendo a representação da instituição. Na ocasião, não foi atingido o quórum necessário e a reunião não foi realizada.",
-          "produtos": "Não houve",
-          "link_relatorio": "https://docs.google.com/document/d/1a5FLtX43rpDBi6PioQMp3gP6jRhJz7tb/edit?usp=sharing&ouid=101063241604327415295&rtpof=true&sd=true",
           "nivel_atuacao": "",
           "titulo_peca": "",
           "plataforma": "",
