@@ -1,15 +1,15 @@
 {
-  "gerado_em": "2026-10-20T19:13:09",
+  "gerado_em": "2026-10-20T19:20:46",
   "periodo": {
     "inicio": "23/07/2024",
     "fim": "30/09/2026"
   },
   "global": {
-    "total_atividades": 587,
-    "total_participantes": 4652,
-    "internos": 4205,
+    "total_atividades": 585,
+    "total_participantes": 4628,
+    "internos": 4181,
     "externos": 447,
-    "media_participantes": 7.93,
+    "media_participantes": 7.91,
     "municipios_atendidos": 26,
     "regionais": 12,
     "serie_temporal": [
@@ -43,7 +43,7 @@
       },
       {
         "mes": "2026-08",
-        "atividades": 116
+        "atividades": 114
       },
       {
         "mes": "2026-09",
@@ -56,11 +56,11 @@
       "sigla": "PEA",
       "tem_dados": true,
       "indicadores": {
-        "total_atividades": 57,
-        "total_participantes": 1421,
-        "internos": 1060,
+        "total_atividades": 56,
+        "total_participantes": 1397,
+        "internos": 1036,
         "externos": 361,
-        "media_participantes": 24.93,
+        "media_participantes": 24.95,
         "municipios_atendidos": 26,
         "regionais": 9
       },
@@ -75,7 +75,7 @@
         },
         {
           "mes": "2026-08",
-          "atividades": 28
+          "atividades": 27
         },
         {
           "mes": "2026-09",
@@ -1314,37 +1314,6 @@
           "codigo_acao": "12.1",
           "atividade": "12.1. Realizar ações de mobilização",
           "programa": "PEA",
-          "data": "27/08/2026",
-          "data_iso": "2026-08-27",
-          "mes_ref": "2026-08",
-          "regional": "Regional IV - Cabo Frio",
-          "estado": "RJ",
-          "municipio": "Arraial do Cabo",
-          "municipios": [
-            "Arraial do Cabo"
-          ],
-          "abrangencia": "ok",
-          "local": "Núcleo Territorial",
-          "objetivo": "Mobilizar os participantes do projeto de educação ambiental que findou suas atividades para integrarem o Programa Planeja+, apresentando seus objetivos, metodologia, abrangência e possibilidades de atuação, promovendo a escuta e o diálogo sobre as expectativas e as demandas relacionadas ao território de Arraial do Cabo, bem como realizando o cadastramento dos interessados em participar do programa.",
-          "metodologia": "Exposição dialogada e dinâmicas pedagógicas",
-          "perfil": "educador social, educador assistente, mobilizadora, assistente de logística e pesquisador social",
-          "participantes": 24,
-          "part_internos": 24,
-          "part_externos": 0,
-          "resultados": "A atividade não foi realizada na data prevista devido à necessidade de adequações operacionais. Sua realização possibilitou a mobilização dos participantes para conhecer e integrar o Programa Planeja+, com a apresentação de seus objetivos, metodologia, projetos, abrangência e possibilidades de atuação, O encontro também promoveu um espaço de escuta e diálogo, possibilitando o compartilhamento de experiências, expectativas e demandas relacionadas ao território de Arraial do Cabo e estimulando o interesse pela participação social. Ao final, os interessados foram orientados para o preenchimento das fichas de inscrição, Termos de Adesão como voluntários e Autorizações de Uso de Imagem.",
-          "produtos": "Produtos: Fichas de Inscrição, termos de adesão e autorização de uso de imagem preenchidos e assinados. - Status: em andamento. Encaminhamento : recebimento das fichas de inscrição dos participantes que não realizaram a entrega durante a atividade. Responsável: mobilizadora.",
-          "link_relatorio": "https://docs.google.com/document/d/1Qhdk3iZ0W4jW0mbi-iQbE2Z3019i34bk/edit?usp=sharing&ouid=101063241604327415295&rtpof=true&sd=true",
-          "nivel_atuacao": "",
-          "titulo_peca": "",
-          "plataforma": "",
-          "interacoes": 0,
-          "visualizacoes": 0,
-          "origem": "atividade"
-        },
-        {
-          "codigo_acao": "12.1",
-          "atividade": "12.1. Realizar ações de mobilização",
-          "programa": "PEA",
           "data": "05/08/2026",
           "data_iso": "2026-08-05",
           "mes_ref": "2026-08",
@@ -1930,11 +1899,11 @@
       "sigla": "PAG",
       "tem_dados": true,
       "indicadores": {
-        "total_atividades": 349,
+        "total_atividades": 348,
         "total_participantes": 1120,
         "internos": 1036,
         "externos": 84,
-        "media_participantes": 3.21,
+        "media_participantes": 3.22,
         "municipios_atendidos": 26,
         "regionais": 8
       },
@@ -1965,7 +1934,7 @@
         },
         {
           "mes": "2026-08",
-          "atividades": 63
+          "atividades": 62
         },
         {
           "mes": "2026-09",
@@ -8682,37 +8651,6 @@
           "resultados": "Os participantes tomaram conhecimento das ações de arborização previstas para setembro, bem como tomaram conhecimento da agenda para a capacitação dos trabalhadores licenciados da Praia do Forno e das alterações propostas para a identidade visual do Parque e da continuidade do Grupo de Trabalho de Turismo de Base Comunitária. Os conselheiros tomaram conhecimento de que o Ofício da Associação Raízes enviado ao Conselho de Meio Ambiente contendo suas contribuições sobre a minuta de resolução dos estacionamentos ecológicos foi encaminhado para análise jurídica da Procuradoria e terá posterior envio ao CMMA, e, por fim, tiveram ciência de da publicação do edital complementar com a abertura de inscrição para o preenchimento da vaga remanescente do Conselho por entidades da sociedade civil.",
           "produtos": "Encaminhamento: Realizar a leitura e análise das atas das reuniões anteriores e encaminhar eventual manifestação à Secretaria do CMMA. Responsáveis: Educador social e educadora assistente.",
           "link_relatorio": "https://docs.google.com/document/d/1fGArmOdzbMJRL8g4ea6k1hSh5E670FFz/edit?usp=sharing&ouid=101063241604327415295&rtpof=true&sd=true",
-          "nivel_atuacao": "",
-          "titulo_peca": "",
-          "plataforma": "",
-          "interacoes": 0,
-          "visualizacoes": 0,
-          "origem": "atividade"
-        },
-        {
-          "codigo_acao": "21.3",
-          "atividade": "21.3 Representar o Programa em espaços de controle social em nível municipal - Reunião Ordinária do Conselho Municipal de Defesa do Meio Ambiente",
-          "programa": "PAG",
-          "data": "27/08/2026",
-          "data_iso": "2026-08-27",
-          "mes_ref": "2026-08",
-          "regional": "Regional IV - Cabo Frio",
-          "estado": "RJ",
-          "municipio": "Cabo Frio",
-          "municipios": [
-            "Cabo Frio"
-          ],
-          "abrangencia": "ok",
-          "local": "Auditório da Prefeitura Municipal de Cabo Frio",
-          "objetivo": "Obter acesso e acompanhar a ata da última reunião do Conselho Municipal de Defesa do Meio Ambiente, além das informações referentes à análise das Contas do Fundo Municipal de Meio Ambiente, os recursos administrativos de autos de infração e o andamento do novo processo eleitoral para a representação no Conselho Municipal de Defesa do Meio Ambiente.",
-          "metodologia": "Exposição Dialogada",
-          "perfil": "educador social e educadora assistente",
-          "participantes": 0,
-          "part_internos": 0,
-          "part_externos": 0,
-          "resultados": "A atividade não foi realizada na data prevista pois foi reagendada pelo poder público após o envio da Agenda Ibama/Petrobras. Durante a reunião do Conselho Municipal de Defesa do Meio Ambiente, a equipe técnica teve ciência dos pareceres técnicos relativos aos processos administrativos em tramitação, da votação majoritária pela manutenção das multas aplicadas em conformidade com o Sistema Municipal de Licenciamento Ambiental e colaboraram suscitando a efetivação do processo eleitoral para o biênio 2026/2028.",
-          "produtos": "",
-          "link_relatorio": "https://docs.google.com/document/d/1Jz_kAJDWHwsjRPfEuBtMxoqT_USrZ-TH/edit?usp=sharing&ouid=101063241604327415295&rtpof=true&sd=true",
           "nivel_atuacao": "",
           "titulo_peca": "",
           "plataforma": "",
