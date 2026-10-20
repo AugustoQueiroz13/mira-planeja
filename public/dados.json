@@ -1,15 +1,15 @@
 {
-  "gerado_em": "2026-10-20T19:32:42",
+  "gerado_em": "2026-10-20T19:39:23",
   "periodo": {
     "inicio": "23/07/2024",
     "fim": "30/09/2026"
   },
   "global": {
-    "total_atividades": 585,
+    "total_atividades": 584,
     "total_participantes": 4628,
     "internos": 4181,
     "externos": 447,
-    "media_participantes": 7.91,
+    "media_participantes": 7.92,
     "municipios_atendidos": 26,
     "regionais": 12,
     "serie_temporal": [
@@ -1899,11 +1899,11 @@
       "sigla": "PAG",
       "tem_dados": true,
       "indicadores": {
-        "total_atividades": 348,
+        "total_atividades": 347,
         "total_participantes": 1120,
         "internos": 1036,
         "externos": 84,
-        "media_participantes": 3.22,
+        "media_participantes": 3.23,
         "municipios_atendidos": 26,
         "regionais": 8
       },
@@ -4386,37 +4386,6 @@
           "part_externos": 0,
           "resultados": "A equipe técnica do Planeja+ participou da reunião do Conselho Municipal de Meio Ambiente de Carapebus e tomou conhecimento sobre o Plano de Gestão Integrada de Resíduos Sólidos (PGINS), que contribuirá para a melhor aplicação e gestão relacionada aos resíduos sólidos do município. Além disso, foi apresentado o Plano Municipal de Conservação da Mata Atlântica e as etapas de trabalho para sua elaboração, que contribuirá para conservação e recuperação do bioma presente na região. Foram apresentadas também atualizações sobre ações desenvolvidas nas Unidades de Conservação, principalmente relacionadas ao monitoramento; e a realização da Semana de Educação Ambiental.",
           "produtos": "- Produto: Não houve. - Encaminhamento: Realizar a inscrição para o Grupo de Apoio ao Desenvolvimento do Plano Municipal de Conservação e Recuperação da Mata Atlântica de Carapebus; Responsável: Educador Social.",
-          "link_relatorio": "",
-          "nivel_atuacao": "",
-          "titulo_peca": "",
-          "plataforma": "",
-          "interacoes": 0,
-          "visualizacoes": 0,
-          "origem": "atividade"
-        },
-        {
-          "codigo_acao": "21.3",
-          "atividade": "21.3 Representar o Programa em Espaços de Controle Social em Nível Municipal",
-          "programa": "PAG",
-          "data": "",
-          "data_iso": "",
-          "mes_ref": "",
-          "regional": "Regional IV - Cabo Frio",
-          "estado": "RJ",
-          "municipio": "Armação dos Búzios",
-          "municipios": [
-            "Armação dos Búzios"
-          ],
-          "abrangencia": "ok",
-          "local": "***",
-          "objetivo": "***",
-          "metodologia": "***",
-          "perfil": "***",
-          "participantes": 0,
-          "part_internos": 0,
-          "part_externos": 0,
-          "resultados": "A atividade não foi realizada por falta de quórum na reunião do Conselho",
-          "produtos": "",
           "link_relatorio": "",
           "nivel_atuacao": "",
           "titulo_peca": "",
