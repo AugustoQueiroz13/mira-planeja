@@ -24,3 +24,5 @@ dados/entrada
 *.njsproj
 *.sln
 *.sw?
+~$*
+dados/metas.xlsx

@@ -52,6 +52,7 @@ export interface MetaAcaoInfo {
   alvo: number
   rotulo: string
   concluido?: boolean
+  produto_entregue?: boolean
 }
 
 export interface MetasInfo {

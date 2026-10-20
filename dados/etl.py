@@ -351,29 +351,46 @@ def carrega_metas(caminho):
             continue
         na = _num_meta(ma)
         npd = _num_meta(mp)
-        exec_txt = (limpa_texto(ma).lower() == "executado") or (limpa_texto(mp).lower() == "executado")
+        ma_txt = limpa_texto(ma).lower()
+        mp_txt = limpa_texto(mp).lower()
         rec = acoes.setdefault(cod, {"projeto": proj, "rotulo": desc, "alvo": 0.0,
                                      "tipo": "sem_meta", "concluido": False,
-                                     "_num": False, "_exec": False})
+                                     "_num_ativ": False, "_exec_ativ": False,
+                                     "_exec_prod": False})
+        # Meta numerica define o alvo medido por contagem (atividade tem prioridade)
         if na and na > 0:
             rec["alvo"] += na
             rec["tipo"] = "atividade"
-            rec["_num"] = True
+            rec["_num_ativ"] = True
         elif npd and npd > 0:
             rec["alvo"] += npd
             rec["tipo"] = "produto"
-            rec["_num"] = True
-        elif exec_txt:
-            rec["_exec"] = True
+        # "Executado" na coluna Atividades encerra a acao (100%);
+        # "Executado" so na coluna Produto marca o entregavel como entregue.
+        # Aceita a palavra sozinha ou junto do numero da meta (ex: "8 - Executado")
+        if "executado" in ma_txt:
+            rec["_exec_ativ"] = True
+        if "executado" in mp_txt:
+            rec["_exec_prod"] = True
     wb.close()
-    # Acoes marcadas apenas como "Executado" (sem meta numerica) sao concluidas -> 100%
     for rec in acoes.values():
-        if not rec["_num"] and rec["_exec"]:
-            rec["tipo"] = "produto"
-            rec["alvo"] = 1.0
+        exec_ativ = rec["_exec_ativ"]
+        exec_prod = rec["_exec_prod"]
+        num_ativ = rec["_num_ativ"]
+        # Concluida (100%): a frente de atividades foi executada, ou e um
+        # produto entregue que nao tem atividades recorrentes de contagem.
+        if exec_ativ or (not num_ativ and exec_prod):
+            if rec["tipo"] == "sem_meta":
+                rec["tipo"] = "produto"
+            if rec["alvo"] == 0.0:
+                rec["alvo"] = 1.0
             rec["concluido"] = True
-        rec.pop("_num", None)
-        rec.pop("_exec", None)
+        # Hibrida: atividades de longo prazo ainda em contagem + produto entregue.
+        # O selo "Produto entregue" aparece junto do progresso real das atividades.
+        rec["produto_entregue"] = num_ativ and exec_prod and not rec["concluido"]
+        rec.pop("_num_ativ", None)
+        rec.pop("_exec_ativ", None)
+        rec.pop("_exec_prod", None)
     return {"acoes": acoes, "totais_projeto": totais}
 
 

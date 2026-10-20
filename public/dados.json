@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-10-20T07:53:54",
+  "gerado_em": "2026-10-20T10:32:57",
   "periodo": {
     "inicio": "27/02/2026",
     "fim": "30/09/2026"
@@ -19308,525 +19308,599 @@
         "rotulo": "1.1 Selecionar, contratar e capacitar a equipe do programa",
         "alvo": 56.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "1.2": {
         "projeto": "PGP",
         "rotulo": "1.2 Selecionar e contratar serviços terceirizados",
         "alvo": 1.0,
         "tipo": "produto",
-        "concluido": true
+        "concluido": true,
+        "produto_entregue": false
       },
       "2.1": {
         "projeto": "PGP",
         "rotulo": "2.1 Locar as sedes para o funcionamento do programa (locais e regionais)",
         "alvo": 1.0,
         "tipo": "produto",
-        "concluido": true
+        "concluido": true,
+        "produto_entregue": false
       },
       "2.2": {
         "projeto": "PGP",
         "rotulo": "2.2. Aquisição de móveis e equipamentos para as 34 sedes e a equipe",
-        "alvo": 34.0,
+        "alvo": 1.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": true,
+        "produto_entregue": false
       },
       "3.1": {
         "projeto": "PGP",
         "rotulo": "3.1 Realizar reuniões ordinárias do Conselho Gestor",
         "alvo": 12.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "3.2": {
         "projeto": "PGP",
         "rotulo": "3.2 Realizar reuniões de análise crítica",
         "alvo": 4.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "3.3": {
         "projeto": "PGP",
         "rotulo": "3.3 Manter acervo documental pertinente ao programa",
         "alvo": 1.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": true,
+        "produto_entregue": false
       },
       "3.4": {
         "projeto": "PGP",
         "rotulo": "3.4. Realizar Encontros Regionais da Equipe Técnica para planejamento estratégico das ações",
         "alvo": 7.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "4.1": {
         "projeto": "PGP",
         "rotulo": "4.1 Realizar oficinas para a elaboração do regimento do Conselho Gestor do Programa",
         "alvo": 1.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": true,
+        "produto_entregue": false
       },
       "4.2": {
         "projeto": "PGP",
         "rotulo": "4.2 Elaborar Código de Ética",
         "alvo": 1.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": true,
+        "produto_entregue": false
       },
       "4.3": {
         "projeto": "PGP",
         "rotulo": "4.3 Elaborar o Manual de Organização do Programa",
         "alvo": 1.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": true,
+        "produto_entregue": false
       },
       "4.4": {
         "projeto": "PGP",
         "rotulo": "4.4 Elaborar o Manual de Utilização das Sedes",
         "alvo": 1.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "5.1": {
         "projeto": "PGP",
         "rotulo": "5.1 Apresentar e validar o Plano de Pesquisa e de Monitoramento e Avaliação",
         "alvo": 1.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "5.2": {
         "projeto": "PGP",
         "rotulo": "5.2 Realizar diagnóstico de perfil dos(as) participantes do programa",
         "alvo": 1.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "5.3": {
         "projeto": "PGP",
         "rotulo": "5.3 Mapear e participar em eventos vinculados ao controle de rendas petrolíferas",
         "alvo": 8.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "5.4": {
         "projeto": "PGP",
         "rotulo": "5.4 Sistematizar os dados municipais das rendas petrolíferas, do controle social e do orçamento público em formato de painel",
         "alvo": 12.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "5.5": {
         "projeto": "PGP",
         "rotulo": "5.5 Realizar oficinas de planejamento da próxima fase",
         "alvo": 52.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "6.1": {
         "projeto": "PGP",
         "rotulo": "6.1 Realizar oficinas para elaboração de indicadores por projeto vinculando-as a construção do sistema de monitoramento e avaliação",
         "alvo": 2.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "7.1": {
         "projeto": "PGP",
         "rotulo": "7.1 Elaborar relatório das Ações de Mitigação, com resultados considerados mitigadores de impacto",
         "alvo": 1.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "8.1": {
         "projeto": "PGP",
         "rotulo": "8.1 Elaboração de planilha com a sistematização das políticas públicas mapeadas",
         "alvo": 1.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "9.1": {
         "projeto": "PGP",
         "rotulo": "9.1 Elaboração de produto com a sistematização dos dados da aplicação das receitas petrolíferas",
         "alvo": 1.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "10.1": {
         "projeto": "PEA",
         "rotulo": "10.1 Realizar 10 encontros locais (nos municípios) e sete encontros regionais (um por região) e um encontro de culminância",
         "alvo": 268.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "11.1": {
         "projeto": "PEA",
         "rotulo": "11.1 Realizar 78 formações abertas ao público externo",
         "alvo": 78.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "12.1": {
         "projeto": "PEA",
         "rotulo": "12.1. Realizar ações de mobilização",
         "alvo": 104.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "13.1": {
         "projeto": "PEA",
         "rotulo": "13.1 Elaborar PPP",
         "alvo": 8.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "14.1": {
         "projeto": "PEA",
         "rotulo": "14.1. Realizar formação continuada da equipe técnica (intercâmbio, participação em eventos científicos, encontros quadrimestrais)",
         "alvo": 45.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "15.1": {
         "projeto": "PEA",
         "rotulo": "15. 1 Realizar formações dos participantes",
         "alvo": 1768.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "16.1": {
         "projeto": "PEA",
         "rotulo": "16.1 Selecionar participantes para o PAG",
         "alvo": 572.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "17.1": {
         "projeto": "PEA",
         "rotulo": "17.1 Selecionar os(as) participantes remunerados(as) do PAG nos municípios por meio de avaliação de aprendizagem",
         "alvo": 435.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "18.1": {
         "projeto": "PAG",
         "rotulo": "18.1 Realizar oficina para elaboração do termo de compromisso",
         "alvo": 1.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "18.2": {
         "projeto": "PAG",
         "rotulo": "18.2 Aprovar com o Conselho Gestor o termo de compromisso para participantes do PAG",
         "alvo": 1.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "19.1": {
         "projeto": "PAG",
         "rotulo": "19.1 Sistematizar, por meio de painéis informativos, o uso das rendas petrolíferas na gestão municipal das políticas públicas de saúde, educação e território, com base em reuniões de monitoramento e mapeamento participativo.",
         "alvo": 1118.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": true
       },
       "20.1": {
         "projeto": "PAG",
         "rotulo": "20.1 Realizar oficinas para definir estratégias para atuação na gestão pública municipal com os(as) participantes do PAG",
         "alvo": 104.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "21.1": {
         "projeto": "PAG",
         "rotulo": "21.1 Realizar reuniões para análise de conjuntura municipal e implementação da agenda política de atuação na gestão pública",
         "alvo": 1248.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "21.2": {
         "projeto": "PAG",
         "rotulo": "21. 2 Participar de espaços de controle social municipais",
         "alvo": 807.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "21.3": {
         "projeto": "PAG",
         "rotulo": "21.3 Representar o Programa em espaços de controle social em nível municipal",
         "alvo": 872.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "21.4": {
         "projeto": "PAG",
         "rotulo": "21.4 Realizar eventos locais para deliberações de propostas de incidência política",
         "alvo": 26.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "21.5": {
         "projeto": "PAG",
         "rotulo": "21.5 Apresentar propostas de melhoria das politicas públicas ao Poder Público municipal (Executivo e Legislativo)",
         "alvo": 650.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "22.1": {
         "projeto": "PAG",
         "rotulo": "22.1. Realizar oficina para definir estratégia de atuação na gestão pública em nível estadual, no Rio de Janeiro; e regional para os estados do Espírito Santo e São Paulo",
         "alvo": 3.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "23.1": {
         "projeto": "PAG",
         "rotulo": "23.1 Realizar reuniões para levantar, monitorar e sistematizar na forma de painéis a aplicação estadual das rendas petrolíferas nas políticas públicas socioespaciais, de saúde, de educação e outras oriundas dos impactos da indústria do petróleo",
         "alvo": 42.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "23.2": {
         "projeto": "PAG",
         "rotulo": "23.2 Participar de espaços de controle social estaduais no debate das legislações orçamentárias (LOA, LDO e PPA)",
         "alvo": 6.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "23.3": {
         "projeto": "PAG",
         "rotulo": "23.3 Apresentar proposta no ciclo orçamentário Estadual (LOA, LDO e PPA)",
         "alvo": 3.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "24.1": {
         "projeto": "PAG",
         "rotulo": "24.1 Realizar reuniões operacionais e de alinhamento",
         "alvo": 7.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "24.2": {
         "projeto": "PAG",
         "rotulo": "24.2 Realizar encontro para troca de experiências e avaliação do Programa em nível regional",
         "alvo": 7.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "24.3": {
         "projeto": "PAG",
         "rotulo": "24.3 Realizar encontro macrorregional para troca de experiências, avaliação e planejamento do Programa em nível macrorregional",
         "alvo": 1.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "24.4": {
         "projeto": "PAG",
         "rotulo": "24.4 Realizar reuniões de planejamento e mobilização para a incidência politica em âmbito federal",
         "alvo": 9.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "24.5": {
         "projeto": "PAG",
         "rotulo": "24.5 Participar de espaço de controle social relevante, considerando a temática das rendas petrolíferas ou orçamento público, em nível federal",
         "alvo": 2.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "24.6": {
         "projeto": "PAG",
         "rotulo": "24.6 Apresentar proposta no ciclo orçamentário Federal (LOA, LDO e PPA)",
         "alvo": 3.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "25.1": {
         "projeto": "PAG",
         "rotulo": "25.1 Realizar ações conjuntas com instituições, coletivos e movimentos sociais para mobilização, acompanhamento, monitoramento e incidência politica",
         "alvo": 156.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "25.2": {
         "projeto": "PAG",
         "rotulo": "25.2 Realizar ações conjuntas com instituições, coletivos, movimentos sociais para mobilização, acompanhamento, monitoramento e incidência politica em âmbito estadual",
         "alvo": 8.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "26.1": {
         "projeto": "PAG",
         "rotulo": "26.1 Produzir dossiê acerca do processo de elaboração das propostas apresentadas ao Poder Público municipal",
         "alvo": 26.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "26.2": {
         "projeto": "PAG",
         "rotulo": "26.2 Produzir dossiê acerca do processo de elaboração das propostas apresentadas ao Poder Público estadual",
         "alvo": 3.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "27.1": {
         "projeto": "PCS",
         "rotulo": "27.1 Elaborar e realizar diagnósticos de comunicação",
         "alvo": 8.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": true,
+        "produto_entregue": false
       },
       "27.2": {
         "projeto": "PCS",
         "rotulo": "27.2 Elaborar Plano de Comunicação Geral do Programa",
         "alvo": 1.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": true,
+        "produto_entregue": false
       },
       "27.3": {
         "projeto": "PCS",
         "rotulo": "27.3 Elaborar peças de mobilização iniciais",
         "alvo": 4.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": true,
+        "produto_entregue": false
       },
       "27.4": {
         "projeto": "PCS",
         "rotulo": "27.4 Elaborar kits de comunicação",
         "alvo": 2.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": true,
+        "produto_entregue": false
       },
       "28.1": {
         "projeto": "PCS",
         "rotulo": "28.1 Criar site e redes sociais (Youtube, Instagram, Facebook, Whatsapp, Tiktok)",
         "alvo": 5.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": true,
+        "produto_entregue": false
       },
       "28.2": {
         "projeto": "PCS",
         "rotulo": "28.2 Publicar no site e nas redes sociais",
         "alvo": 570.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "28.3": {
         "projeto": "PCS",
         "rotulo": "28.3 Elaborar peças de comunicação voltadas à mobilização em nível geral",
         "alvo": 120.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "29.1": {
         "projeto": "PCS",
         "rotulo": "29.1 Realizar reuniões de articulação com o PMCS",
         "alvo": 4.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "30.1": {
         "projeto": "PCS",
         "rotulo": "30.1 Realizar oficina por região para elaboração dos Planos de Comunicação Regional, considerando suas especificidades",
         "alvo": 7.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "30.2": {
         "projeto": "PCS",
         "rotulo": "30.2 Elaborar os Planos de Comunicação Regionais",
         "alvo": 7.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "30.3": {
         "projeto": "PCS",
         "rotulo": "30.3 Elaborar textos e imagens informativos sobre a atuação regional do Programa",
         "alvo": 252.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "30.4": {
         "projeto": "PCS",
         "rotulo": "30.4 Elaborar peças de mobilização em nível regional",
         "alvo": 63.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "31.1": {
         "projeto": "PCS",
         "rotulo": "31.1 Mediar e elaborar peças que atendam a comunicação popular com os participantes",
         "alvo": 104.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "31.2": {
         "projeto": "PCS",
         "rotulo": "31.2 Realizar oficina de comunicação popular para os(as) participantes",
         "alvo": 78.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "32.1": {
         "projeto": "PCS",
         "rotulo": "32.1 Divulgar o Seminário",
         "alvo": 4.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "32.2": {
         "projeto": "PCS",
         "rotulo": "32.2 Executar o Seminário do Programa",
         "alvo": 1.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "32.3": {
         "projeto": "PCS",
         "rotulo": "32.3 Elaborar e finalizar os relatórios audiovisuais",
         "alvo": 4.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "33.1": {
         "projeto": "PCS",
         "rotulo": "33.1 Elaborar e enviar release",
         "alvo": 6.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "33.2": {
         "projeto": "PCS",
         "rotulo": "33.2 Impulsionar redes sociais",
         "alvo": 8.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "34.1": {
         "projeto": "ASSOCIAÇÃO",
         "rotulo": "34.1 Realizar assembleias ordinárias e reuniões",
         "alvo": 8.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "35.1": {
         "projeto": "ASSOCIAÇÃO",
         "rotulo": "35.1 Capacitar os associados",
         "alvo": 8.0,
         "tipo": "atividade",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       },
       "36.1": {
         "projeto": "ASSOCIAÇÃO",
         "rotulo": "36.1 Publicar relatório anual de prestação de contas",
         "alvo": 4.0,
         "tipo": "produto",
-        "concluido": false
+        "concluido": false,
+        "produto_entregue": false
       }
     },
     "totais_projeto": {
-      "PGP": 108.0,
-      "PEA": 2457.0,
+      "PGP": 104.0,
+      "PEA": 2453.0,
       "PAG": 3424.0,
-      "PCS": 1248.0,
+      "PCS": 1228.0,
       "ASSOCIAÇÃO": 20.0
     }
   },

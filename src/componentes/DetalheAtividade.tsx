@@ -1,5 +1,5 @@
 import type { Atividade } from '../tipos'
-import { X } from 'lucide-react'
+import { X, ExternalLink } from 'lucide-react'
 
 function Campo({ rotulo, valor }: { rotulo: string; valor: string | number }) {
   if (valor === '' || valor === null || valor === undefined) return null
@@ -19,6 +19,9 @@ export function DetalheAtividade({
   aoFechar: () => void
 }) {
   const a = atividade
+  const municipios = a.municipios?.length ? a.municipios.join(', ') : a.municipio
+  const rotuloMunicipio = a.municipios && a.municipios.length > 1 ? 'Municípios' : 'Município'
+
   return (
     <div className="fixed inset-0 z-50 flex justify-end bg-black/40" onClick={aoFechar}>
       <div
@@ -46,7 +49,9 @@ export function DetalheAtividade({
             <Campo rotulo="Data" valor={a.data} />
             <Campo rotulo="Regional" valor={a.regional} />
             <Campo rotulo="Estado" valor={a.estado} />
-            <Campo rotulo="Município" valor={a.municipio} />
+            <Campo rotulo={rotuloMunicipio} valor={municipios} />
+            <Campo rotulo="Abrangência" valor={a.abrangencia} />
+            <Campo rotulo="Nível de atuação" valor={a.nivel_atuacao} />
             <Campo rotulo="Local" valor={a.local} />
             <Campo
               rotulo="Participantes"
@@ -59,6 +64,18 @@ export function DetalheAtividade({
           <Campo rotulo="Resultados alcançados" valor={a.resultados} />
           <Campo rotulo="Produtos e encaminhamentos" valor={a.produtos} />
         </div>
+
+        {a.link_relatorio && (
+          <a
+            href={a.link_relatorio}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-4 flex items-center justify-center gap-2 rounded-xl bg-mira-verde px-4 py-3 text-sm font-medium text-white shadow-sm transition hover:bg-mira-verde/90"
+          >
+            <ExternalLink size={16} />
+            Abrir relatório da atividade
+          </a>
+        )}
       </div>
     </div>
   )

@@ -172,7 +172,13 @@ export function Painel({ admin = false }: { admin?: boolean }) {
           >
             ← Voltar ao panorama
           </button>
-          <DetalheAcao codigo={acao} metasAcoes={metasAcoes} atividades={filtradas} />
+          <DetalheAcao
+            codigo={acao}
+            metas={dados.metas}
+            metasAcoes={metasAcoes}
+            atividades={filtradas}
+            aoAbrir={setAtividadeAberta}
+          />
         </div>
       ) : (
         <>
