@@ -57,7 +57,7 @@ export function Painel({ admin = false }: { admin?: boolean }) {
     }
   })
   const acoesOpcoes = [...rotuloAcao.entries()]
-    .map(([codigo, nome]) => ({ codigo, nome }))
+    .map(([codigo, nome]) => ({ codigo, nome: dados.metas?.acoes?.[codigo]?.rotulo || nome }))
     .sort((a, b) => ordenaAcao(a.codigo, b.codigo))
 
   const filtradas = todas.filter(
