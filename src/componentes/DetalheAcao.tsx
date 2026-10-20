@@ -7,11 +7,63 @@ import {
   YAxis,
   Cell,
   LabelList,
+  PieChart,
+  Pie,
+  Tooltip,
   ResponsiveContainer,
 } from 'recharts'
+import type { Contagem } from '../tipos'
 import { contagem } from '../dados/resumir'
 import { GraficoDistribuicao } from './GraficoDistribuicao'
 import { Cronograma } from './Cronograma'
+
+const CORES_EQUIPE = [
+  '#3C9C3C', '#54B460', '#78C03C', '#30B4A8', '#2AA79B',
+  '#8FCB6E', '#639922', '#4FAE9C', '#A7D89A', '#2E7D32',
+]
+
+function RoscaEquipe({ titulo, dados }: { titulo: string; dados: Contagem[] }) {
+  const total = dados.reduce((s, d) => s + d.quantidade, 0) || 1
+  return (
+    <div className="rounded-xl bg-white p-5 shadow-sm">
+      <h3 className="mb-2 font-medium text-mira-escuro">{titulo}</h3>
+      <ResponsiveContainer width="100%" height={160}>
+        <PieChart>
+          <Pie
+            data={dados}
+            dataKey="quantidade"
+            nameKey="rotulo"
+            innerRadius={42}
+            outerRadius={68}
+            paddingAngle={2}
+            stroke="none"
+          >
+            {dados.map((_, i) => (
+              <Cell key={i} fill={CORES_EQUIPE[i % CORES_EQUIPE.length]} />
+            ))}
+          </Pie>
+          <Tooltip />
+        </PieChart>
+      </ResponsiveContainer>
+      <ul className="mt-2 space-y-1 text-xs">
+        {dados.map((d, i) => (
+          <li key={i} className="flex items-center justify-between gap-2">
+            <span className="flex min-w-0 items-center gap-1.5">
+              <span
+                className="h-2.5 w-2.5 shrink-0 rounded-full"
+                style={{ backgroundColor: CORES_EQUIPE[i % CORES_EQUIPE.length] }}
+              />
+              <span className="truncate text-mira-escuro/70">{d.rotulo}</span>
+            </span>
+            <span className="shrink-0 font-medium text-mira-escuro">
+              {d.quantidade} · {Math.round((d.quantidade / total) * 100)}%
+            </span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
 
 function Campo({ titulo, valor, cinza }: { titulo: string; valor: string; cinza?: boolean }) {
   return (
@@ -198,10 +250,10 @@ export function DetalheAcao({
               unidade="capacitações"
             />
           </div>
-          <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-            <GraficoDistribuicao titulo="Equipe por sexo" dados={equipe.sexo} />
-            <GraficoDistribuicao titulo="Equipe por formação" dados={equipe.formacao} />
-            <GraficoDistribuicao titulo="Equipe por grande área" dados={equipe.area} />
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <RoscaEquipe titulo="Equipe por sexo" dados={equipe.sexo} />
+            <RoscaEquipe titulo="Equipe por formação" dados={equipe.formacao} />
+            <RoscaEquipe titulo="Equipe por grande área" dados={equipe.area} />
           </div>
         </>
       )}
