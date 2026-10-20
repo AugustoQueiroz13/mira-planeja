@@ -329,12 +329,19 @@ def _num_meta(v):
 
 
 def carrega_metas(caminho):
-    """Le a aba 'Metas Totais': por acao, o alvo (coluna de Atividades ou de
-    Produto, a que nao for zero) e o tipo; e o total por projeto."""
+    """Le a aba 'Metas Totais'. Colunas:
+      C Meta: Atividades Realizadas | D Meta: Produto |
+      E Produto Executado | F Meta Geral Por Projeto
+
+    Atividade e medida pela contagem do PINAR (alvo = coluna C).
+    Produto e medido pela propria planilha: Produto Executado / Meta Produto
+    (colunas E / D). Acoes com os dois sao hibridas: a barra segue as
+    atividades e o produto entra como selo. "Executado" (texto) = 100%.
+    """
     wb = load_workbook(caminho, read_only=True, data_only=True)
     ws = wb["Metas Totais"]
     rows = list(ws.iter_rows(values_only=True))
-    acoes = {}
+    acc = {}
     totais = {}
     for r in rows[1:]:
         proj = limpa_texto(r[0]) if len(r) > 0 else ""
@@ -342,55 +349,79 @@ def carrega_metas(caminho):
         if not desc:
             continue
         cod = extrai_codigo_acao(desc)
-        ma = r[2] if len(r) > 2 else None
-        mp = r[3] if len(r) > 3 else None
-        geral = r[4] if len(r) > 4 else None
+        ma = r[2] if len(r) > 2 else None   # Meta Atividades (C)
+        mp = r[3] if len(r) > 3 else None   # Meta Produto (D)
+        pe = r[4] if len(r) > 4 else None   # Produto Executado (E)
+        geral = r[5] if len(r) > 5 else None  # Meta Geral Por Projeto (F)
         if isinstance(geral, (int, float)) and geral and geral > 5 and proj:
             totais[proj] = float(geral)
         if cod == "s/codigo":
             continue
         na = _num_meta(ma)
         npd = _num_meta(mp)
+        npe = _num_meta(pe)
         ma_txt = limpa_texto(ma).lower()
         mp_txt = limpa_texto(mp).lower()
-        rec = acoes.setdefault(cod, {"projeto": proj, "rotulo": desc, "alvo": 0.0,
-                                     "tipo": "sem_meta", "concluido": False,
-                                     "_num_ativ": False, "_exec_ativ": False,
-                                     "_exec_prod": False})
-        # Meta numerica define o alvo medido por contagem (atividade tem prioridade)
+        pe_txt = limpa_texto(pe).lower()
+        rec = acc.setdefault(cod, {
+            "projeto": proj, "rotulo": desc,
+            "meta_ativ": 0.0, "meta_prod": 0.0, "prod_exec": 0.0,
+            "num_ativ": False, "num_prod": False,
+            "exec_ativ": False, "exec_prod": False,
+        })
         if na and na > 0:
-            rec["alvo"] += na
-            rec["tipo"] = "atividade"
-            rec["_num_ativ"] = True
-        elif npd and npd > 0:
-            rec["alvo"] += npd
-            rec["tipo"] = "produto"
-        # "Executado" na coluna Atividades encerra a acao (100%);
-        # "Executado" so na coluna Produto marca o entregavel como entregue.
-        # Aceita a palavra sozinha ou junto do numero da meta (ex: "8 - Executado")
+            rec["meta_ativ"] += na
+            rec["num_ativ"] = True
+        if npd and npd > 0:
+            rec["meta_prod"] += npd
+            rec["num_prod"] = True
+        if npe and npe > 0:
+            rec["prod_exec"] += npe
+        # "Executado" (sozinho ou junto do numero, ex "8 - Executado").
+        # Na coluna Atividades encerra a acao; na de Produto/Executado conta o produto.
         if "executado" in ma_txt:
-            rec["_exec_ativ"] = True
-        if "executado" in mp_txt:
-            rec["_exec_prod"] = True
+            rec["exec_ativ"] = True
+        if "executado" in mp_txt or "executado" in pe_txt:
+            rec["exec_prod"] = True
     wb.close()
-    for rec in acoes.values():
-        exec_ativ = rec["_exec_ativ"]
-        exec_prod = rec["_exec_prod"]
-        num_ativ = rec["_num_ativ"]
-        # Concluida (100%): a frente de atividades foi executada, ou e um
-        # produto entregue que nao tem atividades recorrentes de contagem.
-        if exec_ativ or (not num_ativ and exec_prod):
-            if rec["tipo"] == "sem_meta":
-                rec["tipo"] = "produto"
-            if rec["alvo"] == 0.0:
-                rec["alvo"] = 1.0
-            rec["concluido"] = True
-        # Hibrida: atividades de longo prazo ainda em contagem + produto entregue.
-        # O selo "Produto entregue" aparece junto do progresso real das atividades.
-        rec["produto_entregue"] = num_ativ and exec_prod and not rec["concluido"]
-        rec.pop("_num_ativ", None)
-        rec.pop("_exec_ativ", None)
-        rec.pop("_exec_prod", None)
+
+    acoes = {}
+    for cod, rec in acc.items():
+        tem_ativ = rec["num_ativ"]
+        tem_prod = rec["num_prod"] or rec["exec_prod"]
+        # Produto sem numero mas marcado "Executado" vale como 1 de 1
+        meta_prod = rec["meta_prod"] if rec["num_prod"] else (1.0 if rec["exec_prod"] else 0.0)
+        prod_exec = rec["prod_exec"] if rec["num_prod"] else (1.0 if rec["exec_prod"] else 0.0)
+        if rec["exec_prod"] and not rec["num_prod"]:
+            prod_exec = meta_prod  # "Executado" textual => produto completo
+
+        item = {"projeto": rec["projeto"], "rotulo": rec["rotulo"], "concluido": False}
+        if tem_ativ and tem_prod:
+            # Hibrida: barra pelas atividades; produto entra como selo
+            item["tipo"] = "hibrida"
+            item["alvo"] = rec["meta_ativ"]
+            item["meta_produto"] = meta_prod
+            item["produto_executado"] = prod_exec
+            item["produto_entregue"] = meta_prod > 0 and prod_exec >= meta_prod
+            item["concluido"] = rec["exec_ativ"]
+        elif tem_prod:
+            # Produto puro: medido por Produto Executado / Meta Produto
+            item["tipo"] = "produto"
+            item["alvo"] = meta_prod
+            item["meta_produto"] = meta_prod
+            item["produto_executado"] = prod_exec
+            item["produto_entregue"] = False
+            item["concluido"] = rec["exec_ativ"] or (meta_prod > 0 and prod_exec >= meta_prod)
+        elif tem_ativ:
+            # Atividade pura: medida pela contagem do PINAR
+            item["tipo"] = "atividade"
+            item["alvo"] = rec["meta_ativ"]
+            item["concluido"] = rec["exec_ativ"]
+        else:
+            item["tipo"] = "sem_meta"
+            item["alvo"] = 1.0 if (rec["exec_ativ"] or rec["exec_prod"]) else 0.0
+            item["concluido"] = rec["exec_ativ"] or rec["exec_prod"]
+        acoes[cod] = item
     return {"acoes": acoes, "totais_projeto": totais}
 
 

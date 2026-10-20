@@ -48,11 +48,13 @@ export interface Programa {
 // Bloco de metas vindo do ETL (planilha de METAS)
 export interface MetaAcaoInfo {
   projeto: string
-  tipo: 'atividade' | 'produto' | 'sem_meta'
+  tipo: 'atividade' | 'produto' | 'hibrida' | 'sem_meta'
   alvo: number
   rotulo: string
   concluido?: boolean
   produto_entregue?: boolean
+  meta_produto?: number
+  produto_executado?: number
 }
 
 export interface MetasInfo {

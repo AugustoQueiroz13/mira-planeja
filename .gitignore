@@ -26,3 +26,5 @@ dados/entrada
 *.sw?
 ~$*
 dados/metas.xlsx
+~$*
+dados/metas.xlsx

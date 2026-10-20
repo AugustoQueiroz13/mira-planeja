@@ -23,8 +23,11 @@ export function DetalheAcao({
   const desc = metasAcoes?.acoes?.[codigo]
 
   const ativs = atividades
-  const realizado = ativs.length
-  const alvo = info?.alvo ?? 0
+  // Produto e medido pela planilha (Executado / Meta); atividade e hibrida,
+  // pela contagem de atividades do PINAR.
+  const ehProduto = info?.tipo === 'produto'
+  const realizado = ehProduto ? (info?.produto_executado ?? 0) : ativs.length
+  const alvo = ehProduto ? (info?.meta_produto ?? 0) : (info?.alvo ?? 0)
   const concluido = !!info?.concluido
   const pct = concluido
     ? 100
@@ -39,7 +42,8 @@ export function DetalheAcao({
     ''
   )
   const programa = info?.projeto || desc?.programa || ''
-  const tipoLabel = info?.tipo === 'produto' ? 'produto' : 'atividades'
+  const tipoLabel = ehProduto ? 'produtos' : 'atividades'
+  const resultadoLabel = ehProduto ? 'entregues' : 'realizadas até aqui'
 
   // distribuicao: curada (metas-acoes) ou derivada por regional
   const temCurada = !!desc?.distribuicao && desc.distribuicao.length > 0
@@ -92,6 +96,9 @@ export function DetalheAcao({
           <div className="mb-4 inline-flex items-center gap-1.5 rounded-full bg-mira-verde px-3 py-1 text-xs font-semibold text-white">
             <CheckCircle2 size={14} />
             Produto entregue
+            {info.meta_produto && info.meta_produto > 1
+              ? ` (${info.produto_executado} de ${info.meta_produto})`
+              : ''}
           </div>
         )}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-[1fr_1fr_2fr] md:items-center">
@@ -109,7 +116,7 @@ export function DetalheAcao({
             ) : (
               <>
                 <p className="text-2xl font-bold text-mira-escuro">{realizado}</p>
-                <p className="text-xs text-mira-escuro/55">realizadas até aqui</p>
+                <p className="text-xs text-mira-escuro/55">{resultadoLabel}</p>
               </>
             )}
           </div>

@@ -32,17 +32,32 @@ export function calcularMetas(metas: MetasInfo | undefined, atividades: Atividad
   const projNum: Record<SiglaPrograma, number> = { PEA: 0, PAG: 0, PGP: 0, PCS: 0 }
 
   for (const [cod, def] of Object.entries(metas.acoes)) {
-    const real = contagem[cod] || 0
-    if (def.concluido) {
-      // acao marcada como "Executado" na planilha de METAS: 100%
-      porAcao[cod] = 100
-      if (def.projeto in projNum) projNum[def.projeto as SiglaPrograma] += def.alvo
-    } else if (def.alvo > 0) {
-      porAcao[cod] = Math.min(100, Math.round((real / def.alvo) * 100))
-      // contribuicao limitada ao alvo, para nao superestimar o projeto
-      if (def.projeto in projNum) projNum[def.projeto as SiglaPrograma] += Math.min(real, def.alvo)
+    const proj = def.projeto as SiglaPrograma
+    const naSoma = def.projeto in projNum
+
+    if (def.tipo === 'produto') {
+      // Produto: medido pela propria planilha (Produto Executado / Meta Produto)
+      const meta = def.meta_produto ?? def.alvo
+      const feito = def.produto_executado ?? 0
+      porAcao[cod] = def.concluido
+        ? 100
+        : meta > 0
+          ? Math.min(100, Math.round((feito / meta) * 100))
+          : 0
+      if (naSoma) projNum[proj] += def.concluido ? meta : Math.min(feito, meta)
     } else {
-      porAcao[cod] = real > 0 ? 100 : 0
+      // Atividade e hibrida: medidas pela contagem de atividades do PINAR.
+      // Na hibrida, o produto nao entra na soma (aparece como selo no detalhe).
+      const real = contagem[cod] || 0
+      if (def.concluido) {
+        porAcao[cod] = 100
+        if (naSoma) projNum[proj] += def.alvo
+      } else if (def.alvo > 0) {
+        porAcao[cod] = Math.min(100, Math.round((real / def.alvo) * 100))
+        if (naSoma) projNum[proj] += Math.min(real, def.alvo)
+      } else {
+        porAcao[cod] = real > 0 ? 100 : 0
+      }
     }
   }
 
