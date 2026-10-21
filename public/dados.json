@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-10-21T09:23:49",
+  "gerado_em": "2026-10-21T09:35:30",
   "periodo": {
     "inicio": "23/07/2024",
     "fim": "30/09/2026"
@@ -18491,6 +18491,18 @@
           {
             "mes": "Junho",
             "valor": 642
+          },
+          {
+            "mes": "Julho",
+            "valor": 781
+          },
+          {
+            "mes": "Agosto",
+            "valor": 781
+          },
+          {
+            "mes": "Setembro",
+            "valor": 781
           }
         ]
       },
@@ -18509,6 +18521,18 @@
           {
             "mes": "Junho",
             "valor": 27
+          },
+          {
+            "mes": "Julho",
+            "valor": 31
+          },
+          {
+            "mes": "Agosto",
+            "valor": 31
+          },
+          {
+            "mes": "Setembro",
+            "valor": 31
           }
         ]
       },
@@ -18527,6 +18551,18 @@
           {
             "mes": "Junho",
             "valor": 18
+          },
+          {
+            "mes": "Julho",
+            "valor": 36
+          },
+          {
+            "mes": "Agosto",
+            "valor": 36
+          },
+          {
+            "mes": "Setembro",
+            "valor": 36
           }
         ]
       },
@@ -18545,6 +18581,18 @@
           {
             "mes": "Junho",
             "valor": 52
+          },
+          {
+            "mes": "Julho",
+            "valor": 93
+          },
+          {
+            "mes": "Agosto",
+            "valor": 93
+          },
+          {
+            "mes": "Setembro",
+            "valor": 93
           }
         ]
       },
