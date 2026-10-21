@@ -249,6 +249,14 @@ def transforma(df):
     df["interacoes"] = df["interacoes"].map(para_int)
     df["visualizacoes"] = df["visualizacoes"].map(para_int)
 
+    # Atividades de nivel gerencial trazem "Gerência" na coluna de municipio
+    # (ex.: "Gerência - Niterói"), embora a Regional venha como institucional.
+    # Elas sao da Gerencia, nao de um municipio: viram regional propria para
+    # poder ser filtradas a parte do Institucional. Detecta antes de o municipio
+    # ser reescrito abaixo.
+    ger = df["municipio"].astype(str).str.contains(r"ger[eê]ncia", case=False, regex=True, na=False)
+    df.loc[ger, "regional"] = "Gerência"
+
     trip = df["municipio"].map(municipios_da_celula)
     df["municipios_canon"] = trip.map(lambda t: t[0])
     df["municipio"] = trip.map(lambda t: t[1])
@@ -261,6 +269,11 @@ def transforma(df):
     df.loc[inst, "municipios_canon"] = df.loc[inst, "municipios_canon"].map(lambda _: [])
     df.loc[inst, "municipio"] = "Institucional"
     df.loc[inst, "abrangencia"] = "institucional"
+
+    # Mesmo tratamento para a Gerencia: nao atribui a municipios.
+    df.loc[ger, "municipios_canon"] = df.loc[ger, "municipios_canon"].map(lambda _: [])
+    df.loc[ger, "municipio"] = "Gerência"
+    df.loc[ger, "abrangencia"] = "institucional"
 
     df["data"] = df["data_realizada"].map(parse_data)
     df["mes_ref"] = df["data"].dt.strftime("%Y-%m")
