@@ -18,6 +18,7 @@ import { DetalheAcao } from './DetalheAcao'
 import { AvisoQualidade } from './AvisoQualidade'
 import { BotaoUpload } from './BotaoUpload'
 import { PainelComunicacao } from './PainelComunicacao'
+import { RodapeFeedback } from './RodapeFeedback'
 
 const SIGLAS: SiglaPrograma[] = ['PEA', 'PAG', 'PGP', 'PCS']
 
@@ -250,6 +251,8 @@ export function Painel({ admin = false }: { admin?: boolean }) {
       )}
 
       {admin && <AvisoQualidade qualidade={dados.qualidade} />}
+
+      <RodapeFeedback />
 
       {listaAberta && (
         <ModalLista
