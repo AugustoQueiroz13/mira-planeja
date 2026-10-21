@@ -573,11 +573,11 @@ def engajamento_pcs(df):
 def monta_saida(df, metas, comunicacao):
     comunicacao = dict(comunicacao or {})
     comunicacao["engajamento"] = engajamento_pcs(df)
-    # As publicacoes 28.2 sao contadas pela planilha de atividades (ja vem
-    # consolidadas, uma por publicacao). As 28.2 vindas da planilha de redes
-    # servem so ao engajamento (interacoes/visualizacoes, calculado acima) e
-    # duplicariam a contagem de atividades, por isso saem daqui em diante.
-    df = df[~((df["codigo_acao"] == "28.2") & (df["origem"] == "redes"))].copy()
+    # A planilha de redes serve ao engajamento (posts, interacoes e
+    # visualizacoes, calculados acima). As atividades que vem dela (27.3, 28.2,
+    # 30.3, ...) sao as mesmas ja registradas na planilha de atividades do PCS,
+    # entao NAO entram de novo na contagem de atividades/metas, para nao duplicar.
+    df = df[df["origem"] != "redes"].copy()
     tem_data = df["data"].notna().any()
     saida = {
         "gerado_em": datetime.now().isoformat(timespec="seconds"),
