@@ -82,12 +82,14 @@ function Frente({
   meta,
   pct,
   unidade,
+  ocultarMeta,
 }: {
   titulo: string
   realizado: number
   meta: number
   pct: number
   unidade: string
+  ocultarMeta?: boolean
 }) {
   const cor = pct >= 100 ? '#3C9C3C' : pct >= 50 ? '#78C03C' : '#30B4A8'
   return (
@@ -99,7 +101,7 @@ function Frente({
       <p className="mt-1 text-2xl font-bold text-mira-escuro">
         {realizado}{' '}
         <span className="text-base font-normal text-mira-escuro/55">
-          de {meta} {unidade}
+          {ocultarMeta ? unidade : `de ${meta} ${unidade}`}
         </span>
       </p>
       <div className="mt-3 h-3 w-full rounded-full bg-mira-bege">
@@ -248,6 +250,7 @@ export function DetalheAcao({
               meta={metaCapac}
               pct={pctCapac}
               unidade="capacitações"
+              ocultarMeta
             />
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
